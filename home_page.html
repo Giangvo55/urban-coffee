@@ -1,0 +1,840 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Coffee</title>
+    <script data-n-head="ssr" type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+    <meta data-n-head="ssr" charset="utf-8">
+    <link data-n-head="ssr" rel="icon" type="image/x-icon" href="images/logo_sign.png">
+    <link data-n-head="ssr" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-74991073-1&amp;l=dataLayer&amp;cx=c">
+    </script>
+
+
+    <link rel="stylesheet" href="total_css.css" />
+    <script src="https://storage.googleapis.com/kariba-public/tch/pro/sw/js/kariba.minify.js?v=1637676628031"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-messaging.js"></script>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+<body cz-shortcut-listen="true">
+    <div id="__nuxt">
+
+        <div id="__layout">
+            <div data-v-06237fa0="">
+
+                <script data-v-06237fa0="">
+                    window.dataLayer = window.dataLayer || [];
+
+                    function gtag() {
+                        dataLayer.push(arguments);
+                    }
+                    gtag('js', new Date());
+
+                    gtag('config', 'UA-74991073-1');
+                </script>
+
+                <header data-v-1c02541c="" data-v-06237fa0="" class="bg-header d-flex align-items-center header-phone">
+                    <div data-v-1c02541c="" class="container-fluid container-lg d-flex align-items-center">
+                        <a data-v-1c02541c="" href="/" class="header-logo mr-4"><img data-v-1c02541c="" src="images/slogan.png" alt="" class="desktop-logo" style="width: 100px; height: 100px;"></a>
+                        <a data-v-1c02541c="" href="/" aria-current="page" class="header-logo mr-4 nuxt-link-exact-active nuxt-link-active"></a>
+
+                        <nav data-v-1c02541c="" class="navbar navbar-expand-lg d-none d-lg-inline">
+                            <ul data-v-1c02541c="" class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li data-v-1c02541c="" class="nav-item"><a data-v-1c02541c="" href="/product.html" class="nav-link p-0">Trang chủ</a></li>
+                                <li data-v-1c02541c="" class="nav-item"><a data-v-1c02541c="" href="/blog.html" class="nav-link p-0">Tin tức</a></li>
+
+                            </ul>
+                        </nav>
+                        <div data-v-1c02541c="" class="header-right d-flex align-items-center ml-auto"><a data-v-1c02541c="" class="img-custom header-auth mr-2 mr-sm-2 d-flex align-items-lg-start"><span data-v-1c02541c="" class="mr-1 mr-sm-2 mt-1 d-block icon nologin"><img data-v-1c02541c="" src="images/Login.70dc3d8.png" alt="" style="width: 40px;"></span> <!----></a>
+                            <!---->
+                            <a data-v-1c02541c="" href="/" aria-current="page" class="nav-link p-0 nuxt-link-exact-active nuxt-link-active"><img data-v-1c02541c="" src="images/Carticon.373916c.png" alt="" class="cart-icon-nologin">
+                                <!---->
+                            </a>
+                            <div data-v-1c02541c="" class="header__option--authen" style="display: none;"><img data-v-1c02541c="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMTUuMzg0NkwxNS4zODQ2IDBMMTYgMC42MTUzODRMMC42MTUzODQgMTZMMCAxNS4zODQ2WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTYuNjM5NzVlLTA2IDAuNjE1Mzk1TDE1LjM4NDYgMTZMMTYgMTUuMzg0NkwwLjYxNTM5MSAxLjAzNzQ2ZS0wNUw2LjYzOTc1ZS0wNiAwLjYxNTM5NVoiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo="
+                                    class="icon-close-card">
+                                <ul data-v-1c02541c="" class="header__option--authen--list" style="margin-top: 15px;">
+                                    <li data-v-1c02541c="" class="header__option--authen-item header__option--authen-item-history"><img data-v-1c02541c="" src="/icon/history-order.svg" alt="" class="icon-user">
+                                        <div data-v-1c02541c="" class="history-list-wrap"><a data-v-1c02541c="" href="/find-order"><span data-v-1c02541c="" class="text-authen" style="color: black;">Tra cứu đơn hàng</span></a></div>
+                                        <hr data-v-1c02541c="">
+                                    </li>
+                                    <li data-v-1c02541c="" data-toggle="modal" data-target="#modalLogin" class="header__option--authen-item"><img data-v-1c02541c="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxOCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIgMTNINFYxOEgxNlYySDRWN0gyVjFDMiAwLjczNDc4NCAyLjEwNTM2IDAuNDgwNDMgMi4yOTI4OSAwLjI5Mjg5M0MyLjQ4MDQzIDAuMTA1MzU3IDIuNzM0NzggMCAzIDBIMTdDMTcuMjY1MiAwIDE3LjUxOTYgMC4xMDUzNTcgMTcuNzA3MSAwLjI5Mjg5M0MxNy44OTQ2IDAuNDgwNDMgMTggMC43MzQ3ODQgMTggMVYxOUMxOCAxOS4yNjUyIDE3Ljg5NDYgMTkuNTE5NiAxNy43MDcxIDE5LjcwNzFDMTcuNTE5NiAxOS44OTQ2IDE3LjI2NTIgMjAgMTcgMjBIM0MyLjczNDc4IDIwIDIuNDgwNDMgMTkuODk0NiAyLjI5Mjg5IDE5LjcwNzFDMi4xMDUzNiAxOS41MTk2IDIgMTkuMjY1MiAyIDE5VjEzWk04IDlWNkwxMyAxMEw4IDE0VjExSDBWOUg4WiIgZmlsbD0iI0M0QzRDNCIvPgo8L3N2Zz4K"
+                                            alt="" class="icon-user"> <span data-v-1c02541c="" class="text-authen">Đăng nhập</span>
+                                        <hr data-v-1c02541c="">
+                                    </li>
+                                    <div data-v-1c02541c="" style="display: none;">
+                                        <li data-v-1c02541c="" class="header__option--authen-item"><img data-v-1c02541c="" src="user.db835c0.svg" alt="" class="icon-user"> <a data-v-1c02541c="" href="/user-info/accountUser" class="show-more"><span data-v-1c02541c="" class="text-authen">Thông tin tài khoản</span></a></li>
+                                        <hr data-v-1c02541c="">
+                                        <li data-v-1c02541c="" class="header__option--authen-item"><img data-v-1c02541c="" src="address-book.11e8849.svg" alt="" class="icon-user"> <a data-v-1c02541c="" href="/user-info/userAddress" class="show-more"><span data-v-1c02541c="" class="text-authen">Sổ địa chỉ</span></a></li>
+                                        <hr data-v-1c02541c="">
+                                        <li data-v-1c02541c="" class="header__option--authen-item header__option--authen-item-history"><img data-v-1c02541c="" src="/icon/history-order.svg" alt="" class="icon-user">
+                                            <div data-v-1c02541c="" class="history-list-wrap"><span data-v-1c02541c="" class="text-authen">Lịch sử mua hàng</span>
+                                                <ul data-v-1c02541c="" class="history-list" style="margin-left: 20px; display: none;"> <a data-v-1c02541c="" href="/user-info/orderHistory" class="show-more"><span data-v-1c02541c="" class="text-authen">Xem thêm...</span></a></ul>
+                                            </div>
+                                        </li>
+                                        <hr data-v-1c02541c="">
+                                        <li data-v-1c02541c="" class="header__option--authen-item"><img data-v-1c02541c="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxOSAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMgMTZINVYxOEgxN1YySDVWNEgzVjFDMyAwLjczNDc4NCAzLjEwNTM2IDAuNDgwNDMgMy4yOTI4OSAwLjI5Mjg5M0MzLjQ4MDQzIDAuMTA1MzU3IDMuNzM0NzggMCA0IDBIMThDMTguMjY1MiAwIDE4LjUxOTYgMC4xMDUzNTcgMTguNzA3MSAwLjI5Mjg5M0MxOC44OTQ2IDAuNDgwNDMgMTkgMC43MzQ3ODQgMTkgMVYxOUMxOSAxOS4yNjUyIDE4Ljg5NDYgMTkuNTE5NiAxOC43MDcxIDE5LjcwNzFDMTguNTE5NiAxOS44OTQ2IDE4LjI2NTIgMjAgMTggMjBINEMzLjczNDc4IDIwIDMuNDgwNDMgMTkuODk0NiAzLjI5Mjg5IDE5LjcwNzFDMy4xMDUzNiAxOS41MTk2IDMgMTkuMjY1MiAzIDE5VjE2Wk01IDlIMTJWMTFINVYxNEwwIDEwTDUgNlY5WiIgZmlsbD0iI0M0QzRDNCIvPgo8L3N2Zz4K"
+                                                alt="" class="icon-user"> <span data-v-1c02541c="" class="text-authen">Thoát</span></li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            </header>
+            <main data-v-06237fa0>
+                <main data-v-06237fa0 class="home">
+                    <section class="tch-banner tch-bg-banner">
+                        <div class="container-fluid container-lg position-relative">
+                            <div id="tchCarousel" data-ride="carousel" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div data-slide-to="0" class="active">
+                                        <a target="blank" href="/product-listing"><img src="images/banner_0.jpg" alt="First slide" class="d-block w-100 tch-banner__image"></a>
+                                    </div>
+                                    <div data-slide-no="1" class="carousel-item tch-carousel-item--custome">
+                                        <a target="blank" href="/product-listing"><img src="https://minio.thecoffeehouse.com/image/admin/Web-winningCup_297305.jpg" alt="First slide" class="d-block w-100 tch-banner__image"></a>
+                                    </div>
+                                    <div data-slide-no="2" class="carousel-item tch-carousel-item--custome">
+                                        <a target="blank" href="/product-listing"><img src="https://minio.thecoffeehouse.com/image/admin/BANNERWEB(6)_694799.jpg" alt="First slide" class="d-block w-100 tch-banner__image"></a>
+                                    </div>
+                                    <div data-slide-no="3" class="carousel-item tch-carousel-item--custome">
+                                        <a target="blank" href="/product-listing"><img src="https://minio.thecoffeehouse.com/image/admin/BANNERWEB(7)_809808.jpg" alt="First slide" class="d-block w-100 tch-banner__image"></a>
+                                    </div>
+                                </div>
+                                <ol class="tch-carousel-indicators mb-0">
+                                    <li data-target="#tchCarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#tchCarousel" data-slide-to="1" class=""></li>
+                                    <li data-target="#tchCarousel" data-slide-to="2" class=""></li>
+                                    <li data-target="#tchCarousel" data-slide-to="3" class=""></li>
+                                </ol>
+
+                            </div>
+
+                        </div>
+                    </section>
+                    <!---->
+                    <section class="tch-box" style="background-color: #e1eff0;">
+                        <div data-v-5abbf04c="" class="container-lg container-fluid">
+                            <div data-v-5abbf04c="" class="pop-up-product-detail modal fade" style="display: none;">
+                                <div data-v-8bb0074a="" data-v-5abbf04c="" id="cardModal" tabindex="-1" role="dialog" aria-labelledby="cardModalLabel" aria-hidden="true" class="modal fade">
+                                    <div data-v-8bb0074a="" role="document" class="modal-dialog cart-modal
+      tch-modal-dialog--custom-2 tch-modal-dialog--custom-header tch-modal-dialog--spacing-100
+    ">
+                                        <div data-v-8bb0074a="" class="modal-content cart-modal-content">
+                                            <div data-v-8bb0074a="" class="modal-header cart-modal-header"><button data-v-8bb0074a="" type="button" data-dismiss="modal" aria-label="Close" class="close cart-modal-close"><img data-v-8bb0074a="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMTUuMzg0NkwxNS4zODQ2IDBMMTYgMC42MTUzODRMMC42MTUzODQgMTZMMCAxNS4zODQ2WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTYuNjM5NzVlLTA2IDAuNjE1Mzk1TDE1LjM4NDYgMTZMMTYgMTUuMzg0NkwwLjYxNTM5MSAxLjAzNzQ2ZS0wNUw2LjYzOTc1ZS0wNiAwLjYxNTM5NVoiIGZpbGw9ImJsYWNrIi8+Cjwvc3ZnPgo=" alt="" class="cart-modal-close-icon"></button>
+                                                <h5 data-v-8bb0074a="" id="cardModalLabel" class="modal-title cart-modal-title">Thêm món mới</h5>
+                                            </div>
+                                            <div data-v-8bb0074a="" class="modal-body">
+                                                <div data-v-8bb0074a="" class="cart-product">
+                                                    <div data-v-8bb0074a="" class="card-product-info">
+                                                        <div data-v-8bb0074a="" class="tch-product__image card-product-info-image position-relative"><img data-v-8bb0074a="" alt="" class="card-product-info-image"></div>
+                                                        <div data-v-8bb0074a="" class="card-product-detail"><span data-v-8bb0074a="" class="card-product-name"></span> <span data-v-8bb0074a="" class="card-product-description"></span>
+                                                            <div data-v-8bb0074a="" class="card-product-footer"><span data-v-8bb0074a="" class="card-product-price">0đ</span>
+                                                                <div data-v-8bb0074a="" class="card-product-quantity-config d-flex">
+                                                                    <div data-v-8bb0074a="" aria-hidden="true" class="card-product-decrease btn btn--orange-1 quantity-product add-to-cart p-0"><img data-v-8bb0074a="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMiIgdmlld0JveD0iMCAwIDE2IDIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxNiIgaGVpZ2h0PSIyIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K"
+                                                                            alt="the coffee house"></div> <span data-v-8bb0074a="" class="card-product-quantity"></span>
+                                                                    <div data-v-8bb0074a="" class="btn btn--orange-1 card-product-increase quantity-product active add-to-cart p-0"><img data-v-8bb0074a="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuODU3MTQgNi44NTcxNFYwSDkuMTQyODZWNi44NTcxNEgxNlY5LjE0Mjg2SDkuMTQyODZWMTZINi44NTcxNFY5LjE0Mjg2SDBWNi44NTcxNEg2Ljg1NzE0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="
+                                                                            alt="the coffee house"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <section data-v-8bb0074a="" class="card-product-note">
+                                                        <div data-v-8bb0074a="" class="card-product-note-item"><img data-v-8bb0074a="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAxOCAyMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3IDIwSDFDMC43MzQ3ODQgMjAgMC40ODA0MyAxOS44OTQ2IDAuMjkyODkzIDE5LjcwNzFDMC4xMDUzNTcgMTkuNTE5NiAwIDE5LjI2NTIgMCAxOVYxQzAgMC43MzQ3ODQgMC4xMDUzNTcgMC40ODA0MyAwLjI5Mjg5MyAwLjI5Mjg5M0MwLjQ4MDQzIDAuMTA1MzU3IDAuNzM0Nzg0IDAgMSAwSDE3QzE3LjI2NTIgMCAxNy41MTk2IDAuMTA1MzU3IDE3LjcwNzEgMC4yOTI4OTNDMTcuODk0NiAwLjQ4MDQzIDE4IDAuNzM0Nzg0IDE4IDFWMTlDMTggMTkuMjY1MiAxNy44OTQ2IDE5LjUxOTYgMTcuNzA3MSAxOS43MDcxQzE3LjUxOTYgMTkuODk0NiAxNy4yNjUyIDIwIDE3IDIwWk01IDVWN0gxM1Y1SDVaTTUgOVYxMUgxM1Y5SDVaTTUgMTNWMTVIMTBWMTNINVoiIGZpbGw9IiNFNEU0RTQiLz4KPC9zdmc+Cg=="
+                                                                alt="" class="card-product-note-icon"> <input data-v-8bb0074a="" type="text" placeholder="Ghi chú thêm cho món này" class="card-product-text"></div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                            <div data-v-8bb0074a="" class="modal-footer"><button data-v-8bb0074a="" class="btn-add-item">0đ - Thêm vào giỏ hàng</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-v-5abbf04c="" class="tch-box__body">
+                                <div data-v-5abbf04c="" class="tch-box__header tch-box__header-spacing">
+                                    <div data-v-5abbf04c="" class="
+              tch-box__title
+              d-flex
+              justify-content-start justify-content-md-center
+              align-items-center
+            ">
+                                        <div data-v-5abbf04c=""><span data-v-5abbf04c="" class="icon"><i data-v-5abbf04c="" aria-hidden="true" class="fa fa-trophy"></i></span>
+                                            <span data-v-5abbf04c="" class="text">Urban Lifestyle Coffee</span>
+                                            <span data-v-5abbf04c="" class="icon"><i data-v-5abbf04c="" aria-hidden="true" class="fa fa-trophy"></i></span></div>
+                                        <!---->
+                                    </div>
+                                </div>
+                                <ul data-v-5abbf04c="" id="menu-from-house-content" role="tablist" class="
+              tch-category-card-list tch-category-card-list--spacing
+              d-flex
+              justify-content-md-center
+              flex-xl-wrap
+              flex-lg-wrap
+              border-0
+            ">
+                                    <li data-v-5abbf04c="" class="ml-2 ml-lg-3 mb-2 nav-item">
+
+                                    </li>
+                                    <li data-v-5abbf04c="" class="ml-2 ml-lg-3 mb-2 nav-item">
+                                        <a data-v-5abbf04c="" role="tab" data-toggle="tab" href="Cà phê" aria-controls="Cà phê" aria-selected="true" class="nav-link nav-link-category m-0 border-0">
+                                            <div data-v-5abbf04c="" class="tch-category-card d-flex flex-column">
+                                                <div data-v-5abbf04c="" class="d-flex justify-content-center align-items-center tch-category-card__image tch-category-card--circle"><img data-v-5abbf04c="" src="menu_icon\coffee-cup.png" alt=""></div>
+                                                <div data-v-5abbf04c="" class="tch-category-card__content">
+                                                    <h5 data-v-5abbf04c="" class="tch-category-card__title text-center mb-0">
+                                                        Cà phê
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li data-v-5abbf04c="" class="ml-2 ml-lg-3 mb-2 nav-item">
+                                        <a data-v-5abbf04c="" role="tab" data-toggle="tab" href="Trà Trái Cây - Trà Sữa" aria-controls="Trà Trái Cây - Trà Sữa" aria-selected="true" class="nav-link nav-link-category m-0 border-0">
+                                            <div data-v-5abbf04c="" class="tch-category-card d-flex flex-column">
+                                                <div data-v-5abbf04c="" class="d-flex justify-content-center align-items-center tch-category-card__image tch-category-card--circle"><img data-v-5abbf04c="" src="menu_icon\drink.png" alt=""></div>
+                                                <div data-v-5abbf04c="" class="tch-category-card__content">
+                                                    <h5 data-v-5abbf04c="" class="tch-category-card__title text-center mb-0">
+                                                        Trà Trái Cây
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li data-v-5abbf04c="" class="ml-2 ml-lg-3 mb-2 nav-item">
+                                        <a data-v-5abbf04c="" role="tab" data-toggle="tab" href="Thưởng thức tại nhà" aria-controls="Thưởng thức tại nhà" aria-selected="true" class="nav-link nav-link-category m-0 border-0">
+                                            <div data-v-5abbf04c="" class="tch-category-card d-flex flex-column">
+                                                <div data-v-5abbf04c="" class="d-flex justify-content-center align-items-center tch-category-card__image tch-category-card--circle"><img data-v-5abbf04c="" src="menu_icon\coffee-bean.png" alt=""></div>
+                                                <div data-v-5abbf04c="" class="tch-category-card__content">
+                                                    <h5 data-v-5abbf04c="" class="tch-category-card__title text-center mb-0">
+                                                        Thưởng thức tại nhà
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li data-v-5abbf04c="" class="ml-2 ml-lg-3 mb-2 nav-item">
+                                        <a data-v-5abbf04c="" role="tab" data-toggle="tab" href="Bánh - Snack" aria-controls="Bánh - Snack" aria-selected="true" class="nav-link nav-link-category m-0 border-0">
+                                            <div data-v-5abbf04c="" class="tch-category-card d-flex flex-column">
+                                                <div data-v-5abbf04c="" class="d-flex justify-content-center align-items-center tch-category-card__image tch-category-card--circle"><img data-v-5abbf04c="" src="menu_icon\snacks.png" alt=""></div>
+                                                <div data-v-5abbf04c="" class="tch-category-card__content">
+                                                    <h5 data-v-5abbf04c="" class="tch-category-card__title text-center mb-0">
+                                                        Bánh - Snack
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                                <div data-v-5abbf04c="" class="tab-content">
+                                    <div data-v-5abbf04c="" id="cg-coffee" role="tabpanel" aria-labelledby="cg-coffee-tab" class="tab-pane fade show active">
+                                        <div data-v-5abbf04c="" class="row mb-4 mb-lg-5">
+                                            <div data-v-5abbf04c="" class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3">
+                                                <div data-v-05e960a2="" data-v-5abbf04c="">
+                                                    <a target="blank" href="/product.html">
+                                                        <div data-v-05e960a2="" class="tch-product__card d-flex flex-lg-column ml-0">
+                                                            <div data-v-05e960a2="" class="tch-product__image tch-product--lg__image tch-product-img-border"><img data-v-05e960a2="" src="https://minio.thecoffeehouse.com/image/admin/BottleCFSD_496652_400x400.jpg" alt=""></div>
+                                                            <div data-v-05e960a2="" class="
+                    tch-product__content tch-product__content--mobile-padding
+                    d-flex
+                    flex-column
+                  ">
+                                                                <div data-v-05e960a2="" class="tch-product__content__top mb-1 mb-lg-3">
+                                                                    <h4 data-v-05e960a2="" class="tch-product-content__title mb-0">Cà Phê Sữa Đá Chai Fresh 250ML</h4>
+                                                                </div>
+                                                                <div data-v-05e960a2="" class="
+                      tch-product__content__footer
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      mt-auto
+                    ">
+                                                                    <p data-v-05e960a2="" class="mb-0"><span data-v-05e960a2="" class="d-block">79.000đ</span>
+                                                                        <!---->
+                                                                    </p>
+                                                                    <div data-v-05e960a2="" data-toggle="modal" data-target="#cardModal" class="btn btn--orange-1 add-to-cart p-0"><img data-v-05e960a2="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuODU3MTQgNi44NTcxNFYwSDkuMTQyODZWNi44NTcxNEgxNlY5LjE0Mjg2SDkuMTQyODZWMTZINi44NTcxNFY5LjE0Mjg2SDBWNi44NTcxNEg2Ljg1NzE0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="
+                                                                            alt="the coffee house"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div data-v-5abbf04c="" class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3">
+                                                <div data-v-05e960a2="" data-v-5abbf04c="">
+                                                    <a target="blank" href="/product.html">
+
+                                                        <div data-v-05e960a2="" class="tch-product__card d-flex flex-lg-column ml-0">
+                                                            <div data-v-05e960a2="" class="tch-product__image tch-product--lg__image tch-product-img-border"><img data-v-05e960a2="" src="https://minio.thecoffeehouse.com/image/admin/Bottle_TraDao_836487_400x400.jpg" alt=""></div>
+                                                            <div data-v-05e960a2="" class="
+                    tch-product__content tch-product__content--mobile-padding
+                    d-flex
+                    flex-column
+                  ">
+                                                                <div data-v-05e960a2="" class="tch-product__content__top mb-1 mb-lg-3">
+                                                                    <h4 data-v-05e960a2="" class="tch-product-content__title mb-0">Trà Đào Cam Sả Chai Fresh 500ML</h4>
+                                                                </div>
+                                                                <div data-v-05e960a2="" class="
+                      tch-product__content__footer
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      mt-auto
+                    ">
+                                                                    <p data-v-05e960a2="" class="mb-0"><span data-v-05e960a2="" class="d-block">109.000đ</span>
+                                                                        <!---->
+                                                                    </p>
+                                                                    <div data-v-05e960a2="" data-toggle="modal" data-target="#cardModal" class="btn btn--orange-1 add-to-cart p-0"><img data-v-05e960a2="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuODU3MTQgNi44NTcxNFYwSDkuMTQyODZWNi44NTcxNEgxNlY5LjE0Mjg2SDkuMTQyODZWMTZINi44NTcxNFY5LjE0Mjg2SDBWNi44NTcxNEg2Ljg1NzE0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="
+                                                                            alt="the coffee house"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div data-v-5abbf04c="" class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3">
+                                                <div data-v-05e960a2="" data-v-5abbf04c="">
+                                                    <a target="blank" href="/product.html">
+                                                        <div data-v-05e960a2="" class="tch-product__card d-flex flex-lg-column ml-0">
+                                                            <div data-v-05e960a2="" class="tch-product__image tch-product--lg__image tch-product-img-border"><img data-v-05e960a2="" src="https://minio.thecoffeehouse.com/image/admin/Bottle_oolong_285082_400x400.jpg" alt=""></div>
+                                                            <div data-v-05e960a2="" class="
+                    tch-product__content tch-product__content--mobile-padding
+                    d-flex
+                    flex-column
+                  ">
+                                                                <div data-v-05e960a2="" class="tch-product__content__top mb-1 mb-lg-3">
+                                                                    <h4 data-v-05e960a2="" class="tch-product-content__title mb-0">Trà Sữa Oolong Nướng Trân Châu Chai Fresh 500ML</h4>
+                                                                </div>
+                                                                <div data-v-05e960a2="" class="
+                      tch-product__content__footer
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      mt-auto
+                    ">
+                                                                    <p data-v-05e960a2="" class="mb-0"><span data-v-05e960a2="" class="d-block">99.000đ</span>
+                                                                        <!---->
+                                                                    </p>
+                                                                    <div data-v-05e960a2="" data-toggle="modal" data-target="#cardModal" class="btn btn--orange-1 add-to-cart p-0"><img data-v-05e960a2="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTYuODU3MTQgNi44NTcxNFYwSDkuMTQyODZWNi44NTcxNEgxNlY5LjE0Mjg2SDkuMTQyODZWMTZINi44NTcxNFY5LjE0Mjg2SDBWNi44NTcxNEg2Ljg1NzE0WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg=="
+                                                                            alt="the coffee house"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                    </section>
+                    <section class="tch-box tch-box--blog">
+                        <div class="container-lg container-fluid" style="background: url(&quot;flower.3438b10.svg&quot;) center center no-repeat;">
+                            <div class="tch-box__header tch-box__header-spacing">
+                                <div class="
+                tch-box__title
+                d-flex
+                justify-content-start justify-content-md-center
+                align-items-center
+              "><span class="icon"><i aria-hidden="true" class="fa fa-newspaper"></i></span><span class="text">Tin Tức &nbsp;</span><span class="icon"><i aria-hidden="true" class="fa fa-newspaper"></i></div>
+                            </div>
+                            <div class="tch-box__body">
+                                <div class="row">
+                                    <div data-v-3ec9d806="" class="col-12 col-sm-6 col-lg-3 mb-3">
+                                        <div data-v-3ec9d806="" class="tch-blog-card d-flex flex-column">
+                                            <a data-v-3ec9d806="" href="https://feed.thecoffeehouse.com/untitled-86/?mobile=1" target="blank">
+                                                <div data-v-3ec9d806="" class="tch-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/11/news--5-.jpg&quot;) center center no-repeat;"></div>
+                                            </a>
+                                            <div data-v-3ec9d806="" class="tch-blog-card__content d-flex flex-column">
+                                                <div data-v-3ec9d806="" class="tch-blog-card__content__header d-flex flex-column">
+                                                    <h5 data-v-3ec9d806="" class="tch-blog-card__title">
+                                                        BLACK FRIDAY NHÀ MỜI 35%
+                                                    </h5>
+                                                </div>
+                                                <div data-v-3ec9d806="" class="tch-blog-card__content__footer mt-auto"><button data-v-3ec9d806="" class="
+                    d-inline-block
+                    btn btn--orange
+                    align-items-center
+                    btn--radius-100
+                    float-right
+                  "><a data-v-3ec9d806="" href="/blog.html" class=""><span data-v-3ec9d806="" class="text">ĐỌC TIẾP</span></a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+        <div data-v-3ec9d806="" class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div data-v-3ec9d806="" class="tch-blog-card d-flex flex-column">
+                <a data-v-3ec9d806="" href="https://feed.thecoffeehouse.com/combo-ca-phe-nha-ngon-nhu-quan-chi-tu-109-000d/?mobile=1" target="blank">
+                    <div data-v-3ec9d806="" class="tch-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/11/Banner-news.jpg&quot;) center center no-repeat;"></div>
+                </a>
+                <div data-v-3ec9d806="" class="tch-blog-card__content d-flex flex-column">
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__header d-flex flex-column">
+                        <h5 data-v-3ec9d806="" class="tch-blog-card__title">
+                            COMBO CÀ PHÊ NHÀ - NGON NHƯ QUÁN CHỈ TỪ 109.000đ
+                        </h5>
+                    </div>
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__footer mt-auto"><button data-v-3ec9d806="" class="
+                    d-inline-block
+                    btn btn--orange
+                    align-items-center
+                    btn--radius-100
+                    float-right
+                  "><a data-v-3ec9d806="" href="/blog.html" class=""><span data-v-3ec9d806="" class="text">ĐỌC TIẾP</span></a></button></div>
+                </div>
+            </div>
+        </div>
+        <div data-v-3ec9d806="" class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div data-v-3ec9d806="" class="tch-blog-card d-flex flex-column">
+                <a data-v-3ec9d806="" href="https://feed.thecoffeehouse.com/dau-tuan-hang-say-the-coffee-house-moi-lien-20k/?mobile=1" target="blank">
+                    <div data-v-3ec9d806="" class="tch-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/11/APP-NEWS--16-.jpg&quot;) center center no-repeat;"></div>
+                </a>
+                <div data-v-3ec9d806="" class="tch-blog-card__content d-flex flex-column">
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__header d-flex flex-column">
+                        <h5 data-v-3ec9d806="" class="tch-blog-card__title">
+                            ĐẦU TUẦN HĂNG SAY, THE COFFEE HOUSE MỜI LIỀN 20K
+                        </h5>
+                    </div>
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__footer mt-auto"><button data-v-3ec9d806="" class="
+                    d-inline-block
+                    btn btn--orange
+                    align-items-center
+                    btn--radius-100
+                    float-right
+                  "><a data-v-3ec9d806="" href="/blog.html" class=""><span data-v-3ec9d806="" class="text">ĐỌC TIẾP</span></a></button></div>
+                </div>
+            </div>
+        </div>
+        <div data-v-3ec9d806="" class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div data-v-3ec9d806="" class="tch-blog-card d-flex flex-column">
+                <a data-v-3ec9d806="" href="https://feed.thecoffeehouse.com/hen-ho-xom-tu-the-coffee-house-dai-nuoc-ngon-len-den-40/?mobile=1" target="blank">
+                    <div data-v-3ec9d806="" class="tch-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/11/NEWS-APP.jpg&quot;) center center no-repeat;"></div>
+                </a>
+                <div data-v-3ec9d806="" class="tch-blog-card__content d-flex flex-column">
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__header d-flex flex-column">
+                        <h5 data-v-3ec9d806="" class="tch-blog-card__title">
+                            HẸN HÒ XÔM TỤ - THE COFFEE HOUSE ĐÃI NƯỚC NGON LÊN ĐẾN 40%
+                        </h5>
+                    </div>
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__footer mt-auto"><button data-v-3ec9d806="" class="
+                    d-inline-block
+                    btn btn--orange
+                    align-items-center
+                    btn--radius-100
+                    float-right
+                  "><a data-v-3ec9d806="" href="/blog.html" class=""><span data-v-3ec9d806="" class="text">ĐỌC TIẾP</span></a></button></div>
+                </div>
+            </div>
+        </div>
+        <div data-v-3ec9d806="" class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div data-v-3ec9d806="" class="tch-blog-card d-flex flex-column">
+                <a data-v-3ec9d806="" href="https://feed.thecoffeehouse.com/chon-huong-tinh-te-bi-kip-thoat-e/?mobile=1" target="blank">
+                    <div data-v-3ec9d806="" class="tch-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/11/APP-NEWS--15-.jpg&quot;) center center no-repeat;"></div>
+                </a>
+                <div data-v-3ec9d806="" class="tch-blog-card__content d-flex flex-column">
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__header d-flex flex-column">
+                        <h5 data-v-3ec9d806="" class="tch-blog-card__title">
+                            CHỌN HƯƠNG TINH TẾ BÍ KÍP THOÁT Ế
+                        </h5>
+                    </div>
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__footer mt-auto"><button data-v-3ec9d806="" class="
+                    d-inline-block
+                    btn btn--orange
+                    align-items-center
+                    btn--radius-100
+                    float-right
+                  "><a data-v-3ec9d806="" href="/blog.html" class=""><span data-v-3ec9d806="" class="text">ĐỌC TIẾP</span></a></button></div>
+                </div>
+            </div>
+        </div>
+        <div data-v-3ec9d806="" class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div data-v-3ec9d806="" class="tch-blog-card d-flex flex-column">
+                <a data-v-3ec9d806="" href="https://feed.thecoffeehouse.com/combo-banh-nuoc-nang-luong-ca-ngay-2/?mobile=1" target="blank">
+                    <div data-v-3ec9d806="" class="tch-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/11/1029x513-News-App.jpg&quot;) center center no-repeat;"></div>
+                </a>
+                <div data-v-3ec9d806="" class="tch-blog-card__content d-flex flex-column">
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__header d-flex flex-column">
+                        <h5 data-v-3ec9d806="" class="tch-blog-card__title">
+                            COMBO BÁNH NƯỚC - NĂNG LƯỢNG CẢ NGÀY
+                        </h5>
+                    </div>
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__footer mt-auto"><button data-v-3ec9d806="" class="
+                    d-inline-block
+                    btn btn--orange
+                    align-items-center
+                    btn--radius-100
+                    float-right
+                  "><a data-v-3ec9d806="" href="/blog.html" class=""><span data-v-3ec9d806="" class="text">ĐỌC TIẾP</span></a></button></div>
+                </div>
+            </div>
+        </div>
+        <div data-v-3ec9d806="" class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div data-v-3ec9d806="" class="tch-blog-card d-flex flex-column">
+                <a data-v-3ec9d806="" href="https://feed.thecoffeehouse.com/tearoma-crush-nha-minh-thom-bung-hung-khoi/?mobile=1" target="blank">
+                    <div data-v-3ec9d806="" class="tch-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/11/APP-NEWS--14-.jpg&quot;) center center no-repeat;"></div>
+                </a>
+                <div data-v-3ec9d806="" class="tch-blog-card__content d-flex flex-column">
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__header d-flex flex-column">
+                        <h5 data-v-3ec9d806="" class="tch-blog-card__title">
+                            TEAROMA CRUSH NHÀ MÌNH - THƠM BỪNG HỨNG KHỞI
+                        </h5>
+                    </div>
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__footer mt-auto"><button data-v-3ec9d806="" class="
+                    d-inline-block
+                    btn btn--orange
+                    align-items-center
+                    btn--radius-100
+                    float-right
+                  "><a data-v-3ec9d806="" href="/blog.html" class=""><span data-v-3ec9d806="" class="text">ĐỌC TIẾP</span></a></button></div>
+                </div>
+            </div>
+        </div>
+        <div data-v-3ec9d806="" class="col-12 col-sm-6 col-lg-3 mb-3">
+            <div data-v-3ec9d806="" class="tch-blog-card d-flex flex-column">
+                <a data-v-3ec9d806="" href="https://feed.thecoffeehouse.com/tri-n-ngay-nha-giao-trao-ngan-deal-diem-10/?mobile=1" target="blank">
+                    <div data-v-3ec9d806="" class="tch-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/11/App-news_TCH_TeacherDay.jpg&quot;) center center no-repeat;"></div>
+                </a>
+                <div data-v-3ec9d806="" class="tch-blog-card__content d-flex flex-column">
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__header d-flex flex-column">
+                        <h5 data-v-3ec9d806="" class="tch-blog-card__title">
+                            TRI ÂN NGÀY NHÀ GIÁO - TRAO NGÀN DEAL “ĐIỂM 10”
+                        </h5>
+                    </div>
+                    <div data-v-3ec9d806="" class="tch-blog-card__content__footer mt-auto"><button data-v-3ec9d806="" class="
+                    d-inline-block
+                    btn btn--orange
+                    align-items-center
+                    btn--radius-100
+                    float-right
+                  "><a data-v-3ec9d806="" href="/blog.html" class=""><span data-v-3ec9d806="" class="text">ĐỌC TIẾP</span></a></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <a href="/blogs" class=""></a><a href="javascript:void(0)" class="product-redirect-link text-orange text-center"><span>Xem tất cả</span><span class="ml-2"><i aria-hidden="true" class="fa fa-arrow-right"></i></span></a>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section data-toggle="modal" data-target="#exampleModalCenter" class="tch-box tch-box--introduce-app tch-box--bg-orange-2">
+        <div class="container-lg container-fluid position-relative">
+            <div class="tch-box__bg-image--app position-absolute d-none d-lg-block"><img src="cf-bg.2a2088b.svg" alt=""></div>
+            <div class="row">
+                <div class="
+          col-12 col-lg-5
+          mb-3 mb-lg-0
+          d-flex
+          flex-column
+          justify-content-start justify-content-lg-center
+        ">
+                    <div class="
+            d-flex
+            justify-content-start justify-content-sm-center justify-content-lg-start
+            mb-2
+          ">
+                        <div class="tch-box--introduce-app__logo"><img width="100" src="images/logo_sign.png" alt=""></div>
+                        <div class="tch-box--introduce-app__content">
+                            <p class="tch-box--introduce-app__text mb-0">
+                                Đặt qua app Urban Coffee để tích điểm
+                                <br class="d-none d-sm-block d-lg-none"> và hưởng quyền lợi thành viên.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-flex justify-content-center mt-4">
+                        <a href="javascript:void(0)" class="mr-2">
+                            <div class="tch-box--introduce-app__icon"><img width="100" src="images/app-store-2.a04cf2b.png" alt=""></div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <div class="tch-box--introduce-app__icon"><img width="100" src="images/google-play-2.9945b62.png" alt=""></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="d-flex justify-content-center">
+                        <div class="tch-box--introduce-app__media"><img src="images/newappv6.f2e1281.png" alt="" class="tch-box--introduce-app__media__image"></div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="d-lg-none d-flex justify-content-center mt-3">
+                        <a href="javascript:void(0)" class="mr-2">
+                            <div class="tch-box--introduce-app__icon"><img width="100" src="app-store-2.a04cf2b.png" alt=""></div>
+                        </a>
+                        <a href="javascript:void(0)">
+                            <div class="tch-box--introduce-app__icon"><img width="100" src="google-play-2.9945b62.png" alt=""></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!---->
+    </main>
+
+
+
+
+    <div data-v-06237fa0="" id="abc" tabindex="-1" role="dialog" aria-labelledby="delivery-modal" aria-hidden="false" class="modal fade">
+        <div data-v-06237fa0="" role="document" class="
+          modal-dialog
+          tch-modal-dialog--custom-2 tch-modal-dialog--custom-header tch-modal-dialog--spacing-100
+        ">
+            <div class="modal-content">
+                <div class="modal-header"><span data-dismiss="modal" class="icon"><i aria-hidden="true" class="fa fa-times"></i></span>
+                    <h5 id="abc-title" class="modal-title">Giao hàng</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-0"><input type="text" placeholder="Vui lòng nhập địa chỉ" class="form-control tch-delivery__input"></div>
+                    <div class="tch-order-card--border mb-3" style="display: none;"></div>
+                    <p class="modal-text-link text-center"><span class="icon mr-2"><i aria-hidden="true" class="fa fa-compass"></i></span> <span>Dùng định vị bản đồ</span></p>
+                </div>
+            </div>
+        </div>/
+    </div>
+    <div data-v-06237fa0="">
+        <div id="method-type-modal" tabindex="-1" role="dialog" aria-labelledby="method-type-modal-title" aria-hidden="false" class="modal fade">
+            <div role="document" class="
+
+        modal-pickup-desktop
+          modal-dialog
+          tch-modal-dialog--custom-1 tch-modal-dialog--custom-header tch-modal-dialog--spacing
+        ">
+                <div class="modal-content">
+                    <div class="modal-header"><span data-dismiss="modal" class="icon"><i aria-hidden="true" class="fa fa-times"></i></span>
+                        <h5 id="method-type-modal-title" class="modal-title">Phương thức đặt hàng</h5>
+                    </div>
+                    <div class="modal-body pt-0 pb-0">
+                        <div class="d-flex flex-row align-items-start tch-delivery-card tch-delivery-card--border">
+                            <div class="tch-delivery-card__image"><img src="Delivery 2.ced14c9.svg" alt=""></div>
+                            <div data-toggle="modal" data-target="#abc" class="d-flex justify-content-between align-items-start tch-delivery-card__content">
+                                <div>
+                                    <h5 class="tch-delivery-card__title mb-0">Giao hàng</h5>
+                                    <p class="tch-delivery-card__description mb-0">Vui lòng nhập địa chỉ nhận hàng</p>
+                                </div> <span class="icon mt-2"><i aria-hidden="true" class="fa fa-chevron-right"></i></span></div>
+                        </div>
+                        <div class="d-flex flex-row align-items-start tch-delivery-card tch-delivery-card--border">
+                            <div class="tch-delivery-card__image"><img src="Pickup 2.86cbc47.svg" alt=""></div>
+                            <div data-toggle="modal" data-target="#get-product-modal" class="d-flex justify-content-between align-items-start tch-delivery-card__content">
+                                <div>
+                                    <h5 class="tch-delivery-card__title mb-0">Mang đi</h5>
+                                    <p class="tch-delivery-card__description mb-0">Vui lòng chọn cửa hàng</p>
+                                </div> <span class="icon mt-2"><i aria-hidden="true" class="fa fa-chevron-right"></i></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-v-06237fa0="" id="get-product-modal" tabindex="-1" role="dialog" aria-labelledby="get-product-modal-title" aria-hidden="false" class="modal fade">
+        <div role="document" class="
+         modal-dialog
+         tch-modal-dialog--custom-2 tch-modal-dialog--custom-header tch-modal-dialog--spacing-100
+       ">
+            <div class="modal-content">
+                <div class="modal-header"><span data-dismiss="modal" class="icon"><i aria-hidden="true" class="fa fa-times"></i></span>
+                    <h5 id="get-product-modal-title" class="modal-title">Mang đi</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group"><input type="text" placeholder="Tìm cửa hàng theo quận huyện" class="form-control tch-delivery__input"></div>
+                    <p class="modal-text-link text-center"><span class="icon mr-2"><i aria-hidden="true" class="fa fa-compass"></i></span> <span>Cửa hàng gần tôi</span></p>
+                    <div class="tch-modal-sale-header">
+                        <h6 class="tch-modal-sale-title mb-0">CỬA HÀNG ĐƯỢC YÊU THÍCH</h6>
+                    </div>
+                    <div class="modal-delivery-list-address" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-v-5c47adee="" data-v-06237fa0="">
+        <div data-v-5c47adee="" id="sale-modal" tabindex="-1" role="dialog" aria-labelledby="sale-modal-title" aria-hidden="false" class="modal fade p-0">
+            <div data-v-5c47adee="" role="document" class="
+          modal-dialog
+          tch-modal-dialog--custom-2
+          tch-modal-dialog--custom-header
+          tch-modal-dialog--spacing-100
+        ">
+                <div data-v-5c47adee="" class="modal-content">
+                    <div data-v-5c47adee="" class="modal-header"><span data-v-5c47adee="" data-dismiss="modal" class="icon"><i data-v-5c47adee="" aria-hidden="true" class="fa fa-times"></i></span>
+                        <h5 data-v-5c47adee="" id="sale-modal-title" class="modal-title">Khuyến mãi</h5>
+                    </div>
+                    <div data-v-5c47adee="" class="modal-body">
+                        <div data-v-5c47adee="" class="
+                input-group
+                mb-3
+                tch-delivery__input
+                d-flex
+                align-items-center
+              "><img data-v-5c47adee="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDBIMThWNUgxNlYySDEyVjBaTTYgMFYySDJWNUgwVjBINlpNMTIgMThWMTZIMTZWMTNIMThWMThIMTJaTTYgMThIMFYxM0gyVjE2SDZWMThaTTAgOEgxOFYxMEgwVjhaIiBmaWxsPSIjRkE4QzE2Ii8+Cjwvc3ZnPgo="
+                                alt="" class="cam-scan"> <input data-v-5c47adee="" type="text" placeholder="Nhập mã khuyến mãi" aria-label="" aria-describedby="basic-addon1" class="form-control form-control--custom">
+                            <div data-v-5c47adee="" class="input-group-prepend"><button data-v-5c47adee="" type="button" class="btn btn--smoky-gray btn--radius-right-4"><span data-v-5c47adee="" class="text-apply">Áp dụng</span></button></div>
+                        </div>
+                        <div data-v-5c47adee="">
+                            <div data-v-5c47adee="" class="tch-modal-sale-header">
+                                <h6 data-v-5c47adee="" class="tch-modal-sale-title mb-0">Sắp hết hạn</h6>
+                            </div>
+                            <div data-v-5c47adee="" class="tch-modal-sale-body">
+                                <div data-v-5c47adee="" class="tch-sale-card mb-2">
+                                    <div data-v-5c47adee="" class="voucher-content d-flex align-items-center">
+                                        <div data-v-5c47adee="" class="tch-sale-card-image d-flex justify-content-center"><img data-v-5c47adee="" src="https://minio.thecoffeehouse.com/image/admin/coupou-all-15_829041.jpg" alt=""></div>
+                                        <div data-v-5c47adee="" class="
+                        tch-sale-card-content
+                        d-flex
+                        flex-column
+                        justify-content-between
+                      ">
+                                            <p data-v-5c47adee="" class="text-description mb-0">Giảm 15% từ 3 sản phẩm Cà phê đóng gói/Lon &amp; nước</p>
+                                            <p data-v-5c47adee="" class="text-expired-time mb-0">
+                                            </p>
+                                            <p style="color:#D2691E">Hết hạn trong 7 ngày</p>
+                                            <p></p> <span data-v-5c47adee="" class="use-now">Sử dụng ngay</span></div>
+                                    </div>
+                                </div>
+                                <div data-v-5c47adee="" class="tch-sale-card mb-2">
+                                    <div data-v-5c47adee="" class="voucher-content d-flex align-items-center">
+                                        <div data-v-5c47adee="" class="tch-sale-card-image d-flex justify-content-center"><img data-v-5c47adee="" src="https://minio.thecoffeehouse.com/image/admin/coupou-all-10(2)_849394.jpg" alt=""></div>
+                                        <div data-v-5c47adee="" class="
+                        tch-sale-card-content
+                        d-flex
+                        flex-column
+                        justify-content-between
+                      ">
+                                            <p data-v-5c47adee="" class="text-description mb-0">Giảm 10% 2 sản phẩm Cà phê đóng gói/Lon &amp; nước đón</p>
+                                            <p data-v-5c47adee="" class="text-expired-time mb-0">
+                                            </p>
+                                            <p style="color:#D2691E">Hết hạn trong 7 ngày</p>
+                                            <p></p> <span data-v-5c47adee="" class="use-now">Sử dụng ngay</span></div>
+                                    </div>
+                                </div>
+                                <div data-v-5c47adee="" class="tch-sale-card mb-2">
+                                    <div data-v-5c47adee="" class="voucher-content d-flex align-items-center">
+                                        <div data-v-5c47adee="" class="tch-sale-card-image d-flex justify-content-center"><img data-v-5c47adee="" src="https://minio.thecoffeehouse.com/image/admin/storage/1035_Coupon_20delivery_2030k.jpg" alt=""></div>
+                                        <div data-v-5c47adee="" class="
+                        tch-sale-card-content
+                        d-flex
+                        flex-column
+                        justify-content-between
+                      ">
+                                            <p data-v-5c47adee="" class="text-description mb-0">Giảm 30K đơn từ 129K</p>
+                                            <p data-v-5c47adee="" class="text-expired-time mb-0">
+                                            </p>
+                                            <p style="color:#D2691E">Hết hạn trong 7 ngày</p>
+                                            <p></p> <span data-v-5c47adee="" class="use-now">Sử dụng ngay</span></div>
+                                    </div>
+                                </div>
+                                <div data-v-5c47adee="" class="tch-sale-card mb-2">
+                                    <div data-v-5c47adee="" class="voucher-content d-flex align-items-center">
+                                        <div data-v-5c47adee="" class="tch-sale-card-image d-flex justify-content-center"><img data-v-5c47adee="" src="https://minio.thecoffeehouse.com/image/admin/Coupon-delivery-20K-_999954.jpg" alt=""></div>
+                                        <div data-v-5c47adee="" class="
+                        tch-sale-card-content
+                        d-flex
+                        flex-column
+                        justify-content-between
+                      ">
+                                            <p data-v-5c47adee="" class="text-description mb-0">Giảm 20K đơn từ 89K</p>
+                                            <p data-v-5c47adee="" class="text-expired-time mb-0">
+                                            </p>
+                                            <p style="color:#D2691E">Hết hạn trong 7 ngày</p>
+                                            <p></p> <span data-v-5c47adee="" class="use-now">Sử dụng ngay</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-v-5c47adee="" role="document" class="
+          modal-dialog
+          tch-modal-dialog--custom-2 tch-modal-dialog--custom-header tch-modal-dialog--spacing-100
+        " style="display: none;">
+                <div class="modal-content modal-content--detail-sale">
+                    <div class="modal-header align-items-center"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDkgMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04LjUzNzExIDAuNTAyMTMzTDAuNTAyOTU4IDguNTM2MjlMMC4wMDA4MjM5NzUgOC4wMzQxNUw4LjAzNDk3IDBMOC41MzcxMSAwLjUwMjEzM1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik04LjUzNzExIDE1LjQ5NzlMMC41MDI5NTggNy40NjM3MUwwLjAwMDgyMzk3NSA3Ljk2NTg1TDguMDM0OTcgMTZMOC41MzcxMSAxNS40OTc5WiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg=="
+                            alt="" class="cursor-pointer">
+                        <h5 id="detail-sale-modal-title" class="modal-title">Chi tiết khuyến mãi</h5>
+                    </div>
+                    <div class="modal-body d-flex flex-column justify-content-between">
+                        <div class="tch-detail-sale-box d-flex flex-column align-items-center">
+                            <h4 class="tch-detail-sale-box-title mb-1"></h4>
+                            <p class="tch-text-expired-time"></p> <img src="QR-code.3bf0228.png" alt="" class="tch-detail-sale-box-image">
+                            <p class="tch-text-user-info mb-0"><span class="text mr-1"></span> <span class="icon"><i aria-hidden="true" class="fa fa-clone"></i></span></p>
+                            <!---->
+                        </div> <span class="back">Quay về</span> <button class="btn btn--orange btn--orange--detail-sale btn--radius-100 f-600 w-100"><span class="text">Sử dụng ngay</span></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script data-v-06237fa0="" type="text/javascript">
+        let hoianScript = document.querySelector('#hoian_tracking');
+        hoianScript.addEventListener('load', function() {
+            let karibaScript = document.createElement('script');
+            karibaScript.src = "https://storage.googleapis.com/kariba-public/tch/pro/sw/js/kariba.minify.js?v=" + (new Date).getTime();
+            document.getElementsByTagName('head')[0].appendChild(karibaScript);
+            karibaScript.addEventListener('load', function() {
+                Kariba();
+            })
+        });
+    </script>
+    </div>
+    </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+
+
+
+</body>
+
+</html>

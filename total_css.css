@@ -1,10 +1,3 @@
-/*!
-* Bootstrap v4.6.0 (https://getbootstrap.com/)
-* Copyright 2011-2021 The Bootstrap Authors
-* Copyright 2011-2021 Twitter, Inc.
-* Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
-*/
-
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -32,8 +25,6 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
 }
 
 *,
@@ -43,7 +34,7 @@
 }
 
 html {
-    font-family: sans-serif;
+    font-family: Roboto;
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
@@ -2128,8 +2119,8 @@ textarea.form-control {
 
 .is-valid~.valid-feedback,
 .is-valid~.valid-tooltip,
-.was-validated:valid~.valid-feedback,
-.was-validated:valid~.valid-tooltip {
+.was-validated :valid~.valid-feedback,
+.was-validated :valid~.valid-tooltip {
     display: block
 }
 
@@ -2245,8 +2236,8 @@ textarea.form-control.is-valid {
 
 .is-invalid~.invalid-feedback,
 .is-invalid~.invalid-tooltip,
-.was-validated:invalid~.invalid-feedback,
-.was-validated:invalid~.invalid-tooltip {
+.was-validated :invalid~.invalid-feedback,
+.was-validated :invalid~.invalid-tooltip {
     display: block
 }
 
@@ -9737,7 +9728,7 @@ button.bg-dark:hover {
 }
 
 .text-monospace {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace!important
+    font-family: Roboto!important
 }
 
 .text-justify {
@@ -9977,8 +9968,8 @@ a.text-dark:hover {
 
 @media print {
     *,
-    :after,
-    :before {
+     :after,
+     :before {
         text-shadow: none!important;
         box-shadow: none!important
     }
@@ -10053,26 +10044,26 @@ a.text-dark:hover {
 }
 
 @font-face {
-    font-family: "SF-Pro-Text";
-    src: url(/_nuxt/fonts/SF-Pro-Text-Regular.8393f3f.otf) format("opentype");
+    font-family: Roboto;
+    src: url(/font/Roboto-Regular.ttf) format("opentype");
     font-weight: 400;
     font-style: normal
 }
 
 :root {
     --font-main: SF-Pro-Text-Light;
-    --radial-gradient-orange-1: radial-gradient(100% 501.4% at 0%, at 100%, #ffb141 0, #fb8d17 100%);
-    --radial-gradient-orange-1: radial-gradient(100% 501.4% at 0% 100%, #ffb141 0%, #fb8d17 100%);
-    --radial-gradient-orange-2: radial-gradient(100% 501.4% at 100%, at 100%, #ffb141 0, #fb8d17 100%);
-    --radial-gradient-orange-2: radial-gradient(100% 501.4% at 100% 100%, #ffb141 0%, #fb8d17 100%);
+    --radial-gradient-orange-1: radial-gradient(100% 501.4% at 0%, at 100%, #2c5356 0, #122223 100%);
+    --radial-gradient-orange-1: radial-gradient(100% 501.4% at 0% 100%, #2c5356 0%, #122223 100%);
+    --radial-gradient-orange-2: radial-gradient(100% 501.4% at 100%, at 100%, #2c5356 0, #122223 100%);
+    --radial-gradient-orange-2: radial-gradient(100% 501.4% at 100% 100%, #2c5356 0%, #122223 100%);
     --radial-gradient-orange-3: radial-gradient(100% 100% at 0%, at 0%, #f5222d 0, #fb8d17 100%);
     --radial-gradient-orange-3: radial-gradient(100% 100% at 0% 0%, #f5222d 0%, #fb8d17 100%);
-    --radial-gradient-orange-4: radial-gradient(100% 488.28% at 0%, at 100%, #e87800 0, #fa8c16 100%);
-    --radial-gradient-orange-4: radial-gradient(100% 488.28% at 0% 100%, #e87800 0%, #fa8c16 100%);
-    --radial-gradient-orange-5: radial-gradient(100% 1636.16% at 100%, at 0%, #fff2d8 0, #ffe7ba 100%);
-    --radial-gradient-orange-5: radial-gradient(100% 1636.16% at 100% 0%, #fff2d8 0%, #ffe7ba 100%);
-    --radial-gradient-orange-6: radial-gradient(100% 500% at 0%, at 0%, #fa8c16 0, #874d00 100%);
-    --radial-gradient-orange-6: radial-gradient(100% 500% at 0% 0%, #fa8c16 0%, #874d00 100%);
+    --radial-gradient-orange-4: radial-gradient(100% 488.28% at 0%, at 100%, #122223 0, #1f3b3d 100%);
+    --radial-gradient-orange-4: radial-gradient(100% 488.28% at 0% 100%, #122223 0%, #1f3b3d 100%);
+    --radial-gradient-orange-5: radial-gradient(100% 1636.16% at 100%, at 0%, #a0ccce 0, #e1eff0 100%);
+    --radial-gradient-orange-5: radial-gradient(100% 1636.16% at 100% 0%, #a0ccce 0%, #e1eff0 100%);
+    --radial-gradient-orange-6: radial-gradient(100% 500% at 0%, at 0%, #47878b 0, #091212 100%);
+    --radial-gradient-orange-6: radial-gradient(100% 500% at 0% 0%, #47878b 0%, #091212 100%);
     --radial-gradient-orange-7: radial-gradient(100% 501.4% at 0%, at 100%, #fb8d17 0, #ffb141 100%);
     --radial-gradient-orange-7: radial-gradient(100% 501.4% at 0% 100%, #fb8d17 0%, #ffb141 100%);
     --radial-gradient-orange-8: radial-gradient(100% 584.59% at 0%, at 50%, #d46b08 0, #874d00 100%);
@@ -10082,7 +10073,7 @@ a.text-dark:hover {
     --radial-gradient-orange-10: radial-gradient(100% 828.83% at 0%, at 100%, #e87800 0, #fa8c16 100%);
     --radial-gradient-orange-10: radial-gradient(100% 828.83% at 0% 100%, #e87800 0%, #fa8c16 100%);
     --orange-1: rgba(232, 130, 21, 0.7);
-    --orange-2: #fa8c16;
+    --orange-2: #122223;
     --orange-3: rgba(255, 231, 186, 0.6);
     --orange-4: #ff792c;
     --orange-5: #e57905;
@@ -10090,7 +10081,7 @@ a.text-dark:hover {
     --radial-gradient-yellow: radial-gradient(100% 1636.16% at 100% 0%, #fff2d8 0%, #ffe7ba 100%);
     --white: #fff;
     --white-1: #f5f5f5;
-    --nude-1: #fff7e6;
+    --nude-1: #c7e1e2;
     --nude-2: #ffe7ba;
     --red: red;
     --red-2: #f5222d;
@@ -10581,7 +10572,7 @@ header {
         height: var(--space-80)
     }
     .header-logo img {
-        width: var(--space-252);
+        width: var(--space-20);
         height: var(--space-20)
     }
     .header-right .icon-cart {
@@ -11384,7 +11375,7 @@ footer {
     width: 100%;
     padding: var(--space-20) 0;
     color: var(--white);
-    background-image: url(/_nuxt/img/footer-desktop.727f3a2.png);
+    background-image: url(/images/footer-desktop.jpg);
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat
@@ -11458,7 +11449,7 @@ footer {
 
 .tch-footer__bottom-content {
     width: 100%;
-    padding: var(--space-10) 0;
+    padding: var(--space-20) 0;
     background-color: var(--black)
 }
 
@@ -11503,7 +11494,7 @@ footer {
     }
     .tch-footer__bottom-logo {
         width: var(--space-150);
-        height: var(--space-56)
+        height: var(--space-150)
     }
 }
 
@@ -11914,7 +11905,7 @@ footer {
 .tch-sale-card {
     width: 100%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
-    background: url(/_nuxt/img/card_voucher.321d7af.png) 50%;
+    background: url(card_voucher.321d7af.png) 50%;
     border-radius: 8px;
     background-size: 100% 100%
 }
@@ -12627,7 +12618,7 @@ footer {
 }
 
 .tch-box.tch-box--suggested {
-    background-image: url(/_nuxt/img/list-doc-bg.4a49c2f.svg);
+    background-image: url(list-doc-bg.4a49c2f.svg);
     background: var(--radial-gradient-yellow);
     background-size: contain;
     background-repeat: no-repeat;
@@ -12940,18 +12931,9 @@ footer {
     }
 }
 
-@font-face {
-    font-family: "icomoon";
-    src: url(/_nuxt/fonts/icomoon.60a0a8b.eot);
-    src: url(/_nuxt/fonts/icomoon.60a0a8b.eot#iefix) format("embedded-opentype"), url(/_nuxt/fonts/icomoon.cf1ba78.ttf) format("truetype"), url(/_nuxt/fonts/icomoon.0540be7.woff) format("woff"), url(/_nuxt/img/icomoon.08a8890.svg#icomoon) format("svg");
-    font-weight: 400;
-    font-style: normal;
-    font-display: block
-}
-
 [class*=" tch-icon-"],
 [class^=tch-icon-] {
-    font-family: "icomoon"!important;
+    font-family: "Roboto"!important;
     speak: never;
     font-style: normal;
     font-weight: 400;
@@ -13557,4 +13539,171 @@ footer {
 
 .modal.show[data-v-06237fa0] {
     display: block
+}
+
+.img_user[data-v-1c02541c] {
+    border-radius: 50%
+}
+
+.text-authen[data-v-1c02541c] {
+    margin-left: 17px;
+    flex-shrink: 0
+}
+
+.icon-close-card[data-v-1c02541c] {
+    float: right;
+    transform: translate(-1px, -8px);
+    width: 12px;
+    cursor: pointer
+}
+
+.history-list-wrap[data-v-1c02541c] {
+    display: flex;
+    flex-direction: column
+}
+
+.show-more[data-v-1c02541c] {
+    text-align: center;
+    display: block;
+    color: #000;
+    text-decoration: none
+}
+
+.show-more[data-v-1c02541c]:hover {
+    color: #fa8c16
+}
+
+@media (max-width:992px) {
+    .header__option--authen[data-v-1c02541c] {
+        right: -63px;
+        top: 80%
+    }
+    .header-delivery--mobile[data-v-1c02541c] {
+        display: flex;
+        align-items: center;
+        margin-left: -56px
+    }
+    .desktop-logo[data-v-1c02541c],
+    .header-delivery--desktop[data-v-1c02541c] {
+        display: none
+    }
+    .header-phone[data-v-1c02541c] {
+        padding: 33px 0
+    }
+    .img-custom[data-v-1c02541c] {
+        transform: translate(39px)
+    }
+    .cart-icon-nologin[data-v-1c02541c] {
+        transform: translate(20px, 5px)
+    }
+    .icon-cart-login-have-item[data-v-1c02541c] {
+        margin-left: 37px;
+        width: 39px;
+        height: 40px;
+        transform: translate(4px, 1px)
+    }
+}
+
+@media (min-width:992px) {
+    .header-delivery--mobile[data-v-1c02541c] {
+        display: none
+    }
+    .desktop-logo[data-v-1c02541c],
+    .header-delivery--desktop[data-v-1c02541c] {
+        display: block
+    }
+    .mobile-logo[data-v-1c02541c] {
+        display: none
+    }
+    .img-custom[data-v-1c02541c] {
+        transform: translate(35px)
+    }
+    .cart-icon-nologin[data-v-1c02541c] {
+        transform: translate(20px, 4px)
+    }
+    .icon-cart-login-have-item[data-v-1c02541c] {
+        margin-left: 37px;
+        width: 39px;
+        height: 40px;
+        transform: translate(4px, 1px)
+    }
+}
+
+.cart-icon-nologin[data-v-1c02541c] {
+    width: 70px
+}
+
+.img_user[data-v-1c02541c] {
+    width: 50px;
+    height: 50px
+}
+
+.img-custom[data-v-1c02541c] {
+    cursor: pointer
+}
+
+.name_user[data-v-1c02541c] {
+    width: 102px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 14px;
+    font-size: 14px;
+    margin-left: 28px;
+    margin-right: -72px;
+    height: 14px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    overflow: hidden
+}
+
+.header__option--authen[data-v-1c02541c] {
+    position: absolute;
+    top: 70%;
+    background: #fff;
+    padding: 22px;
+    transform: translate(-102px, 10px);
+    box-shadow: 0 5px 12px rgb(0 0 0/15%);
+    border-radius: 10px;
+    font-size: 14px
+}
+
+.header__option--authen-item[data-v-1c02541c] {
+    display: flex;
+    align-items: center;
+    color: #000;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer
+}
+
+.text-authen[data-v-1c02541c]:hover {
+    color: #fa8c16;
+    text-decoration: none
+}
+
+.header__option--authen-item-history[data-v-1c02541c] {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.history-list[data-v-1c02541c] {
+    list-style: none;
+    margin-top: 7px;
+    overflow: scroll;
+    max-height: 300px
+}
+
+.txt-ref[data-v-1c02541c] {
+    color: #999;
+    text-decoration: none
+}
+
+.txt-ref[data-v-1c02541c]:hover {
+    color: #fa8c16
+}
+
+.navbar .navbar-nav .nav-item.active a[data-v-1c02541c]:after {
+    background: var(--white)
 }
