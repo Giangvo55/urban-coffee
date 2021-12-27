@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Urban Café</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/urbancafe.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Fonts style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+</head>
+
+<body class="bg-light">
+
+    <!-- Header -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow bg-nav fixed-top">
+        <div class="container justify-content-between ">
+
+            <a class="desktop-logo " href="home.html">
+                <img src="/assets/img/slogan_logo_transparent.svg" style="width: 170px; height: 100%;" />
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#ubc_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="ubc_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item p-1 ">
+                            <a class="nav-link" href="home.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="about_us.html">About us</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="order.html">Đặt hàng</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link active" href="news.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" data-target="#sale-modal" data-toggle="modal" style="cursor: pointer;">Khuyến mãi</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#ubc_search">
+                        <i class="fa fa-fw fa-search text-light mr-2"></i>
+                    </a>
+                    <a id="icon-cart" class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-light mr-1"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                    </a>
+                    <a id="icon-profile" class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-light mr-3"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Search -->
+    <div class="modal bg-white" id="ubc_search" tabhome="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="opacity: 0.9;">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Bạn đang tìm kiếm gì..." style="color: black;">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Search -->
+
+    <!-- News -->
+    <section class="ubc-box ubc-box--blog" style="margin-top: 80px;">
+        <div class="container-lg container-fluid">
+            <div class="ubc-box__header ubc-box__header-spacing">
+                <div class=" text-center">
+                    <div class="col-lg-8 m-auto">
+                        <h4 class="h4 py-5"><b>Tin tức</b></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <div class="ubc-blog-card d-flex flex-column">
+                        <a href="#" target="blank">
+                            <div class="ubc-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/08/img_8089_grande-1.jpg&quot;) center center no-repeat;"></div>
+                        </a>
+                        <div class="ubc-blog-card__content d-flex flex-column">
+                            <div class="ubc-blog-card__content__header d-flex flex-column">
+                                <h5 class="ubc-blog-card__title">
+                                    Nghệ thuật pha chế -V60
+                                </h5>
+                            </div>
+                            <div class="mt-auto"><button class="
+            d-inline-block
+            btn btn--blue
+            align-items-center
+            btn--radius-100
+            float-right
+          "><a href="#" class=""><span class="text">ĐỌC TIẾP</span></a></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <div class="ubc-blog-card d-flex flex-column">
+                        <a href="https://feed.thecoffeehouse.com/nghe-thuat-pha-che-kalita-wave/?mobile=1" target="blank">
+                            <div class="ubc-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/08/img_8189_grande-1.jpg&quot;) center center no-repeat;"></div>
+                        </a>
+                        <div class="ubc-blog-card__content d-flex flex-column">
+                            <div class="ubc-blog-card__content__header d-flex flex-column">
+                                <h5 class="ubc-blog-card__title">
+                                    Nghệ thuật pha chế - Kalita Wave
+                                </h5>
+                            </div>
+                            <div class="ubc-blog-card__content__footer mt-auto"><button class="
+            d-inline-block
+            btn btn--blue
+            align-items-center
+            btn--radius-100
+            float-right
+          "><a href="#" class=""><span class="text">ĐỌC TIẾP</span></a></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <div class="ubc-blog-card d-flex flex-column">
+                        <a href="https://feed.thecoffeehouse.com/nghe-thuat-pha-che-cold-brew/?mobile=1" target="blank">
+                            <div class="ubc-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/08/img_8668_grande.jpg&quot;) center center no-repeat;"></div>
+                        </a>
+                        <div class="ubc-blog-card__content d-flex flex-column">
+                            <div class="ubc-blog-card__content__header d-flex flex-column">
+                                <h5 class="ubc-blog-card__title">
+                                    Nghệ thuật pha chế - Cold Brew
+                                </h5>
+                            </div>
+                            <div class="ubc-blog-card__content__footer mt-auto"><button class="
+            d-inline-block
+            btn btn--blue
+            align-items-center
+            btn--radius-100
+            float-right
+          "><a href="#" class=""><span class="text">ĐỌC TIẾP</span></a></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <div class="ubc-blog-card d-flex flex-column">
+                        <a href="https://feed.thecoffeehouse.com/espresso/?mobile=1" target="blank">
+                            <div class="ubc-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/08/img_8430_grande-1.jpg&quot;) center center no-repeat;"></div>
+                        </a>
+                        <div class="ubc-blog-card__content d-flex flex-column">
+                            <div class="ubc-blog-card__content__header d-flex flex-column">
+                                <h5 class="ubc-blog-card__title">
+                                    Nghệ thuật pha chế - Espresso
+                                </h5>
+                            </div>
+                            <div class="ubc-blog-card__content__footer mt-auto"><button class="
+            d-inline-block
+            btn btn--blue
+            align-items-center
+            btn--radius-100
+            float-right
+          "><a href="#" class=""><span class="text">ĐỌC TIẾP</span></a></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <div class="ubc-blog-card d-flex flex-column">
+                        <a href="https://feed.thecoffeehouse.com/nghe-thuat-pha-che-cappucino/?mobile=1" target="blank">
+                            <div class="ubc-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/08/img_8586_grande.jpg&quot;) center center no-repeat;"></div>
+                        </a>
+                        <div class="ubc-blog-card__content d-flex flex-column">
+                            <div class="ubc-blog-card__content__header d-flex flex-column">
+                                <h5 class="ubc-blog-card__title">
+                                    Nghệ thuật pha chế - Cappuccino
+                                </h5>
+                            </div>
+                            <div class="ubc-blog-card__content__footer mt-auto"><button class="
+            d-inline-block
+            btn btn--blue
+            align-items-center
+            btn--radius-100
+            float-right
+          "><a href="#" class=""><span class="text">ĐỌC TIẾP</span></a></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 mb-4">
+                    <div class="ubc-blog-card d-flex flex-column">
+                        <a href="https://feed.thecoffeehouse.com/nghe-thuat-pha-che-latte/?mobile=1" target="blank">
+                            <div class="ubc-blog-card__image" style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/08/236812903_2121626561329021_3403268655411048836_n.jpg&quot;) center center no-repeat;"></div>
+                        </a>
+                        <div class="ubc-blog-card__content d-flex flex-column">
+                            <div class="ubc-blog-card__content__header d-flex flex-column">
+                                <h5 class="ubc-blog-card__title">
+                                    Nghệ thuật pha chế - Latte
+                                </h5>
+                            </div>
+                            <div class="ubc-blog-card__content__footer mt-auto"><button class="
+            d-inline-block
+            btn btn--blue
+            align-items-center
+            btn--radius-100
+            float-right
+          "><a href="#" class=""><span class="text">ĐỌC TIẾP</span></a></button></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center">
+                <a href="/news" class="">
+                    <a href="javascript:void(0)" class="product-redirect-link text-center">
+                        <span>Xem tất cả</span>
+                        <span class="ml-5"><i aria-hidden="true" class="fa fa-arrow-right"></i>
+                        </span>
+                    </a>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!--End News -->
+
+
+    <!--  Footer -->
+    <footer class="ubc-bg-banner" id="ubc_footer">
+        <div class="container-lg container-fluid py-3">
+            <div class="row pt-3">
+                <div class="col-4 col-sm-3 col-lg-2">
+                    <a class="ubc-footer__top__logo" href="home.html">
+                        <img src="/assets/img/slogan_logo_transparent.svg" style="width: 170px;" />
+                    </a>
+
+
+                </div>
+                <div class="col-8 col-sm-9 col-lg-10 row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#sanpham">Sản phẩm&nbsp;<i class="fa fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="sanpham" style="list-style-type: circle;">
+                            <li><a class="text-decoration-none " href="# ">Best-seller</a></li>
+                            <li><a class="text-decoration-none " href="# ">Cà phê</a></li>
+                            <li><a class="text-decoration-none " href="# ">Trà trái cây</a></li>
+                            <li><a class="text-decoration-none " href="# ">Cà phê bột</a></li>
+                            <li><a class="text-decoration-none " href="# ">Bánh - Snacks</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#thongtin">Thông tin website&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="thongtin" style="list-style-type: circle;">
+                            <li><a class="text-decoration-none " href="# ">Trang chủ</a></li>
+                            <li><a class="text-decoration-none " href="# ">About us</a></li>
+                            <li><a class="text-decoration-none " href="# ">Shop Locations</a></li>
+                            <li><a class="text-decoration-none " href="# ">FAQs</a></li>
+                            <li><a class="text-decoration-none " href="# ">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#dieukhoan">Điều khoản sử dụng&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="dieukhoan" style="list-style-type: circle;">
+                            <li><a class="text-decoration-none " href="# ">Quy chế website</a></li>
+                            <li><a class="text-decoration-none " href="# ">Bảo mật thông tin</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#lienhe">Liên hệ&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="lienhe" style="list-style-type: circle;">
+                            <li>
+                                <a class="text-decoration-none " href="# "> <i class="fa fa-map-marker-alt fa-fw"></i> 24 Bắc Kinh, Hải Dương</a>
+                            </li>
+                            <li> <i class="fa fa-phone fa-fw "></i>
+                                <a class="text-decoration-none " href="tel:010-020-0340 ">03-5678-1109</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope fa-fw "></i>
+                                <a class="text-decoration-none " href="mailto:info@company.com ">info@urbancafe.com</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-light my-3 ">
+                <ul class="col-lg-2 col-md-2 list-inline text-center footer-icons align-self-center">
+                    <li class="list-inline-item border  rounded-circle text-center ">
+                        <a class="text-light text-decoration-none " target="_blank " href="http://facebook.com/ "><i class="fab fa-facebook-f fa-lg fa-fw "></i></a>
+                    </li>
+                    <li class="list-inline-item border rounded-circle text-center ">
+                        <a class="text-light text-decoration-none " target="_blank " href="https://www.instagram.com/ "><i class="fab fa-instagram fa-lg fa-fw "></i></a>
+                    </li>
+
+                </ul>
+                <div class="col-lg-5 col-md-0"></div>
+                <div class="col-lg-5 col-md-10">
+                    <div class="input-group mb-2 align-self-center">
+                        <input type="text" class="form-control bg-light text-dark" id="subscribeEmail " placeholder="Nhập Email của bạn để đăng ký nhận tin" width="fit-content;">
+                        <button type="submit" class="input-group-text btn-success text-light">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ubc-footer__bottom-content bg-black ">
+            <div class="container-lg container-fluid">
+                <div class="row align-items-center ">
+                    <div class="col-7 col-lg-6">
+                        <p class="text-left text-light ">
+                            Copyright &copy; 2021 Urban Café | Designed by <i><b>Group 01</b></i>. <br>All rights reserved. </p>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <ul class="d-flex align-items-center justify-content-end ubc-footer__bottom__navbar mb-0 "></ul>
+                    </div>
+                    <div class="col-5 col-lg-2">
+                        <div class="ubc-footer__bottom-logo ml-auto">
+                            <a href="http://online.gov.vn/Home/WebDetails/48042" target="blank"><img src="/assets/img/copyright.png" alt="" class="ml-auto"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/js/ubc.js "></script>
+    <script src="assets/js/custom.js "></script>
+    <!-- End Script -->
+</body>
+
+</html>
