@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Urban Café</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/urbancafe.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+
+    <!-- Fonts style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+</head>
+
+<body class="bg-light">
+    <!-- Header -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow bg-nav fixed-top">
+        <div class="container justify-content-between">
+
+            <a class="desktop-logo " href="home.html">
+                <img src="/assets/img/slogan_logo_transparent.svg" style="width: 170px; height: 100%;" />
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#ubc_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="ubc_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item p-1 ">
+                            <a class="nav-link" href="home.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="about_us.html">About us</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="order.html">Đặt hàng</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="news.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" data-target="#sale-modal" data-toggle="modal" style="cursor: pointer;">Khuyến mãi</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="navbar align-self-center d-flex">
+                <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                        <div class="input-group-text">
+                            <i class="fa fa-fw fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-icon d-none d-lg-inline px-3" href="#" data-bs-toggle="modal" data-bs-target="#ubc_search">
+                    <i class="fa fa-fw fa-search text-light mr-2"></i>
+                </a>
+                <div class="dropdown">
+                    <a id="icon-cart" class="nav-icon position-relative text-decoration-none px-3 " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-fw fa-cart-arrow-down text-light mr-1 text-decoration-none"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" style="font-size: 14px;">Tra cứu đơn hàng</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="register.html" style="font-size: 14px;">Đăng nhập</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a id="icon-profile" class="nav-icon position-relative text-decoration-none" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-fw fa-user text-light mr-3"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" style="font-size: 14px;">Tra cứu đơn hàng</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#" style="font-size: 14px;">Đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Close Header -->
+
+    <!-- Search -->
+    <div class="modal bg-white" id="ubc_search" tabhome="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="opacity: 0.9;">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Bạn đang tìm kiếm gì..." style="color: black;">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Search -->
+
+    <!-- Form -->
+
+    <section class="signin-up" style="margin-top: 130px; margin-bottom: 80px;">
+        <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="signin-tab" data-bs-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true" style="width: 180px; text-align: center;">Sign In</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="signup-tab" data-bs-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="false" style="width: 180px;text-align: center;">Sign Up</a>
+            </li>
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
+                <div class="container-signin">
+                    <div class="signup-content">
+                        <form method="POST" id="signin-form" class="signup-form">
+
+                            <div class="form-group">
+                                <label for="phone_number">Phone number</label>
+                                <input type="number" class="form-input" name="phone_number" id="phone_number" />
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-input" name="password" id="password" />
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" style=" font-size: 13px; font-weight: 500;">Lưu thông tin đăng nhập</label>
+                                <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" id="submit" class="form-submit" value="Log in" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="signup-tab">
+                <div class="container-signup">
+                    <div class="signup-content">
+                        <form method="POST" id="signup-form" class="signup-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first_name">First name</label>
+                                    <input type="text" class="form-input" name="first_name" id="first_name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="last_name">Last name</label>
+                                    <input type="text" class="form-input" name="last_name" id="last_name" />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group form-icon">
+                                    <label for="birth_date">Birth date</label>
+                                    <input type="text" class="form-input" name="birth_date" id="birth_date" placeholder="MM-DD-YYYY" />
+                                    <button type="button" class="ui-datepicker-trigger valid" aria-invalid="false"><i class="far fa-calendar-alt" ></i></button>
+                                </div>
+                                <div class="form-radio">
+                                    <label for="gender" style="font-size:13px">Gender</label>
+                                    <div class="form-flex">
+                                        <input type="radio" name="gender" value="male" id="male" checked="checked" />
+                                        <label for="male">Male</label>
+
+                                        <input type="radio" name="gender" value="female" id="female" />
+                                        <label for="female">Female</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone_number">Phone number</label>
+                                <input type="number" class="form-input" name="phone_number" id="phone_number" />
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" class="form-input" name="password" id="password" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="re_password">Repeat your password</label>
+                                    <input type="password" class="form-input" name="re_password" id="re_password" />
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-input" name="email" id="email" />
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" style=" font-size: 13px; font-weight: 500;">Chấp thuận <a href="#">Điều khoản và chính sách</a> đăng ký</label>
+                                <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" name="submit" id="submit" class="form-submit" value="Register" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Form -->
+
+
+    <!--  Footer -->
+    <div class="ubc-footer__bottom-content bg-black ">
+        <div class="container-lg container-fluid ">
+            <div class="row align-items-center ">
+                <div class="col-7 col-lg-6 ">
+                    <p class="text-left text-light ">
+                        Copyright &copy; 2021 Urban Café | Designed by <i><b>Group 01</b></i>. <br>All rights reserved. </p>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block ">
+                    <ul class="d-flex align-items-center justify-content-end ubc-footer__bottom__navbar mb-0 "></ul>
+                </div>
+                <div class="col-5 col-lg-2 ">
+                    <div class="ubc-footer__bottom-logo ml-auto ">
+                        <a href="http://online.gov.vn/Home/WebDetails/48042 " target="blank "><img src="/assets/img/copyright.png " alt=" " class="ml-auto "></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </foo>
+    <!-- End Footer -->
+    <!-- Start Script -->
+    <script src="assets/js/bootstrap.bundle.min.js "></script>
+
+
+    <script src="assets/js/ubc.js "></script>
+    <script src="assets/js/custom.js "></script>
+    <!-- End Script -->
+</body>
+
+</html>
