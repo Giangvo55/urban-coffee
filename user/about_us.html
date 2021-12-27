@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Urban Café</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/urbancafe.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Fonts style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+</head>
+
+<body class="bg-light">
+    <!-- Header -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow bg-nav fixed-top">
+        <div class="container justify-content-between ">
+
+            <a class="desktop-logo " href="home.html">
+                <img src="/assets/img/slogan_logo_transparent.svg" style="width: 170px; height: 100%;" />
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#ubc_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="ubc_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item p-1 ">
+                            <a class="nav-link " href="home.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link active" href="about_us.html">About us</a>
+                        </li>
+
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="order.html">Đặt hàng</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="news.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" data-target="#sale-modal" data-toggle="modal" style="cursor: pointer;">Khuyến mãi</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#ubc_search">
+                        <i class="fa fa-fw fa-search text-light mr-2"></i>
+                    </a>
+                    <a id="icon-cart" class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-light mr-1"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                    </a>
+                    <a id="icon-profile" class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-light mr-3"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Close Header -->
+
+    <!-- Search -->
+    <div class="modal bg-white" id="ubc_search" tabhome="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="opacity: 0.9;">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Bạn đang tìm kiếm gì..." style="color: black;">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                    <i class="fa fa-fw fa-search text-white"></i>
+                </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Search -->
+
+    <!-- Main content -->
+
+    <section class="header1 img_content" id="header1-0" style="margin-top: 80px;">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-10">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="header1 main_content" id="header1-7">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="ubc-white col-md-10">
+                    <h1 class="ubc-section-title ubc-bold pb-3 ">Responsive Bootstrap About Us Page Template</h1>
+                    <h3 class="ubc-section-subtitle align-center ubc-light pb-3 ">MEET OUR TEAM</h3>
+                    <p class="align-center pb-3 ">
+                        We are all very different. We were born in different cities, at different times, we love different music, food, movies. But we have something that unites us all. It is our company. We are its heart. We are not just a team, we are a family.
+                    </p>
+                    <div class="ubc-section-btn align-center"><a class="btn btn-md btn-black-outline " href="index.html#form1-4">
+                        CONTACT US</a></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Main content -->
+
+    <!-- Character -->
+
+
+    <section class="container py-5">
+        <div class="row text-center pt-3 pb-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">Our Services</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
+                    <h2 class="h5 mt-4 text-center">Delivery Services</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-success text-center"><i class="fas fa-exchange-alt"></i></div>
+                    <h2 class="h5 mt-4 text-center">Shipping &amp; Return</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-success text-center"><i class="fa fa-percent"></i></div>
+                    <h2 class="h5 mt-4 text-center">Promotion</h2>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 pb-5">
+                <div class="h-100 py-5 services-icon-wap shadow">
+                    <div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
+                    <h2 class="h5 mt-4 text-center">24 Hours Service</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Character -->
+
+    <!-- Carousel slide Admin-->
+
+    <div class="slider-admin">
+        <div class="container text-center">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel-slider-admin">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carousel-slider-admin" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carousel-slider-admin" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carousel-slider-admin" data-bs-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="user col-md-8">
+                            <div class="user_image">
+                                <img src="assets/img/shop_01.jpg" alt="" title="" media-simple="true">
+                            </div>
+                            <div class="user_text pb-3">
+                                <p>
+                                    Good afternoon. I am very pleased with the quality of the work of your employee representing your wonderful company.
+                                </p>
+                            </div>
+                            <div class="user_name ubc-bold pb-2 ">
+                                Helen
+                            </div>
+                            <div class="user_desk ubc-light ">
+                                DESIGNER
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="user col-md-8">
+                            <div class="user_image">
+                                <img src="assets/img/shop_02.jpg" alt="" title="" media-simple="true">
+                            </div>
+                            <div class="user_text pb-3">
+                                <p class="">
+                                    All issues are resolved promptly. In communication, the employees are pleasant, helpful. Always offer new ideas, new ways to develop, improve our project.
+                                </p>
+                            </div>
+                            <div class="user_name ubc-bold pb-2 ">
+                                Linda
+                            </div>
+                            <div class="user_desk ubc-light ">
+                                DEVELOPER
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="user col-md-8">
+                            <div class="user_image">
+                                <img src="assets/img/shop_03.jpg" alt="" title="" media-simple="true">
+                            </div>
+                            <div class="user_text pb-3">
+                                <p class="">
+                                    Excellent client manager. He is always accurate, all promises are fulfilled, all questions get answers, the company presents very attentive and positive approach.
+                                </p>
+                            </div>
+                            <div class="user_name ubc-bold pb-2 ">
+                                Linda
+                            </div>
+                            <div class="user_desk ubc-light ">
+                                DEVELOPER
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-controls">
+                    <a class="carousel-control-prev" role="button" data-bs-slide="prev" href="#carousel-slider-admin">
+                        <span aria-hidden="true" class="fas fa-chevron-left" style="font-size: 1rem;"></span>
+                    </a>
+
+                    <a class="carousel-control-next" role="button" data-bs-slide="next" href="#carousel-slider-admin">
+                        <span aria-hidden="true" class="fas fa-chevron-right" style="font-size: 1rem;"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Carousel slide Admin-->
+
+    <!-- Carousel slide Clients-->
+    <section class="bg-light py-1">
+        <div class="container my-4">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Our Brands</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="col-lg-9 m-auto tempaltemo-carousel">
+                    <div class="row d-flex flex-row">
+                        <!--Controls-->
+                        <div class="col-1 align-self-center">
+                            <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="prev">
+                                <i class="text-light fas fa-chevron-left"></i>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+
+                        <!--Carousel Wrapper-->
+                        <div class="col">
+                            <div class="carousel slide carousel-multi-item pt-2 pt-md-0" id="templatemo-slide-brand" data-bs-ride="carousel">
+                                <!--Slides-->
+                                <div class="carousel-inner product-links-wap" role="listbox">
+
+                                    <!--First slide-->
+                                    <div class="carousel-item active">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End First slide-->
+
+                                    <!--Second slide-->
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Second slide-->
+
+                                    <!--Third slide-->
+                                    <div class="carousel-item">
+                                        <div class="row">
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_01.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_02.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_03.png" alt="Brand Logo"></a>
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <a href="#"><img class="img-fluid brand-img" src="assets/img/brand_04.png" alt="Brand Logo"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Third slide-->
+
+                                </div>
+                                <!--End Slides-->
+                            </div>
+                        </div>
+                        <!--End Carousel Wrapper-->
+
+                        <!--Controls-->
+                        <div class="col-1 align-self-center">
+                            <a class="h1" href="#templatemo-slide-brand" role="button" data-bs-slide="next">
+                                <i class="text-light fas fa-chevron-right"></i>
+                            </a>
+                        </div>
+                        <!--End Controls-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End  Carousel slide Clients-->
+
+    <!-- Form Contact us-->
+    <section class="ubc-section form1 mb-5" id="form1-4">
+
+        <div class="container ubc-contactus-form" style="background-color: white;">
+            <div class="row justify-content-center pt-4">
+                <div class="title col-12 col-lg-8">
+                    <h2 class="ubc-section-title align-center pb-3 ">
+                        CONTACT US</h2>
+
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="media-container-column col-lg-8" data-form-type="formoid">
+                    <div data-form-alert="" hidden="">
+                        Thanks for filling out the form!
+                    </div>
+
+                    <form class="ubc-form pb-5" action="" method="post" data-form-title="Mobirise Form"><input type="hidden" data-form-email="true" value="R46ImfT8lRYLhZq6vpVE63L0V35bOdmwHjgn18Tp/HdDujD3JfWe/8bm7YjE2vjZZ7JFQMRNRIinYQUh3aNa2qi1GshxArFhHAffNuiFsZiNLfMCF8KElmS7V7lbqBIL">
+                        <div class="row row-sm-offset">
+                            <div class="col-md-4 multi-horizontal" data-for="name">
+                                <div class="form-group">
+                                    <label class="form-control-label " for="name-form1-4">Name</label>
+                                    <input type="text" class="form-control" name="name" data-form-field="Name" required="" id="name-form1-4">
+                                </div>
+                            </div>
+                            <div class="col-md-4 multi-horizontal" data-for="email">
+                                <div class="form-group">
+                                    <label class="form-control-label " for="email-form1-4">Email</label>
+                                    <input type="email" class="form-control" name="email" data-form-field="Email" required="" id="email-form1-4">
+                                </div>
+                            </div>
+                            <div class="col-md-4 multi-horizontal" data-for="phone">
+                                <div class="form-group">
+                                    <label class="form-control-label " for="phone-form1-4">Phone</label>
+                                    <input type="tel" class="form-control" name="phone" data-form-field="Phone" id="phone-form1-4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" data-for="message">
+                            <label class="form-control-label " for="message-form1-4">Message</label>
+                            <textarea type="text" class="form-control" name="message" rows="7" data-form-field="Message" id="message-form1-4"></textarea>
+                        </div>
+                        <div class="align-center pt-4"><span class="input-group-btn "><button href="" type="submit" class="btn btn-form btn-black-outline ">SEND FORM</button></span></div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Form Contact us-->
+
+
+
+    <!--  Footer -->
+    <footer class="ubc-bg-banner" id="ubc_footer">
+        <div class="container-lg container-fluid py-3">
+            <div class="row pt-3">
+                <div class="col-4 col-sm-3 col-lg-2">
+                    <a class="ubc-footer__top__logo" href="home.html">
+                        <img src="/assets/img/slogan_logo_transparent.svg" style="width: 170px;" />
+                    </a>
+
+
+                </div>
+                <div class="col-8 col-sm-9 col-lg-10 row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#sanpham">Sản phẩm&nbsp;<i class="fa fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="sanpham" style="list-style-type: circle;">
+                            <li><a class="text-decoration-none " href="# ">Best-seller</a></li>
+                            <li><a class="text-decoration-none " href="# ">Cà phê</a></li>
+                            <li><a class="text-decoration-none " href="# ">Trà trái cây</a></li>
+                            <li><a class="text-decoration-none " href="# ">Cà phê bột</a></li>
+                            <li><a class="text-decoration-none " href="# ">Bánh - Snacks</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#thongtin">Thông tin website&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="thongtin" style="list-style-type: circle;">
+                            <li><a class="text-decoration-none " href="# ">Trang chủ</a></li>
+                            <li><a class="text-decoration-none " href="# ">About us</a></li>
+                            <li><a class="text-decoration-none " href="# ">Shop Locations</a></li>
+                            <li><a class="text-decoration-none " href="# ">FAQs</a></li>
+                            <li><a class="text-decoration-none " href="# ">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#dieukhoan">Điều khoản sử dụng&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="dieukhoan" style="list-style-type: circle;">
+                            <li><a class="text-decoration-none " href="# ">Quy chế website</a></li>
+                            <li><a class="text-decoration-none " href="# ">Bảo mật thông tin</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#lienhe">Liên hệ&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="lienhe" style="list-style-type: circle;">
+                            <li>
+                                <a class="text-decoration-none " href="# "> <i class="fa fa-map-marker-alt fa-fw"></i> 24 Bắc Kinh, Hải Dương</a>
+                            </li>
+                            <li> <i class="fa fa-phone fa-fw "></i>
+                                <a class="text-decoration-none " href="tel:010-020-0340 ">03-5678-1109</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope fa-fw "></i>
+                                <a class="text-decoration-none " href="mailto:info@company.com ">info@urbancafe.com</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-light my-3 ">
+                <ul class="col-lg-2 col-md-2 list-inline text-center footer-icons align-self-center">
+                    <li class="list-inline-item border  rounded-circle text-center ">
+                        <a class="text-light text-decoration-none " target="_blank " href="http://facebook.com/ "><i class="fab fa-facebook-f fa-lg fa-fw "></i></a>
+                    </li>
+                    <li class="list-inline-item border rounded-circle text-center ">
+                        <a class="text-light text-decoration-none " target="_blank " href="https://www.instagram.com/ "><i class="fab fa-instagram fa-lg fa-fw "></i></a>
+                    </li>
+
+                </ul>
+                <div class="col-lg-5 col-md-0"></div>
+                <div class="col-lg-5 col-md-10">
+                    <div class="input-group mb-2 align-self-center">
+                        <input type="text" class="form-control bg-light text-dark" id="subscribeEmail " placeholder="Nhập Email của bạn để đăng ký nhận tin" width="fit-content;">
+                        <button type="submit" class="input-group-text btn-success text-light">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ubc-footer__bottom-content bg-black ">
+            <div class="container-lg container-fluid">
+                <div class="row align-items-center ">
+                    <div class="col-7 col-lg-6">
+                        <p class="text-left text-light ">
+                            Copyright &copy; 2021 Urban Café | Designed by <i><b>Group 01</b></i>. <br>All rights reserved. </p>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <ul class="d-flex align-items-center justify-content-end ubc-footer__bottom__navbar mb-0 "></ul>
+                    </div>
+                    <div class="col-5 col-lg-2">
+                        <div class="ubc-footer__bottom-logo ml-auto">
+                            <a href="http://online.gov.vn/Home/WebDetails/48042" target="blank"><img src="/assets/img/copyright.png" alt="" class="ml-auto"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- Start Script -->
+    <script src="assets/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/js/ubc.js "></script>
+    <script src="assets/js/custom.js "></script>
+    <!-- End Script -->
+</body>
+
+</html>

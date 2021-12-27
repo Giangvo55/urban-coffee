@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Urban Café</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/urbancafe.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Fonts style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+</head>
+
+<body class="bg-light">
+    <!-- Header -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow bg-nav fixed-top">
+        <div class="container justify-content-between ">
+
+            <a class="desktop-logo " href="home.html">
+                <img src="/assets/img/slogan_logo_transparent.svg" style="width: 170px; height: 100%;" />
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#ubc_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="ubc_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item p-1 ">
+                            <a class="nav-link " href="home.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="about_us.html">About us</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="order.html">Đặt hàng</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link active" href="news.html">Tin tức</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" data-target="#sale-modal" data-toggle="modal" style="cursor: pointer;">Khuyến mãi</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="navbar align-self-center d-flex">
+                <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
+                        <div class="input-group-text">
+                            <i class="fa fa-fw fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <a class="nav-icon d-none d-lg-inline px-3" href="#" data-bs-toggle="modal" data-bs-target="#ubc_search">
+                    <i class="fa fa-fw fa-search text-light mr-2"></i>
+                </a>
+                <div class="dropdown">
+                    <a id="icon-cart" class="nav-icon position-relative text-decoration-none px-3 " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-fw fa-cart-arrow-down text-light mr-1 text-decoration-none"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" style="font-size: 14px;">Tra cứu đơn hàng</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="signin.html" style="font-size: 14px;">Đăng nhập</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown">
+                    <a id="icon-profile" class="nav-icon position-relative text-decoration-none" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-fw fa-user text-light mr-3"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#" style="font-size: 14px;">Tra cứu đơn hàng</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#" style="font-size: 14px;">Đăng nhập</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- Close Header -->
+
+    <!-- Search -->
+    <div class="modal bg-white" id="ubc_search" tabhome="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="opacity: 0.9;">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Bạn đang tìm kiếm gì..." style="color: black;">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--End Search -->
+    <section class="container py-5" style="margin-top: 100px;">
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+                <div class=" pb-3 ubc-product-card--shadow" style="background-color: white; border-radius: 20px;">
+                    <h6 class="mb-0 pt-3 px-5">Chi tiết đơn hàng</h6>
+                    <div class="d-flex justify-content-between px-5"><span>Bạn đã đặt <b style="font-weight: bold;">5</b> loại sản phẩm</span>
+
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 mx-4 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="assets/img/example_coffee.jpg" width="40">
+                            <div class="ml-2">
+                                <h6 class=" d-block">Bạc ngon Xĩu</h6>
+                                <div>Vừa (L), Đá</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row" style="font-weight: 600;">x3</div>
+                        <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span class="d-block">75.000VNĐ</span></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 mx-4 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="assets/img/example_coffee.jpg" width="40">
+                            <div class="ml-2">
+                                <h6 class=" d-block">Bạc ngon Xĩu</h6>
+                                <div>Vừa (L), Đá</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row" style="font-weight: 600;">x3</div>
+                        <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span class="d-block">75.000VNĐ</span></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2  mx-4 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="assets/img/example_coffee.jpg" width="40">
+                            <div class="ml-2">
+                                <h6 class=" d-block">Bạc ngon Xĩu</h6>
+                                <div>Vừa (L), Đá</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row" style="font-weight: 600;">x3</div>
+                        <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span class="d-block">75.000VNĐ</span></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2  mx-4 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="assets/img/example_coffee.jpg" width="40">
+                            <div class="ml-2">
+                                <h6 class=" d-block">Bạc ngon Xĩu</h6>
+                                <div>Vừa (L), Đá</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row" style="font-weight: 600;">x3</div>
+                        <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span class="d-block">75.000VNĐ</span></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2  mx-4 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="assets/img/example_coffee.jpg" width="40">
+                            <div class="ml-2">
+                                <h6 class=" d-block">Bạc ngon Xĩu</h6>
+                                <div>Vừa (L), Đá</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row" style="font-weight: 600;">x3</div>
+                        <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span class="d-block">75.000VNĐ</span></div>
+                    </div>
+                    <hr class="mx-3">
+                    <div class="d-flex justify-content-between align-items-center mt-3 mx-3 rounded">
+                        <h5 style="font-weight: 600;"> Tổng tiền:</h5>
+                        <h5 class="d-flex flex-row" style="font-weight: 600;"> 225.000VNĐ</h5>
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+            <div class="col-lg-8">
+                <div class="">
+                    <div class="container">
+
+                        <div class="row py-5 p-3 bg-white ubc-product-card--shadow" style="border-radius: 20px;">
+                            <div class="col-lg-6">
+                                <h5 class=" rounded-pill px-4 py-2 text-uppercase align-center" style="background-color: #6db0b4;">Mã giảm giá</h5>
+                                <div class="p-4">
+                                    <div class="input-group mb-4 border rounded-pill p-2">
+                                        <input type="text" placeholder="Apply coupon" aria-describedby="button-addon3" class="form-control border-0">
+                                        <div class="input-group-append border-0">
+                                            <button id="button-addon3" type="button" class="btn btn-primary px-3 rounded-pill align-items-center"><i class="fa fa-gift">&nbsp;</i>Áp dụng</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5 class=" rounded-pill px-4 py-2 text-uppercase align-center" style="background-color: #6db0b4;">Lưu ý</h5>
+                                <div class="p-4">
+                                    <p class="font-italic mb-4">Nếu bạn có bất cứ lưu ý gì cho cửa hàng hoặc nhân viên giao hàng, xin hãy ghi lại vào ô trống bên dưới.</p>
+                                    <textarea name="" cols="35" rows="5" class="col-xs-4"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <h5 class=" rounded-pill px-4 py-2 text-uppercase align-center" style="background-color: #6db0b4;">Tổng đơn hàng</h5>
+                                <div class="p-4">
+
+                                    <ul class="list-unstyled mb-4">
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Giá trị đơn hàng </strong><strong>225.000 VNĐ</strong></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Phí giao hàng</strong><strong>10.000 VNĐ</strong></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Giảm giá</strong><strong>- 22.500 VNĐ</strong></li>
+                                        <li class="d-flex justify-content-between py-3 border-bottom">
+                                            <h5 class="">Tổng tiền</h5>
+                                            <h5 class="">202.500 VNĐ</h5>
+                                        </li>
+                                    </ul>
+                                    <div class="align-center">
+                                        <a href="#" class="btn btn-detail-order rounded-pill py-2">Tiến hành thanh toán <i class="fa fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--  Footer -->
+    <footer class="ubc-bg-banner" id="ubc_footer">
+        <div class="container-lg container-fluid py-3">
+            <div class="row pt-3 align-center">
+                <div class="col-4 col-sm-3 col-lg-2 ">
+                    <a class="ubc-footer__top__logo" href="home.html">
+                        <img src="/assets/img/slogan_logo_transparent.svg" style="width: 150px;" />
+                    </a>
+
+
+                </div>
+                <div class="col-8 col-sm-9 col-lg-10 row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#sanpham">Sản phẩm&nbsp;<i class="fa fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="sanpham" style="list-style-type: circle;">
+                            <li><a class="text-decoration-none " href="# ">Best-seller</a></li>
+                            <li><a class="text-decoration-none " href="# ">Cà phê</a></li>
+                            <li><a class="text-decoration-none " href="# ">Trà trái cây</a></li>
+                            <li><a class="text-decoration-none " href="# ">Cà phê bột</a></li>
+                            <li><a class="text-decoration-none " href="# ">Bánh - Snacks</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#thongtin">Thông tin website&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="thongtin" style="list-style-type: circle;">
+                            <li><a class="text-decoration-none " href="# ">Trang chủ</a></li>
+                            <li><a class="text-decoration-none " href="# ">About us</a></li>
+                            <li><a class="text-decoration-none " href="# ">Shop Locations</a></li>
+                            <li><a class="text-decoration-none " href="# ">FAQs</a></li>
+                            <li><a class="text-decoration-none " href="# ">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#dieukhoan">Điều khoản sử dụng&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="dieukhoan" style="list-style-type: circle;">
+                            <li><a class="text-decoration-none " href="# ">Quy chế website</a></li>
+                            <li><a class="text-decoration-none " href="# ">Bảo mật thông tin</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#lienhe">Liên hệ&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="lienhe" style="list-style-type: circle;">
+                            <li>
+                                <a class="text-decoration-none " href="# "> <i class="fa fa-map-marker-alt fa-fw"></i> 24 Bắc Kinh, Hải Dương</a>
+                            </li>
+                            <li> <i class="fa fa-phone fa-fw "></i>
+                                <a class="text-decoration-none " href="tel:010-020-0340 ">03-5678-1109</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope fa-fw "></i>
+                                <a class="text-decoration-none " href="mailto:info@company.com ">info@urbancafe.com</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-light my-3 ">
+                <ul class="col-lg-2 col-md-2 list-inline text-center footer-icons align-self-center">
+                    <li class="list-inline-item border  rounded-circle text-center ">
+                        <a class="text-light text-decoration-none " target="_blank " href="http://facebook.com/ "><i class="fab fa-facebook-f fa-lg fa-fw "></i></a>
+                    </li>
+                    <li class="list-inline-item border rounded-circle text-center ">
+                        <a class="text-light text-decoration-none " target="_blank " href="https://www.instagram.com/ "><i class="fab fa-instagram fa-lg fa-fw "></i></a>
+                    </li>
+
+                </ul>
+                <div class="col-lg-5 col-md-0"></div>
+                <div class="col-lg-5 col-md-10">
+                    <div class="input-group mb-2 align-self-center">
+                        <input type="text" class="form-control bg-light " id="subscribeEmail " placeholder="Nhập Email của bạn để đăng ký nhận tin" width="fit-content;">
+                        <button type="submit" class="input-group-text btn-success">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ubc-footer__bottom-content bg-black ">
+            <div class="container-lg container-fluid">
+                <div class="row align-items-center ">
+                    <div class="col-7 col-lg-6">
+                        <p class="text-left text-light">
+                            Copyright &copy; 2021 Urban Café | Designed by <i><b>Group 01</b></i>. <br>All rights reserved. </p>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <ul class="d-flex align-items-center justify-content-end ubc-footer__bottom__navbar mb-0 "></ul>
+                    </div>
+                    <div class="col-5 col-lg-2">
+                        <div class="ubc-footer__bottom-logo ml-auto">
+                            <a href="http://online.gov.vn/Home/WebDetails/48042" target="blank"><img src="/assets/img/copyright.png" alt="" class="ml-auto"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/js/ubc.js "></script>
+    <script src="assets/js/custom.js "></script>
+    <!-- End Script -->
+</body>
+
+</html>
