@@ -187,7 +187,7 @@ div {
 }
 
 .text-light {
-    color: #cfd6e1 !important;
+    color: #ffffff !important;
 }
 
 .bg-dark {
@@ -207,15 +207,14 @@ div {
 }
 
 .btn-success {
-    background-color: #59ab6e !important;
+    background-color: #199436 !important;
     border-color: #fff !important;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
     color: #ffffff;
 }
 
 .btn-success:focus {
-    background-color: #122223 !important;
     border-color: #56ae6c !important;
     color: #ffffff;
 }
@@ -349,10 +348,6 @@ div {
     margin-top: var(--space-6)
 }
 
-.nav-link-category.active .ubc-category-card .ubc-category-card__content .ubc-category-card__title {
-    color: var(--orange-2)
-}
-
 .ubc-category-card .ubc-category-card__content .ubc-category-card__title {
     color: var(--smoky-gray-2);
     width: var(--space-54);
@@ -394,7 +389,7 @@ div {
 .ubc-product__card {
     padding: var(--space-8);
     margin-left: var(--space-8);
-    background-color: var(--white);
+    background-color: #eef6f6;
     border-radius: var(--space-8);
     cursor: pointer;
     box-shadow: var(--product-box-shadow)
@@ -480,7 +475,6 @@ div {
 .ubc-product__card .ubc-product__content__top .ubc-product__content__sale-info {
     padding: 0 var(--space-8);
     border-radius: var(--space-4);
-    background-color: var(--orange-3);
     font-size: var(--space-10);
     line-height: var(--space-18)
 }
@@ -503,7 +497,6 @@ div {
 }
 
 .ubc-product__card .ubc-product__content__footer i {
-    color: var(--orange-2);
     font-size: var(--space-32);
     line-height: 1
 }
@@ -571,6 +564,22 @@ div {
     }
 }
 
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background-color: #87bec1;
+    color: #fff;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link {
+    color: #336164;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link:hover {
+    color: #122223;
+}
+
 
 /* News */
 
@@ -631,7 +640,7 @@ div {
 }
 
 .btn.btn--blue {
-    background: var(--radial-gradient-blue-1)
+    background: #417a7e;
 }
 
 .btn .text {
@@ -682,26 +691,25 @@ div {
     width: 100%;
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 200;
+    font-size: 14px;
     line-height: 1.5;
     color: #000000;
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
 @media (prefers-reduced-motion:reduce) {
     .form-control {
-        transition: none
+        transition: none;
     }
 }
 
-.input-group .form-control ::placeholder {
-    color: rgb(156, 156, 156);
-    font-weight: 300;
+.input-group .form-control::placeholder {
+    color: rgb(61, 61, 61);
+    font-weight: 500;
+    text-transform: none;
 }
 
 .form-control--custom:focus {
@@ -713,10 +721,6 @@ div {
     font-size: var(--space-16);
     line-height: var(--space-24);
     color: var(--black-3)
-}
-
-.text-apply[data-v-5c47adee] {
-    color: #fff
 }
 
 #ubc_footer a {
@@ -787,11 +791,10 @@ div {
         padding: var(--space-40) 0
     }
     .ubc-footer__bottom-content {
-        padding: var(--space-8) 0
+        padding: var(--space-4) 0
     }
     .ubc-footer__bottom-logo {
         width: var(--space-150);
-        height: var(--space-56)
     }
 }
 
