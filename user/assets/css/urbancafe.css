@@ -179,7 +179,7 @@ div {
 }
 
 .text-muted {
-    color: #bcbcbc !important;
+    color: #808080 !important;
 }
 
 .text-success {
@@ -255,7 +255,7 @@ div {
     position: absolute;
     content: "";
     width: 100%;
-    height: 2px;
+    height: 1.5px;
     top: 100%;
     left: 0;
     background: #ffffff;
@@ -682,7 +682,7 @@ div {
 /* Footer */
 
 .form-control {
-    border: 1px solid #e8e8e8;
+    border: 1.5px solid #777777;
     width: fit-content;
 }
 
@@ -691,10 +691,9 @@ div {
     width: 100%;
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
-    font-size: 14px;
     line-height: 1.5;
     color: #000000;
-    background-color: #fff;
+    font-weight: 500;
     background-clip: padding-box;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
@@ -707,9 +706,13 @@ div {
 }
 
 .input-group .form-control::placeholder {
-    color: rgb(61, 61, 61);
-    font-weight: 500;
+    color: rgb(156, 156, 156);
+    font-weight: 400;
     text-transform: none;
+}
+
+.input-group .form-control:focus {
+    border: 2px solid #7287e0;
 }
 
 .form-control--custom:focus {
@@ -1091,7 +1094,7 @@ input:-webkit-autofill {
 
 #signup-form {
     padding: 20px;
-    height: 600px;
+    height: 500px;
 }
 
 .signup-form::-webkit-scrollbar-track {
@@ -1135,7 +1138,7 @@ input {
 
 label {
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 3px;
 }
 
