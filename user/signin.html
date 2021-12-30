@@ -22,12 +22,11 @@
 
 <body class="bg-light">
     <!-- Header -->
-
     <nav class="navbar navbar-expand-lg navbar-dark shadow bg-nav fixed-top">
         <div class="container justify-content-between">
 
             <a class="desktop-logo " href="home.html">
-                <img src="/assets/img/slogan_logo_transparent.svg" style="width: 170px; height: 100%;" />
+                <img src="./assets/img/slogan_logo_transparent.svg" style="width: 170px; height: 100%;" />
             </a>
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#ubc_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +49,7 @@
                             <a class="nav-link" href="news.html">Tin tức</a>
                         </li>
                         <li class="nav-item p-1">
-                            <a class="nav-link" data-target="#sale-modal" data-toggle="modal" style="cursor: pointer;">Khuyến mãi</a>
+                            <a class="nav-link" data-bs-target="#sale-modal" data-bs-toggle="modal" style="cursor: pointer;">Khuyến mãi</a>
                         </li>
 
                     </ul>
@@ -69,16 +68,16 @@
                 <a class="nav-icon d-none d-lg-inline px-3" href="#" data-bs-toggle="modal" data-bs-target="#ubc_search">
                     <i class="fa fa-fw fa-search text-light mr-2"></i>
                 </a>
-                <div class="dropdown">
-                    <a id="icon-cart" class="nav-icon position-relative text-decoration-none px-3 " id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="dropdown  mx-3">
+                    <a id="icon-cart" class="nav-icon position-relative text-decoration-none" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa fa-fw fa-cart-arrow-down text-light mr-1 text-decoration-none"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#" style="font-size: 14px;">Tra cứu đơn hàng</a></li>
+                        <li><a class="dropdown-item" href="my-cart.html" style="font-size: 14px;">Giỏ hàng</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="register.html" style="font-size: 14px;">Đăng nhập</a></li>
+                        <li><a class="dropdown-item" href="order-tracking.html" style="font-size: 14px;">Tra cứu đơn hàng</a></li>
                     </ul>
                 </div>
 
@@ -87,11 +86,11 @@
                         <i class="fa fa-fw fa-user text-light mr-3"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#" style="font-size: 14px;">Tra cứu đơn hàng</a></li>
+                        <li><a class="dropdown-item" href="my-profile.html" style="font-size: 14px;">Hồ sơ</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#" style="font-size: 14px;">Đăng nhập</a></li>
+                        <li><a class="dropdown-item" href="signin.html" style="font-size: 14px;">Đăng nhập</a></li>
                     </ul>
                 </div>
             </div>
@@ -103,14 +102,14 @@
     <!-- Close Header -->
 
     <!-- Search -->
-    <div class="modal bg-white" id="ubc_search" tabhome="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="opacity: 0.9;">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="w-100 pt-1 mb-5 text-right">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal " id="ubc_search" tabhome="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="opacity: 0.9;">
+        <div class="modal-dialog modal-lg" role="document" style="margin-top: 100px;">
+            <div class="w-100 pt-1 mb-3 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="color: white;"></button>
             </div>
             <form action="" method="get" class="modal-content modal-body border-0 p-0">
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Bạn đang tìm kiếm gì..." style="color: black;">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="inputModalSearch" placeholder="Bạn đang tìm kiếm gì..." style="color: black;">
                     <button type="submit" class="input-group-text bg-success text-light">
                         <i class="fa fa-fw fa-search text-white"></i>
                     </button>
@@ -120,15 +119,116 @@
     </div>
     <!-- Search -->
 
+
+
+    <!-- Sale Modal -->
+    <div>
+        <div id="sale-modal" tabhome="-1" role="dialog" aria-labelledby="sale-modal-title" class="modal bg-light" aria-hidden="true" style="padding-right: 16px;">
+            <div role="document" class="
+        modal-dialog
+        tch-modal-dialog--custom-2
+        tch-modal-dialog--custom-header
+        tch-modal-dialog--spacing-100
+      ">
+                <div class="modal-content">
+                    <div class="modal-header ">
+                        <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h5 id="sale-modal-title" class="modal-title">Khuyến mãi</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="
+              input-group
+              tch-delivery__input
+              d-flex
+              align-items-center
+            "><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDBIMThWNUgxNlYySDEyVjBaTTYgMFYySDJWNUgwVjBINlpNMTIgMThWMTZIMTZWMTNIMThWMThIMTJaTTYgMThIMFYxM0gyVjE2SDZWMThaTTAgOEgxOFYxMEgwVjhaIiBmaWxsPSIjRkE4QzE2Ii8+Cjwvc3ZnPgo="
+                                alt="" class="cam-scan"> <input type="text" placeholder="Nhập mã khuyến mãi" aria-label="" aria-describedby="basic-addon1" class="form-control form-control--custom">
+                            <div class="input-group-prepend"><button type="button" class="btn btn--smoky-gray btn--radius-right-4"><span  class="text-apply">Áp dụng</span></button></div>
+                        </div>
+                        <div>
+                            <div class="tch-modal-sale-header">
+                                <h6 class="tch-modal-sale-title ">Các voucher có sẵn</h6>
+                            </div>
+                            <div class="tch-modal-sale-body">
+                                <div class="tch-sale-card">
+                                    <div class="voucher-content d-flex align-items-center ubc-product-card--shadow">
+                                        <div class="tch-sale-card-image d-flex justify-content-center"><img src="https://minio.thecoffeehouse.com/image/admin/Coupondelivery10k_238803.jpg" alt=""></div>
+                                        <div class="
+                      tch-sale-card-content
+                      d-flex
+                      flex-column
+                      justify-content-between
+                    ">
+                                            <p class="text-description mb-0">Ưu đãi 30% đơn từ 4 món (bánh, snack,nước)</p>
+                                            <p class="text-expired-time mb-0">Hết hạn 31/12/2021</p> <input type="text" id="vcID" class="form-control form-control--custom" disabled value="GV050501"></div>
+                                        <div class=""> <button type="button" class="btn btn-detail-order rounded-pill btn-clipboard" onclick="cpVoucher()">Copy</button>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="voucher-content d-flex align-items-center ubc-product-card--shadow mt-2">
+                                        <div class="tch-sale-card-image d-flex justify-content-center"><img src="https://minio.thecoffeehouse.com/image/admin/Coupondelivery10k_238803.jpg" alt=""></div>
+                                        <div class="
+                      tch-sale-card-content
+                      d-flex
+                      flex-column
+                      justify-content-between
+                    ">
+                                            <p class="text-description mb-0">Ưu đãi 30% đơn từ 4 món (bánh, snack,nước)</p>
+                                            <p class="text-expired-time mb-0">Hết hạn 31/12/2021</p> <input type="text" id="vcID" class="form-control form-control--custom" disabled value="GV050501"></div>
+                                        <div class=""> <button type="button" class="btn btn-detail-order rounded-pill btn-clipboard" onclick="cpVoucher()">Copy</button>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="voucher-content d-flex align-items-center ubc-product-card--shadow mt-2">
+                                        <div class="tch-sale-card-image d-flex justify-content-center"><img src="https://minio.thecoffeehouse.com/image/admin/Coupondelivery10k_238803.jpg" alt=""></div>
+                                        <div class="
+                      tch-sale-card-content
+                      d-flex
+                      flex-column
+                      justify-content-between
+                    ">
+                                            <p class="text-description mb-0">Ưu đãi 30% đơn từ 4 món (bánh, snack,nước)</p>
+                                            <p class="text-expired-time mb-0">Hết hạn 31/12/2021</p> <input type="text" id="vcID" class="form-control form-control--custom" disabled value="GV050501"></div>
+                                        <div class=""> <button type="button" class="btn btn-detail-order rounded-pill btn-clipboard" onclick="cpVoucher()">Copy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="document" class="
+        modal-dialog
+        tch-modal-dialog--custom-2 tch-modal-dialog--custom-header tch-modal-dialog--spacing-100
+      " style="display: none;">
+                    <div class="modal-content modal-content--detail-sale">
+                        <div class="modal-header align-items-center"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDkgMTYiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik04LjUzNzExIDAuNTAyMTMzTDAuNTAyOTU4IDguNTM2MjlMMC4wMDA4MjM5NzUgOC4wMzQxNUw4LjAzNDk3IDBMOC41MzcxMSAwLjUwMjEzM1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik04LjUzNzExIDE1LjQ5NzlMMC41MDI5NTggNy40NjM3MUwwLjAwMDgyMzk3NSA3Ljk2NTg1TDguMDM0OTcgMTZMOC41MzcxMSAxNS40OTc5WiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg=="
+                                alt="" class="cursor-pointer">
+                            <h5 id="detail-sale-modal-title" class="modal-title">Chi tiết khuyến mãi</h5>
+                        </div>
+                        <div class="modal-body d-flex flex-column justify-content-between">
+                            <div class="tch-detail-sale-box d-flex flex-column align-items-center">
+                                <h4 class="tch-detail-sale-box-title mb-1"></h4>
+                                <p class="tch-text-expired-time"></p> <img src="/_nuxt/img/QR-code.3bf0228.png" alt="" class="tch-detail-sale-box-image">
+                                <p class="tch-text-user-info mb-0"><span class="text mr-1"></span> <span class="icon"><i aria-hidden="true" class="fa fa-clone"></i></span></p>
+
+                            </div> <span class="back">Quay về</span> <button class="btn btn--orange btn--orange--detail-sale btn--radius-100 f-600 w-100"><span class="text">Sử dụng ngay</span></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Sale Modal -->
+
     <!-- Form -->
 
-    <section class="signin-up" style="margin-top: 130px; margin-bottom: 80px;">
+    <section class="signin-up" style="margin-top: 120px; margin-bottom: 50px;">
         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="signin-tab" data-bs-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true" style="width: 180px; text-align: center;">Sign In</a>
+                <a class="nav-link active" id="signin-tab" data-bs-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true" style="width: 180px; text-align: center;">Đăng nhập</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="signup-tab" data-bs-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="false" style="width: 180px;text-align: center;">Sign Up</a>
+                <a class="nav-link" id="signup-tab" data-bs-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="false" style="width: 180px;text-align: center;">Đăng ký</a>
             </li>
 
         </ul>
@@ -139,20 +239,19 @@
                         <form method="POST" id="signin-form" class="signup-form">
 
                             <div class="form-group">
-                                <label for="phone_number">Phone number</label>
+                                <label for="phone_number">Số điện thoại</label>
                                 <input type="number" class="form-input" name="phone_number" id="phone_number" />
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password">Mật khẩu</label>
                                 <input type="password" class="form-input" name="password" id="password" />
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                <input class="form-check-input" type="checkbox">
                                 <label class="form-check-label" style=" font-size: 13px; font-weight: 500;">Lưu thông tin đăng nhập</label>
-                                <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
                             </div>
                             <div class="form-group">
-                                <input type="submit" name="submit" id="submit" class="form-submit" value="Log in" />
+                                <input type="submit" name="submit" id="submit" class="form-submit" value="Đăng nhập" />
                             </div>
                         </form>
                     </div>
@@ -164,57 +263,61 @@
                         <form method="POST" id="signup-form" class="signup-form">
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="first_name">First name</label>
+                                    <label for="first_name">Họ và tên đệm</label>
                                     <input type="text" class="form-input" name="first_name" id="first_name" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="last_name">Last name</label>
+                                    <label for="last_name">Tên</label>
                                     <input type="text" class="form-input" name="last_name" id="last_name" />
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group form-icon">
-                                    <label for="birth_date">Birth date</label>
+                                    <label for="birth_date">Ngày sinh</label>
                                     <input type="text" class="form-input" name="birth_date" id="birth_date" placeholder="MM-DD-YYYY" />
                                     <button type="button" class="ui-datepicker-trigger valid" aria-invalid="false"><i class="far fa-calendar-alt" ></i></button>
                                 </div>
                                 <div class="form-radio">
-                                    <label for="gender" style="font-size:13px">Gender</label>
+                                    <label for="gender" style="font-size:13px">Giới tính</label>
                                     <div class="form-flex">
                                         <input type="radio" name="gender" value="male" id="male" checked="checked" />
-                                        <label for="male">Male</label>
+                                        <label for="male">Nam</label>
 
                                         <input type="radio" name="gender" value="female" id="female" />
-                                        <label for="female">Female</label>
+                                        <label for="female">Nữ</label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label for="phone_number">Phone number</label>
-                                <input type="number" class="form-input" name="phone_number" id="phone_number" />
-                            </div>
                             <div class="form-row">
                                 <div class="form-group">
-                                    <label for="password">Password</label>
+                                    <label for="phone_number">Số điện thoại</label>
+                                    <input type="number" class="form-input" name="phone_number" id="phone_number" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-input" name="email" id="email" />
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="password">Mật khẩu</label>
                                     <input type="password" class="form-input" name="password" id="password" />
                                 </div>
                                 <div class="form-group">
-                                    <label for="re_password">Repeat your password</label>
+                                    <label for="re_password">Nhập lại mật khẩu</label>
                                     <input type="password" class="form-input" name="re_password" id="re_password" />
                                 </div>
 
                             </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-input" name="email" id="email" />
-                            </div>
+
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                 <label class="form-check-label" style=" font-size: 13px; font-weight: 500;">Chấp thuận <a href="#">Điều khoản và chính sách</a> đăng ký</label>
                                 <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
                             </div>
                             <div class="form-group">
-                                <input type="submit" name="submit" id="submit" class="form-submit" value="Register" />
+                                <input type="submit" name="submit" id="submit" class="form-submit" value="Đăng ký" />
                             </div>
                         </form>
                     </div>
@@ -225,28 +328,110 @@
     <!-- End Form -->
 
 
+
     <!--  Footer -->
-    <div class="ubc-footer__bottom-content bg-black ">
-        <div class="container-lg container-fluid ">
-            <div class="row align-items-center ">
-                <div class="col-7 col-lg-6 ">
-                    <p class="text-left text-light ">
-                        Copyright &copy; 2021 Urban Café | Designed by <i><b>Group 01</b></i>. <br>All rights reserved. </p>
+    <footer id="ubc_footer" style="background-image: url(./assets/img/footer_img.png);">
+        <div class="container-lg container-fluid">
+            <div class="row pt-3">
+                <div class="col-4 col-sm-3 col-lg-2">
+                    <a class="ubc-footer__top__logo" href="home.html">
+                        <img src="./assets/img/slogan_logo_transparent.svg" style="width: 170px;" />
+                    </a>
+
+
                 </div>
-                <div class="col-lg-4 d-none d-lg-block ">
-                    <ul class="d-flex align-items-center justify-content-end ubc-footer__bottom__navbar mb-0 "></ul>
-                </div>
-                <div class="col-5 col-lg-2 ">
-                    <div class="ubc-footer__bottom-logo ml-auto ">
-                        <a href="http://online.gov.vn/Home/WebDetails/48042 " target="blank "><img src="/assets/img/copyright.png " alt=" " class="ml-auto "></a>
+                <div class="col-8 col-sm-9 col-lg-10 row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#sanpham">Sản phẩm&nbsp;<i class="fa fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="sanpham" style="list-style-type: circle;">
+                            <li><a class="text-decoration-none " href="# ">Best-seller</a></li>
+                            <li><a class="text-decoration-none " href="# ">Cà phê</a></li>
+                            <li><a class="text-decoration-none " href="# ">Trà trái cây</a></li>
+                            <li><a class="text-decoration-none " href="# ">Cà phê bột</a></li>
+                            <li><a class="text-decoration-none " href="# ">Bánh - Snacks</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#thongtin">Thông tin website&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="thongtin" style="list-style-type: circle;">
+                            <li><a class="text-decoration-none " href="# ">Trang chủ</a></li>
+                            <li><a class="text-decoration-none " href="# ">About us</a></li>
+                            <li><a class="text-decoration-none " href="# ">Shop Locations</a></li>
+                            <li><a class="text-decoration-none " href="# ">FAQs</a></li>
+                            <li><a class="text-decoration-none " href="# ">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#dieukhoan">Điều khoản sử dụng&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="dieukhoan" style="list-style-type: circle;">
+                            <li><a class="text-decoration-none " href="# ">Quy chế website</a></li>
+                            <li><a class="text-decoration-none " href="# ">Bảo mật thông tin</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#lienhe">Liên hệ&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
+                        <ul class="collapse text-light footer-link-list " id="lienhe" style="list-style-type: circle;">
+                            <li>
+                                <a class="text-decoration-none " href="# "> <i class="fa fa-map-marker-alt fa-fw"></i> 24 Bắc Kinh, Hải Dương</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none " href="tel:010-020-0340 "><i class="fa fa-phone fa-fw "></i> 03-5678-1109</a>
+                            </li>
+                            <li>
+
+                                <a class="text-decoration-none " href="mailto:info@company.com "><i class="fa fa-envelope fa-fw "></i> info@urbancafe.com</a>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
             </div>
 
+            <div class="row text-light my-3 ">
+                <ul class="col-lg-2 col-md-2 list-inline text-center footer-icons align-self-center">
+                    <li class="list-inline-item border  rounded-circle text-center ">
+                        <a class="text-light text-decoration-none " target="_blank " href="http://facebook.com/ "><i class="fab fa-facebook-f fa-lg fa-fw "></i></a>
+                    </li>
+                    <li class="list-inline-item border rounded-circle text-center ">
+                        <a class="text-light text-decoration-none " target="_blank " href="https://www.instagram.com/ "><i class="fab fa-instagram fa-lg fa-fw "></i></a>
+                    </li>
+
+                </ul>
+                <div class="col-lg-5 col-md-0"></div>
+                <div class="col-lg-5 col-md-10">
+                    <div class="input-group mb-2 align-self-center">
+                        <input type="text" class="form-control bg-light text-dark" id="subscribeEmail " placeholder="Nhập Email của bạn để đăng ký nhận tin" width="fit-content;">
+                        <button type="submit" class="input-group-text btn-success text-light">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    </foo>
+
+        <div class="ubc-footer__bottom-content" style="background-color: black;">
+            <div class="container-lg container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-7 col-lg-6">
+                        <p class="text-left text-light" style="margin-top: auto; margin-bottom: auto; font-size: smaller;">
+                            Copyright &copy; 2021 Urban Café | Designed by <i><b>Group 01</b></i>. <br>All rights reserved. </p>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <ul class="d-flex align-items-center justify-content-end ubc-footer__bottom__navbar mb-0 "></ul>
+                    </div>
+                    <div class="col-5 col-lg-2">
+                        <div class="ubc-footer__bottom-logo ml-auto">
+                            <a href="http://online.gov.vn/Home/WebDetails/48042" target="blank"><img src="./assets/img/copyright.png" alt="" class="ml-auto" width="75%"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
     <!-- End Footer -->
+
     <!-- Start Script -->
     <script src="assets/js/bootstrap.bundle.min.js "></script>
 
