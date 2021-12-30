@@ -1642,6 +1642,24 @@ label {
     display: flex
 }
 
+.users-table .img_product {
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex
+}
+
+.users-table .img_news {
+    width: 120px;
+    height: 120px;
+}
+
+.users-table .img_promotions {
+    width: 100px;
+    height: 100px;
+}
+
 .table-wrapper {
     overflow-x: auto;
     overflow-y: hidden;
