@@ -58,8 +58,8 @@
             <div class="navbar align-self-center d-flex">
                 <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                     <div class="input-group">
-                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                        <div class="input-group-text">
+                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Nhập từ khóa cần tìm...">
+                        <div class="input-group-text btn-success">
                             <i class="fa fa-fw fa-search"></i>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                 <a class="nav-icon d-none d-lg-inline px-3" href="#" data-bs-toggle="modal" data-bs-target="#ubc_search">
                     <i class="fa fa-fw fa-search text-light mr-2"></i>
                 </a>
-                <div class="dropdown  mx-3">
+                <div class="dropdown mx-3">
                     <a id="icon-cart" class="nav-icon position-relative text-decoration-none" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa fa-fw fa-cart-arrow-down text-light mr-1 text-decoration-none"></i>
                     </a>
@@ -220,7 +220,7 @@
     <!--End Sale Modal -->
 
     <!-- Slider -->
-    <div class="" style="margin-top: 80px; ">
+    <div class="body-content">
         <div class="ubc-banner ubc-bg-banner">
             <div class="container-fluid container-lg position-relative">
                 <div id="ubc-hero-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -267,9 +267,8 @@
     <!-- Menu order -->
     <section class="container-lg container-fluid py-5">
         <div class="row text-center">
-            <div class="col-lg-8 m-auto">
+            <div class="col-lg-8 m-auto tilte-menu">
                 <h4 class="h4"><b>Đem cả Urban Café về nhà</b></h4>
-
             </div>
         </div>
 
@@ -320,6 +319,35 @@
             </li>
 
             <li class="ml-2 ml-lg-3 mb-2 nav-item ">
+                <a class="nav-link nav-link nav-link-category m-0 border-0 " href=".cakes" data-bs-toggle="tab" aria-selected="true">
+                    <div class="ubc-category-card d-flex flex-column">
+                        <div class="d-flex justify-content-center align-items-center ubc-category-card__image ubc-category-card--circle "><img src="./assets/img/cake.png" alt=""></div>
+                        <div class="ubc-category-card__content ">
+                            <h5 class="ubc-category-card__title text-center mb-0">
+                                Bánh
+                            </h5>
+                        </div>
+                    </div>
+
+                </a>
+            </li>
+
+            <li class="ml-2 ml-lg-3 mb-2 nav-item ">
+                <a class="nav-link nav-link nav-link-category m-0 border-0 " href=".snacks" data-bs-toggle="tab" aria-selected="true">
+                    <div class="ubc-category-card d-flex flex-column">
+                        <div class="d-flex justify-content-center align-items-center ubc-category-card__image ubc-category-card--circle "><img src="./assets/img/snacks.png" alt=""></div>
+                        <div class="ubc-category-card__content ">
+                            <h5 class="ubc-category-card__title text-center mb-0">
+                                Snacks
+                            </h5>
+                        </div>
+                    </div>
+
+                </a>
+            </li>
+
+
+            <li class="ml-2 ml-lg-3 mb-2 nav-item ">
                 <a class="nav-link nav-link nav-link-category m-0 border-0 " href=".coffeebean" data-bs-toggle="tab" aria-selected="true">
                     <div class="ubc-category-card d-flex flex-column">
                         <div class="d-flex justify-content-center align-items-center ubc-category-card__image ubc-category-card--circle "><img src="./assets/img/coffee-bean.png" alt=""></div>
@@ -332,31 +360,13 @@
 
                 </a>
             </li>
-
-            <li class="ml-2 ml-lg-3 mb-2 nav-item ">
-                <a class="nav-link nav-link nav-link-category m-0 border-0 " href=".cakeandsnack" data-bs-toggle="tab" aria-selected="true">
-                    <div class="ubc-category-card d-flex flex-column">
-                        <div class="d-flex justify-content-center align-items-center ubc-category-card__image ubc-category-card--circle "><img src="./assets/img/snacks.png" alt=""></div>
-                        <div class="ubc-category-card__content ">
-                            <h5 class="ubc-category-card__title text-center mb-0">
-                                Bánh - Snacks
-                            </h5>
-                        </div>
-                    </div>
-
-                </a>
-            </li>
-
-
-
-
         </ul>
         <div class="card-body tab-content">
 
             <div id="bestseller" class="tab-pane active">
                 <div class="row mb-4 mb-lg-5">
                     <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3">
-                        <a href="detail-product.html">
+                        <a class="item-menu-order" href="detail-product.html">
                             <div class="ubc-product__card d-flex flex-lg-column ml-0">
                                 <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border">
                                     <img src="https://minio.thecoffeehouse.com/image/admin/BottleCFSD_496652_400x400.jpg" alt="">
@@ -376,7 +386,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3">
-                        <a href="detail-product.html">
+                        <a class="item-menu-order" href="detail-product.html">
                             <div class="ubc-product__card d-flex flex-lg-column ml-0">
                                 <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border"><img src="https://minio.thecoffeehouse.com/image/admin/Bottle_TraDao_836487_400x400.jpg" alt=""></div>
                                 <div class="
@@ -404,7 +414,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3">
-                        <a href="detail-product.html">
+                        <a class="item-menu-order" href="detail-product.html">
                             <div class="ubc-product__card d-flex flex-lg-column ml-0">
                                 <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border"><img src="https://minio.thecoffeehouse.com/image/admin/Bottle_oolong_285082_400x400.jpg" alt=""></div>
                                 <div class="
@@ -437,7 +447,7 @@
             <div id="coffeecup" class="tab-pane">
                 <div class="row mb-4 mb-lg-5">
                     <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3">
-                        <a href="detail-product.html">
+                        <a class="item-menu-order" href="detail-product.html">
                             <div class="ubc-product__card d-flex flex-lg-column ml-0">
                                 <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border">
                                     <img src="https://minio.thecoffeehouse.com/image/admin/Bottle_oolong_285082_400x400.jpg" alt="">
@@ -467,7 +477,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3">
-                        <a href="detail-product.html">
+                        <a class="item-menu-order" href="detail-product.html">
                             <div class="ubc-product__card d-flex flex-lg-column ml-0">
                                 <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border"><img src="https://minio.thecoffeehouse.com/image/admin/Bottle_oolong_285082_400x400.jpg" alt=""></div>
                                 <div class="
@@ -495,7 +505,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3">
-                        <a href="detail-product.html">
+                        <a class="item-menu-order" href="detail-product.html">
                             <div class="ubc-product__card d-flex flex-lg-column ml-0">
                                 <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border"><img src="https://minio.thecoffeehouse.com/image/admin/Bottle_oolong_285082_400x400.jpg" alt=""></div>
                                 <div class="
@@ -533,7 +543,11 @@
 
             </div>
 
-            <div id="cakeandsnack" class="tab-pane">
+            <div id="cakes" class="tab-pane">
+
+            </div>
+
+            <div id="snacks" class="tab-pane">
 
             </div>
         </div>
@@ -546,8 +560,8 @@
         <div class="container-lg container-fluid ">
             <div class="ubc-box__header ubc-box__header-spacing ">
                 <div class=" text-center ">
-                    <div class="col-lg-8 m-auto ">
-                        <h4 class="h4 pb-3"><b>Tin tức</b></h4>
+                    <div class="col-lg-8 m-auto tilte-menu mb-3">
+                        <h4 class="h4 "><b>Tin tức</b></h4>
                     </div>
                 </div>
             </div>
@@ -564,7 +578,7 @@
                                     Nghệ thuật pha chế -V60
                                 </h5>
                             </div>
-                            <div class="mt-auto "><button class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a href="# " class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                            <div class="mt-auto "><button class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a href="# " style="text-decoration:none"><span class="text ">ĐỌC TIẾP</span></a></button></div>
                         </div>
                     </div>
                 </div>
@@ -579,7 +593,7 @@
                                     Nghệ thuật pha chế - Kalita Wave
                                 </h5>
                             </div>
-                            <div class="ubc-blog-card__content__footer mt-auto "><button class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a href="# " class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                            <div class="ubc-blog-card__content__footer mt-auto "><button class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a href="# " style="text-decoration:none"><span class="text ">ĐỌC TIẾP</span></a></button></div>
                         </div>
                     </div>
                 </div>
@@ -594,7 +608,7 @@
                                     Nghệ thuật pha chế - Cold Brew
                                 </h5>
                             </div>
-                            <div class="ubc-blog-card__content__footer mt-auto "><button class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a href="# " class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                            <div class="ubc-blog-card__content__footer mt-auto "><button class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a href="# " style="text-decoration:none"><span class="text ">ĐỌC TIẾP</span></a></button></div>
                         </div>
                     </div>
                 </div>
@@ -609,7 +623,9 @@
                                     Nghệ thuật pha chế - Espresso
                                 </h5>
                             </div>
-                            <div class="ubc-blog-card__content__footer mt-auto "><button class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a href="# " class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                            <div class="ubc-blog-card__content__footer mt-auto ">
+                                <div class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a href="# " style="text-decoration:none"><span class="text ">ĐỌC TIẾP</span></a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -624,7 +640,7 @@
                                     Nghệ thuật pha chế - Cappuccino
                                 </h5>
                             </div>
-                            <div class="ubc-blog-card__content__footer mt-auto "><button class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a href="# " class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                            <div class="ubc-blog-card__content__footer mt-auto "><button class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a href="# " style="text-decoration:none"><span class="text ">ĐỌC TIẾP</span></a></button></div>
                         </div>
                     </div>
                 </div>
@@ -639,7 +655,7 @@
                                     Nghệ thuật pha chế - Latte
                                 </h5>
                             </div>
-                            <div class="ubc-blog-card__content__footer mt-auto "><button class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a href="# " class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                            <div class="ubc-blog-card__content__footer mt-auto "><button class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a href="# " style="text-decoration:none"><span class="text ">ĐỌC TIẾP</span></a></button></div>
                         </div>
                     </div>
                 </div>
@@ -678,8 +694,9 @@
                             <li><a class="text-decoration-none " href="# ">Best-seller</a></li>
                             <li><a class="text-decoration-none " href="# ">Cà phê</a></li>
                             <li><a class="text-decoration-none " href="# ">Trà trái cây</a></li>
+                            <li><a class="text-decoration-none " href="# ">Bánh</a></li>
+                            <li><a class="text-decoration-none " href="# ">Snacks</a></li>
                             <li><a class="text-decoration-none " href="# ">Cà phê bột</a></li>
-                            <li><a class="text-decoration-none " href="# ">Bánh - Snacks</a></li>
 
                         </ul>
                     </div>
