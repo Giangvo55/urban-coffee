@@ -28,7 +28,8 @@
     "express-fileupload": "^1.2.1",
     "express-session": "^1.17.2",
     "mongodb": "^4.2.2",
-    "mongoose": "^6.1.4"
+    "mongoose": "^6.1.4",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
