@@ -45,7 +45,7 @@
                             <a class="nav-link" href="#">About us</a>
                         </li>
                         <li class="nav-item p-1">
-                            <a class="nav-link" href="#">Đặt hàng</a>
+                            <a class="nav-link" href="/order">Đặt hàng</a>
                         </li>
                         <li class="nav-item p-1">
                             <a class="nav-link" href="#">Tin tức</a>
@@ -76,9 +76,14 @@
                     <a id="icon-cart" class="nav-icon position-relative text-decoration-none" id="navbarDropdown"
                         role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa fa-fw fa-cart-arrow-down text-light mr-1 text-decoration-none"></i>
+                        <% if(session.cart) { %>
+                        <span class=" counter counter-lg">
+                            <%= session.cart.totalQty %>
+                        </span>
+                            <% } %>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#" style="font-size: 14px;">Giỏ hàng</a></li>
+                        <li><a class="dropdown-item" href="/my-cart" style="font-size: 14px;">Giỏ hàng</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
