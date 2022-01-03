@@ -14,5 +14,6 @@ router.get('/add-to-cart/:id', mainController.addToCart);
 
 // News
 router.get('/detail-news', mainController.getDetailNews);
+router.get('/news', mainController.getAllNews);
 
 module.exports = router;
