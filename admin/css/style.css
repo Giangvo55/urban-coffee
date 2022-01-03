@@ -807,25 +807,25 @@ body {
 }
 
 .menu-toggle {
-    background-image: url(../img/svg/Bulk/Menu-toggle-white.svg);
+    background-image: url(../assets/img/svg/Bulk/Menu-toggle-white.svg);
     width: 24px;
     height: 24px
 }
 
 .menu-toggle--gray {
-    background-image: url(../img/svg/Bulk/Menu-toggle-gray.svg);
+    background-image: url(../assets/img/svg/Bulk/Menu-toggle-gray.svg);
     width: 24px;
     height: 24px
 }
 
 .order-today {
-    background-image: url(../img/svg/package.svg);
+    background-image: url(../assets/img/svg/package.svg);
     width: 24px;
     height: 24px
 }
 
 .history {
-    background-image: url(../img/svg/file-text.svg);
+    background-image: url(../assets/img/svg/file-text.svg);
     width: 24px;
     height: 24px
 }
@@ -835,91 +835,91 @@ body {
 .document,
 .arrow-down,
 .history {
-    background-image: url(../img/svg/file-text.svg)
+    background-image: url(../assets/img/svg/file-text.svg)
 } */
 
 .arrow-down {
-    background-image: url(../img/svg/Bulk/Arrow-DownCircle.svg);
+    background-image: url(../assets/img/svg/Bulk/Arrow-DownCircle.svg);
     width: 24px;
     height: 24px;
 }
 
 .manage-cus {
-    background-image: url(../img/svg/user-check.svg);
+    background-image: url(../assets/img/svg/user-check.svg);
     width: 24px;
     height: 24px
 }
 
 .manage-admin {
-    background-image: url(../img/svg/users.svg);
+    background-image: url(../assets/img/svg/users.svg);
     width: 24px;
     height: 24px
 }
 
 .message,
 .paper {
-    background-image: url(../img/svg/Bulk/Paper-white.svg)
+    background-image: url(../assets/img/svg/Bulk/Paper-white.svg)
 }
 
 .message {
-    background-image: url(../img/svg/Bulk/Message-white.svg)
+    background-image: url(../assets/img/svg/Bulk/Message-white.svg)
 }
 
 .edit {
-    background-image: url(../img/svg/Bulk/Edit-white.svg);
+    background-image: url(../assets/img/svg/Bulk/Edit-white.svg);
     width: 24px;
     height: 24px
 }
 
 .menu-sidebar {
-    background-image: url(../img/svg/list.svg);
+    background-image: url(../assets/img/svg/list.svg);
     width: 24px;
     height: 24px
 }
 
 .promotions {
-    background-image: url(../img/svg/gift.svg);
+    background-image: url(../assets/img/svg/gift.svg);
     width: 24px;
     height: 24px
 }
 
 .blog-sidebar {
-    background-image: url(../img/svg/book.svg);
+    background-image: url(../assets/img/svg/bookmark.svg);
     width: 24px;
     height: 24px
 }
 
 .setting,
 .settings-line {
-    background-image: url(../img/svg/Bulk/Setting-white.svg);
+    background-image: url(../assets/img/svg/Bulk/Setting-white.svg);
     width: 24px;
     height: 24px
 }
 
 .settings-line {
-    background-image: url(../img/svg/Bulk/Settings-line.svg)
+    background-image: url(../assets/img/svg/Bulk/Settings-line.svg)
 }
 
 .avatar {
-    background-image: url(../img/avatar/Avatar.svg);
+    background-image: url(../assets/img/avatar/Avatar.svg);
     width: 56px;
     height: 56px
 }
 
 .avatar-2 {
-    background-image: url(../img/avatar/avatar-2.svg);
+    background-image: url(../assets/img/avatar/avatar-2.svg);
     width: 40px;
     height: 40px
 }
 
 .notification {
-    background-image: url(../img/svg/Bulk/Notification-gray.svg);
+    background-image: url(../assets/img/svg/Bulk/Notification-gray.svg);
     width: 24px;
     height: 24px
 }
 
 .arrows-up-down {
-    background-image: url(../img/svg/Bulk/Arrows-up-down.svg);
+    background-image: url(../assets/img/svg/Bulk/Arrows-up-down.svg);
     width: 10px;
     height: 17px;
     margin-left: 10px
@@ -927,47 +927,47 @@ body {
 
 .move,
 .radio {
-    background-image: url(../img/svg/move.svg);
+    background-image: url(../assets/img/svg/move.svg);
     width: 24px;
     height: 24px
 }
 
 .radio {
-    background-image: url(../img/svg/radio.svg)
+    background-image: url(../assets/img/svg/radio.svg)
 }
 
 .thumbnail {
-    background-image: url(../img/svg/thumbnail.svg);
+    background-image: url(../assets/img/svg/thumbnail.svg);
     width: 60px;
     height: 60px
 }
 
 .google-drive,
 .time-circle {
-    background-image: url(../img/svg/Bulk/TimeCircle.svg);
+    background-image: url(../assets/img/svg/Bulk/TimeCircle.svg);
     width: 24px;
     height: 24px
 }
 
 .google-drive {
-    background-image: url(../img/svg/GoogleDrive.svg)
+    background-image: url(../assets/img/svg/GoogleDrive.svg)
 }
 
 .delete,
 .dropbox,
 .star {
-    background-image: url(../img/svg/dropbox.svg);
+    background-image: url(../assets/img/svg/dropbox.svg);
     width: 24px;
     height: 24px
 }
 
 .delete,
 .star {
-    background-image: url(../img/svg/Bulk/Star.svg)
+    background-image: url(../assets/img/svg/Bulk/Star.svg)
 }
 
 .delete {
-    background-image: url(../img/svg/Bulk/Delete.svg)
+    background-image: url(../assets/img/svg/Bulk/Delete.svg)
 }
 
 .search-wrapper svg {
@@ -1056,7 +1056,7 @@ h1,
 h2,
 h3 {
     letter-spacing: 1px;
-    color: #171717
+    color: #ffffff
 }
 
 .h-1 {
@@ -1079,7 +1079,8 @@ h3 {
     font-size: 24px;
     line-height: 1.42;
     color: #171717;
-    margin-bottom: 10px
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 button {
@@ -1437,9 +1438,8 @@ button.disabled:focus {
     width: 100%;
     font-weight: 500;
     font-size: 14px;
-    line-height: 2.43;
+    line-height: 1.5;
     color: #767676;
-    border-bottom: 1px solid #eee;
     text-align: left
 }
 
@@ -1498,16 +1498,6 @@ input[type=radio]:focus {
     box-shadow: none
 }
 
-
-/* 
-.form-input::-webkit-input-placeholder,
-input::-webkit-input-placeholder {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 2.43;
-    color: #d6d7e3
-} */
-
 .form-input::-moz-placeholder,
 input::-moz-placeholder {
     font-weight: 500;
@@ -1542,6 +1532,8 @@ input:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-calendar-picker-in
     display: none!important
 }
 
+
+/* 
 .check {
     position: relative;
     display: -webkit-box;
@@ -1552,7 +1544,7 @@ input:enabled:read-write:-webkit-any(:focus, :hover)::-webkit-calendar-picker-in
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap
-}
+} */
 
 label {
     width: -webkit-max-content;
@@ -1569,11 +1561,9 @@ label {
 .users-table-info {
     line-height: 1.4;
     letter-spacing: -.3px;
-    color: #767676
 }
 
 .users-table table {
-    width: 100%;
     text-align: center;
     -webkit-transition: none;
     -o-transition: none;
@@ -1587,7 +1577,102 @@ label {
 
 .users-table-info th {
     font-weight: 700;
-    background-color: #c7e1e2;
+    background-color: #84d0d5;
+}
+
+.avt {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.col-select {
+    min-width: 60px !important;
+}
+
+.col-order-id {
+    min-width: 130px !important;
+}
+
+.col-customer-id {
+    min-width: 130px !important;
+}
+
+.col-staff-id {
+    min-width: 130px !important;
+}
+
+.col-time {
+    min-width: 80px !important;
+}
+
+.col-discount {
+    min-width: 100px !important;
+}
+
+.col-total {
+    min-width: 120px !important;
+}
+
+.col-discount {
+    min-width: 110px !important;
+}
+
+.col-note {
+    min-width: 340px !important;
+    text-align: center !important;
+}
+
+.col-name {
+    min-width: 180px !important;
+    text-align: center !important;
+}
+
+.col-gender {
+    min-width: 80px !important;
+    text-align: center !important;
+}
+
+.col-phone {
+    min-width: 125px !important;
+    text-align: center !important;
+}
+
+.col-email {
+    min-width: 180px !important;
+    text-align: center !important;
+}
+
+.col-avt {
+    min-width: 120px !important;
+    text-align: center !important;
+}
+
+.col-point {
+    min-width: 100px !important;
+    text-align: center !important;
+}
+
+.col-note-reason {
+    min-width: 220px !important;
+    text-align: center !important;
+}
+
+.col-status {
+    min-width: 100px !important;
+}
+
+.col-address {
+    min-width: 220px !important;
+    text-align: center !important;
+}
+
+.col-action-today-order {
+    min-width: 120px !important;
+}
+
+.col-action-edit {
+    min-width: 70px !important;
 }
 
 .users-table__checkbox {
@@ -1612,11 +1697,11 @@ label {
 
 .users-table td {
     background-color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.users-table td:first-child {
+.primary-key {
     font-weight: 600;
 }
 
@@ -1625,7 +1710,11 @@ label {
 }
 
 .users-table tbody {
-    font-size: 14px
+    font-size: 14px;
+    max-height: 450px;
+    display: block;
+    overflow: auto;
+    width: fit-content;
 }
 
 .users-table .users-item-dropdown {
@@ -1634,9 +1723,6 @@ label {
 }
 
 .users-table img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
     display: flex
@@ -2018,9 +2104,8 @@ label {
 
 .main-nav .notification-dropdown__title {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.22;
-    color: #171717;
+    font-size: 15px;
+    color: #000000;
     margin-bottom: 5px
 }
 
@@ -2405,8 +2490,6 @@ label {
 
 .main {
     padding-top: 40px;
-    padding-bottom: 20px;
-    margin-bottom: 60px
 }
 
 .main-content {
@@ -3423,6 +3506,30 @@ label {
     width: 300px;
     text-align: center;
     padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.medium-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 170px;
+    text-align: center;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .badge-active {
@@ -3450,25 +3557,56 @@ label {
     background-color: #4bde97
 }
 
-.action-detail img:hover {
+.action-detail:hover {
     background-color: #afc6ff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #ffffff;
 }
 
-.action-accept img:hover {
+.contrast-icon {
+    width: 100%;
+}
+
+.contrast-icon:hover {
+    filter: contrast(100);
+}
+
+.action-accept:hover {
     background-color: #86a7fc;
-    stroke: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #ffffff;
 }
 
-.action-delivery img:hover {
+.action-delivery:hover {
     background-color: #fac26e;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #ffffff;
 }
 
-.action-finish img:hover {
+.action-finish:hover {
     background-color: #85e0b4;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #ffffff;
 }
 
-.action-cancel img:hover {
+.action-cancel {
     background-color: #f26464;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #ffffff;
+}
+
+.action-cancel:hover {
+    background-color: #f72828;
+}
+
+.action-edit {
+    background-color: #4d71ca;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #ffffff;
+}
+
+.action-edit:hover {
+    background-color: #063fd1;
 }
 
 
@@ -3477,16 +3615,15 @@ label {
 .modal {
     display: none;
     /* Hidden by default */
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: fixed;
     z-index: 1;
-    padding-top: 50px;
-    padding-bottom: 50px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgba(0, 0, 0, 0.6);
     /* Black w/ opacity */
 }
@@ -3524,7 +3661,9 @@ label {
 
 .items {
     -webkit-box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.25);
-    box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.08)
+    box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.2);
+    background: white;
+    border-radius: 10px;
 }
 
 .mt-3 {
@@ -3533,6 +3672,14 @@ label {
 
 .p-2 {
     padding: .5rem!important
+}
+
+.pb-2 {
+    padding-bottom: .5rem!important
+}
+
+.pb-3 {
+    padding-bottom: 1rem!important
 }
 
 .mx-4 {
@@ -3561,6 +3708,10 @@ label {
 
 .m-3 {
     margin: 1rem!important
+}
+
+.m-auto {
+    margin: auto!important
 }
 
 .mx-5 {
@@ -3632,9 +3783,11 @@ label {
 
 .close {
     color: white;
-    float: right;
     font-size: 28px;
     font-weight: bold;
+    padding-right: 10px;
+    position: absolute;
+    right: 10px;
 }
 
 .close:hover,
@@ -3645,18 +3798,13 @@ label {
 }
 
 .modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #326164;
     color: white;
-}
-
-.modal-body {
-    padding: 2px 16px;
 }
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #326164;
     color: white;
 }
 
@@ -3841,7 +3989,7 @@ label {
 }
 
 .darkmode .menu-toggle--gray {
-    background-image: url(../img/svg/Bulk/Menu-toggle-white.svg)
+    background-image: url(../assets/img/svg/Bulk/Menu-toggle-white.svg)
 }
 
 .darkmode .users-table-info th {
@@ -3859,10 +4007,30 @@ label {
 
 .darkmode .notification {
     stroke: #fff;
-    background-image: url(../img/svg/Bulk/Notification.svg);
+    background-image: url(../assets/img/svg/Bulk/Notification.svg);
 }
 
-darkmode .notification {
+.darkmode .notification {
     stroke: #fff;
-    background-image: url(../img/svg/Bulk/Notification.svg);
+    background-image: url(../assets/img/svg/Bulk/Notification.svg);
+}
+
+.darkmode .action-cancel {
+    background-color: #f26464;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #464646, -2px -2px 5px #312a2a;
+}
+
+.darkmode .action-cancel:hover {
+    background-color: #f72828;
+}
+
+.darkmode .action-edit {
+    background-color: #4d71ca;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #464646, -2px -2px 5px #312a2a;
+}
+
+.darkmode .action-edit:hover {
+    background-color: #063fd1;
 }

@@ -10,7 +10,6 @@
     <link rel="shortcut icon" href="./assets/img/logo/favicon.svg" type="image/x-icon">
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
@@ -21,7 +20,7 @@
         <aside class="sidebar">
             <div class="sidebar-start">
                 <div class="sidebar-head">
-                    <a href="./" class="logo-wrapper" title="Home">
+                    <a href="" class="logo-wrapper" title="Home">
                         <span class="sr-only">Home</span>
                         <span class="icon logo" aria-hidden="true"><img src="./assets/img/logo/favicon.svg" alt=""></span>
                         <img src="./assets/img/logo/slogan_logo_transparent.svg" alt="" style="height: 45px; width: auto;">
@@ -36,17 +35,17 @@
                     <span class="system-menu__title">Tổng quan</span>
                     <ul class="sidebar-body-menu">
                         <li>
-                            <a class="" href="today-orders.html"><span class="icon order-today" aria-hidden="true"></span> Đơn hàng hôm nay</a>
+                            <a href="today-orders.html"><span class="icon order-today" aria-hidden="true"></span> Đơn hàng hôm nay</a>
                         </li>
 
                         <li>
-                            <a class="active" href="#">
+                            <a class="active">
                                 <span class="icon history" aria-hidden="true"></span>Lịch sử đơn hàng
 
                             </a>
                         </li>
                         <li>
-                            <a class="" href="manage-customers.html">
+                            <a href="manage-customers.html">
                                 <span class="icon manage-cus" aria-hidden="true"></span>Quản lý khách hàng
                             </a>
 
@@ -71,33 +70,31 @@
                                     <a href="menu-fruit-tea.html">• Trà trái cây</a>
                                 </li>
                                 <li>
-                                    <a href="menu-cakes.html">• Bánh</a>
-                                </li>
-                                <li>
-                                    <a href="menu-snacks.html">• Snacks</a>
-                                </li>
-                                <li>
                                     <a href="menu-coffee-powder.html">• Cà phê bột</a>
+                                </li>
+                                <li>
+                                    <a href="menu-cakes&snacks.html">• Bánh - Snacks</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
 
-                            <a class="" href="promotions.html">
+                            <a href="promotions.html">
                                 <span class="icon promotions" aria-hidden="true"></span>Khuyến mãi
                                 </span>
                             </a>
                         </li>
                         <li>
-                            <a class="" href="news.html">
-                                <span class="icon blog-sidebar" aria-hidden="true"></span>Tin tức
+                            <a href="blogs.html">
+                                <span class="icon blog-sidebar" aria-hidden="true"></span>Blogs
                                 </span>
                             </a>
                         </li>
                         <li>
-                            <a class="" href="manage-staffs.html">
+                            <a href="manage-staffs.html">
                                 <span class="icon manage-admin" aria-hidden="true"></span>Quản lý thành viên
                             </a>
+
                         </li>
                     </ul>
                 </div>
@@ -122,7 +119,7 @@
                     <div class="main-nav-start">
                         <div class="search-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                            <input type="text" placeholder="Nhập ID đơn hàng cần tìm..." required="">
+                            <input type="text" placeholder="Nhập ID hóa đơn cần tìm kiếm..." required="">
                         </div>
                     </div>
                     <h2 class="main-title">Lịch sử đơn hàng</h2>
@@ -138,8 +135,8 @@
           <i data-feather="chevron-down" aria-hidden="true"></i>
         </button>
                             <ul class="lang-menu dropdown">
-                                <li><a href="##">Vietnam</a></li>
-                                <li><a href="##">English</a></li>
+                                <li><a href="">Vietnam</a></li>
+                                <li><a href="">English</a></li>
                             </ul>
                         </div>
                         <button class="theme-switcher gray-circle-btn" type="button" title="Switch theme">
@@ -153,39 +150,43 @@
           <span class="icon notification active" aria-hidden="true"></span>
         </button>
                             <ul class="users-item-dropdown notification-dropdown dropdown">
-                                <li class=" d-flex align-items-center">
-                                    <a href="##">
+                                <li>
+                                    <a href="">
                                         <div class="notification-dropdown-icon info">
                                             <i data-feather="check"></i>
                                         </div>
                                         <div class="notification-dropdown-text">
-                                            <span class="notification-dropdown__title d-flex align-items-center">Đơn hàng mới <br> UC-999999</span>
-
+                                            <span class="notification-dropdown__title">System just updated</span>
+                                            <span class="notification-dropdown__subtitle">The system has been successfully upgraded. Read more
+                  here.</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="##">
+                                    <a href="">
                                         <div class="notification-dropdown-icon danger">
                                             <i data-feather="info" aria-hidden="true"></i>
                                         </div>
                                         <div class="notification-dropdown-text">
-                                            <span class="notification-dropdown__title">Đơn hàng bị hủy <br> UC-999999</span>
+                                            <span class="notification-dropdown__title">The cache is full!</span>
+                                            <span class="notification-dropdown__subtitle">Unnecessary caches take up a lot of memory space and
+                  interfere ...</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="##">
+                                    <a href="">
                                         <div class="notification-dropdown-icon info">
                                             <i data-feather="check" aria-hidden="true"></i>
                                         </div>
                                         <div class="notification-dropdown-text">
-                                            <span class="notification-dropdown__title">Đơn hàng mới <br> UC-999999</span>
+                                            <span class="notification-dropdown__title">New Subscriber here!</span>
+                                            <span class="notification-dropdown__subtitle">A new subscriber has subscribed.</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="link-to-page" href="#">Đến trang quản lý thông tin</a>
+                                    <a class="link-to-page" href="">Go to Notifications page</a>
                                 </li>
                             </ul>
                         </div>
@@ -197,16 +198,22 @@
           </span>
         </button>
                             <ul class="users-item-dropdown nav-user-dropdown dropdown">
-                                <li style="padding: 10px;">
-                                    <a href="my-profile.html">
+                                <li>
+                                    <a href="">
                                         <i data-feather="user" aria-hidden="true"></i>
-                                        <span>Hồ sơ</span>
+                                        <span>Profile</span>
                                     </a>
                                 </li>
-                                <li style="padding: 10px;">
-                                    <a class="danger" href="##">
+                                <li>
+                                    <a href="">
+                                        <i data-feather="settings" aria-hidden="true"></i>
+                                        <span>Account settings</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="danger" href="">
                                         <i data-feather="log-out" aria-hidden="true"></i>
-                                        <span>Đăng xuất</span>
+                                        <span>Log out</span>
                                     </a>
                                 </li>
                             </ul>
@@ -215,96 +222,98 @@
                 </div>
             </nav>
             <!-- ! Main -->
-            <div class="container" style="padding-top: 20px; padding-right: 20px;"> <button class="action-today-order transparent-btn action-cancel" type="button " title="Cancel order " style="position: absolute; right: 4%;">
-                <div class="contrast-icon"><img src="./assets/img/svg/trash-2.svg" ></div>
-            </button></div>
-
-            <div class="container main ">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="users-table table-wrapper">
-                            <table class="m-auto">
-                                <thead style="display: table; width: fit-content;">
-                                    <tr class="users-table-info" style=" text-align:center">
-                                        <th class="col-select">Select</th>
-                                        <th class="col-order-id">Order ID</th>
-                                        <th class="col-customer-id">Customer ID</th>
-                                        <th class="col-staff-id">Staff ID</th>
-                                        <th class="col-time">Time</th>
-                                        <th class="col-time">Date</th>
-                                        <th class="col-discount">Discount</th>
-                                        <th class="col-total">Total</th>
-                                        <th class="col-note-reason"> Note </th>
-                                        <th class="col-status">Status</th>
-                                        <th class="col-action-edit">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="col-select"><input type="checkbox"></td>
-                                        <td class="primary-key col-order-id viewDetail">UC-99999999
-                                        </td>
-                                        <td class="col-customer-id viewDetail">
-                                            MUC-12345678
-                                        </td>
-                                        <td class="col-staff-id viewDetail">
-                                            SUC-12345678
-                                        </td>
-                                        <td class="col-time viewDetail">10:15</td>
-                                        <td class="col-time viewDetail">30/12/2021</td>
-
-                                        <td class="col-discount viewDetail">-20.000VNĐ</td>
-                                        <td class="col-total viewDetail">200.000VNĐ</td>
-                                        <td class="col-note-reason viewDetail">
-                                            <div class="medium-text">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
-                                        </td>
-                                        <td class="col-status"><span class="badge-disabled ">Hủy đơn</span></td>
-
-                                        <td class="col-action-edit">
-                                            <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
-                                                    <div class="contrast-icon"><img src="./assets/img/svg/edit.svg "></div>
-                                                  
+            <main class="main users chart-page" id="skip-target">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="users-table table-wrapper">
+                                <table class="posts-table">
+                                    <thead>
+                                        <tr class="users-table-info" style=" text-align:center;display: block">
+                                            <th>Order ID</th>
+                                            <th>User ID</th>
+                                            <th>Staff ID</th>
+                                            <th>Time</th>
+                                            <th>Date</th>
+                                            <th>Discount</th>
+                                            <th>Total</th>
+                                            <th>Status</th>
+                                            <th>Note</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody style="overflow-x:auto; height: 100px;display: block">
+                                        <tr style="text-align: center;">
+                                            <td>UC-12345678
+                                            </td>
+                                            <td>
+                                                MUC-12345678
+                                            </td>
+                                            <td>
+                                                <div class="pages-table-img">
+                                                    <picture>
+                                                        <source srcset="./assets/img/avatar/avatar-face-04.webp" type="image/webp"><img src="./assets/img/avatar/avatar-face-04.png" alt="User Name"></picture>
+                                                    UC-ANBT1109
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px;">10:15</td>
+                                            <td style="padding: 10px;">12/12/2021</td>
+                                            <td>
+                                                -20.000VNĐ
+                                            </td>
+                                            <td>200.000 VNĐ</td>
+                                            <td style="text-align: center;"><span class="badge-disabled">Hủy đơn</span></td>
+                                            <td class="long-text ">
+                                                <div class="long-text ">Khách kiểu bị bực bội sau ngày dài chạy deadline nên khóc và đòi boom hàng :(</div>
+                                            </td>
+                                            <td>
+                                                <button id="viewDetail" class="action-today-order transparent-btn action-detail " type="button " title="Detail ">
+                                                    <img src="./assets/img/svg/eye.svg " class=" ">
                                                 </button>
+                                                <button class="action-today-order transparent-btn action-cancel " type="button " title="Delete">
+                                                    <img src="./assets/img/svg/trash-2.svg " >
+                                                </button>
+                                            </td>
+                                        </tr>
 
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="col-select "><input type="checkbox">
-                                        </td>
-                                        <td class="primary-key col-order-id ">UC-99999999
-                                        </td>
-                                        <td class="col-customer-id ">
-                                            MUC-12345678
-                                        </td>
-                                        <td class="col-staff-id ">
-                                            SUC-12345678
-                                        </td>
-                                        <td class="col-time ">10:15</td>
-                                        <td class="col-time ">30/12/2021</td>
-                                        <td class="col-discount">-20.000VNĐ</td>
-                                        <td class="col-total">200.000VNĐ</td>
-                                        <td class="col-note-reason">
-                                            <div class="medium-text">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
-                                        </td>
-                                        <td class="col-status "><span class="badge-success ">Hoàn thành</span></td>
-
-                                        <td class="col-action-edit ">
-                                            <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
-                                                <div class="contrast-icon "><img src="./assets/img/svg/edit.svg "></div>
-                                              
-                                            </button>
-
-                                        </td>
-                                    </tr>
-
-                                </tbody>
-                            </table>
+                                        </tr>
+                                        <tr style="text-align: center;">
+                                            <td>UC-12345678
+                                            </td>
+                                            <td>
+                                                MUC-12345678
+                                            </td>
+                                            <td>
+                                                <div class="pages-table-img">
+                                                    <picture>
+                                                        <source srcset="./assets/img/avatar/avatar-face-04.webp" type="image/webp"><img src="./assets/img/avatar/avatar-face-04.png" alt="User Name"></picture>
+                                                    UC-GVC0505
+                                                </div>
+                                            </td>
+                                            <td style="padding: 10px;">10:15</td>
+                                            <td style="padding: 10px;">12/12/2021</td>
+                                            <td>
+                                                -20.000VNĐ
+                                            </td>
+                                            <td>200.000 VNĐ</td>
+                                            <td><span class="badge-active">Hoàn thành</span></td>
+                                            <td>None</td>
+                                            <td>
+                                                <button id="viewDetail" class="action-today-order transparent-btn action-detail " type="button " title="Detail">
+                                                    <img src="./assets/img/svg/eye.svg " class=" ">
+                                                </button>
+                                                <button class="action-today-order transparent-btn action-cancel " type="button " title="Delete">
+                                                    <img src="./assets/img/svg/trash-2.svg " >
+                                                </button>
+                                            </td>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
-            </div>
+            </main>
 
         </div>
     </div>
@@ -313,13 +322,13 @@
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
-        <div class="align-items-center">
+        <div class="row-modal align-items-center">
 
             <div class="modal-content col-lg-6 col-md-6 col-sm-6">
                 <div class="modal-header ">
                     <span id="modal-close" class="close">&times;</span>
-                    <h2 style="text-align: center; padding: 10px;">Chi tiết hóa đơn</h2>
-                    <div class="col-lg-10 col-md-10 col-sm-10 m-auto pb-2">
+                    <h2 style="text-align: center; padding: 10px;">Chi tiết đơn hàng</h2>
+                    <div class="col-lg-6 col-md-6 col-sm-6 mx-top-modal">
                         <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Mã đơn hàng:
                             <div>Đang giao</div>
                         </div>
