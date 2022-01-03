@@ -73,12 +73,12 @@ exports.exploreOrder = async(req, res) => {
  * GET /
  * My Cart 
  */
-exports.exploreMyCart = async(req, res) => {
-    try {
-        res.render('my-cart', {title : 'Giỏ hàng'}); 
-    } catch (error) {
-        res.status(500).send({message: error.message || "Error Occured" });
+exports.exploreMyCart = async(req, res, next) => {
+    if(!req.session.cart){
+        res.render('my-cart', {title : 'Giỏ hàng', products : null}); 
     }
+    var cart = new Cart(req.session.cart); 
+    res.render('my-cart', {title : 'Giỏ hàng', products: cart.generateArray(), totalPrice: cart.totalPrice }); 
 }
 
 /**
@@ -96,5 +96,6 @@ exports.addToCart = async(req, res, next) => {
        cart.add(drink, drink.id); 
        req.session.cart = cart; 
       console.log(req.session.cart);
-    })
+      res.redirect('/'); 
+    }); 
 }

@@ -1,5 +1,5 @@
 <!-- Slider -->
-<div class="" style="margin-top: 80px; ">
+<div class="body-content">
     <div class="ubc-banner ubc-bg-banner">
         <div class="container-fluid container-lg position-relative">
             <div id="ubc-hero-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -48,9 +48,8 @@
 <!-- Menu order -->
 <section class="container-lg container-fluid py-5">
     <div class="row text-center">
-        <div class="col-lg-8 m-auto">
+        <div class="col-lg-8 m-auto tilte-menu">
             <h4 class="h4"><b>Đem cả Urban Café về nhà</b></h4>
-
         </div>
     </div>
 
@@ -64,7 +63,8 @@
                 <div class="ubc-category-card d-flex flex-column">
                     <div
                         class="d-flex justify-content-center align-items-center ubc-category-card__image ubc-category-card--circle ">
-                        <img src="/img/best-seller.png" alt=""></div>
+                        <img src="/img/best-seller.png" alt="">
+                    </div>
                     <div class="ubc-category-card__content ">
                         <h5 class="ubc-category-card__title text-center mb-0">
                             Best-seller
@@ -81,7 +81,8 @@
                 <div class="ubc-category-card d-flex flex-column">
                     <div
                         class="d-flex justify-content-center align-items-center ubc-category-card__image ubc-category-card--circle ">
-                        <img src="/img/coffee-cup.png" alt=""></div>
+                        <img src="/img/coffee-cup.png" alt="">
+                    </div>
                     <div class="ubc-category-card__content ">
                         <h5 class="ubc-category-card__title text-center mb-0">
                             Cà Phê
@@ -99,7 +100,8 @@
                 <div class="ubc-category-card d-flex flex-column">
                     <div
                         class="d-flex justify-content-center align-items-center ubc-category-card__image ubc-category-card--circle ">
-                        <img src="/img/drink.png" alt=""></div>
+                        <img src="/img/drink.png" alt="">
+                    </div>
                     <div class="ubc-category-card__content ">
                         <h5 class="ubc-category-card__title text-center mb-0">
                             Trà trái cây
@@ -116,7 +118,8 @@
                 <div class="ubc-category-card d-flex flex-column">
                     <div
                         class="d-flex justify-content-center align-items-center ubc-category-card__image ubc-category-card--circle ">
-                        <img src="/img/coffee-bean.png" alt=""></div>
+                        <img src="/img/coffee-bean.png" alt="">
+                    </div>
                     <div class="ubc-category-card__content ">
                         <h5 class="ubc-category-card__title text-center mb-0">
                             Cà phê bột
@@ -133,7 +136,8 @@
                 <div class="ubc-category-card d-flex flex-column">
                     <div
                         class="d-flex justify-content-center align-items-center ubc-category-card__image ubc-category-card--circle ">
-                        <img src="/img/snacks.png" alt=""></div>
+                        <img src="/img/snacks.png" alt="">
+                    </div>
                     <div class="ubc-category-card__content ">
                         <h5 class="ubc-category-card__title text-center mb-0">
                             Bánh - Snacks
@@ -151,7 +155,7 @@
             <div class="row mb-4 mb-lg-5">
                 <% if(bestSeller !='' ) { %>
                     <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3 ">
-                        <a href="/drinks/<%= bestSeller._id %>">
+                        <a href="/drinks/<%= bestSeller._id %>" class="item-menu-order">
                             <div class="ubc-product__card d-flex flex-lg-column ml-0 ">
                                 <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border ">
                                     <img src="<%- bestSeller.img %>" alt="<%- bestSeller.name %>">
@@ -170,7 +174,8 @@
                                             </span>
                                         </p>
                                         <a href="/add-to-cart/<%= bestSeller._id %>">
-                                            <div data-toggle="modal " data-target="#cardModal " class="btn add-to-cart p-0 ">
+                                            <div data-toggle="modal " data-target="#cardModal "
+                                                class="btn add-to-cart p-0 ">
                                                 <img class="add-to-cart " src="/img/add.png" alt="add to cart ">
                                             </div>
                                         </a>
@@ -190,7 +195,7 @@
                 <% if(drinks !='' ) { %>
                     <% drinks.coffee.forEach(function(drink, index) { %>
                         <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3 ">
-                            <a href="/drinks/<%= drink._id %>">
+                            <a href="/drinks/<%= drink._id %>" class="item-menu-order">
                                 <div class="ubc-product__card d-flex flex-lg-column ml-0 ">
                                     <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border ">
                                         <img src="<%- drink.img %>" alt="<%- drink.name %>">
@@ -229,7 +234,7 @@
                 <% if(drinks !='' ) { %>
                     <% drinks.fruitTea.forEach(function(drink, index) { %>
                         <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3 ">
-                            <a href="/drinks/<%= drink._id %>">
+                            <a href="/drinks/<%= drink._id %>" class="item-menu-order">
                                 <div class="ubc-product__card d-flex flex-lg-column ml-0 ">
                                     <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border ">
                                         <img src="<%- drink.img %>" alt="<%- drink.name %>">
@@ -267,7 +272,7 @@
                 <% if(drinks !='' ) { %>
                     <% drinks.coffeeBean.forEach(function(drink, index) { %>
                         <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3 ">
-                            <a href="/drinks/<%= drink._id %>">
+                            <a href="/drinks/<%= drink._id %>" class="item-menu-order">
                                 <div class="ubc-product__card d-flex flex-lg-column ml-0 ">
                                     <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border ">
                                         <img src="<%- drink.img %>" alt="<%- drink.name %>">
@@ -305,7 +310,7 @@
                 <% if(drinks !='' ) { %>
                     <% drinks.cakeAndSnack.forEach(function(drink, index) { %>
                         <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3 ">
-                            <a href="/drinks/<%= drink._id %>">
+                            <a href="/drinks/<%= drink._id %>" class="item-menu-order">
                                 <div class="ubc-product__card d-flex flex-lg-column ml-0 ">
                                     <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border ">
                                         <img src="<%- drink.img %>" alt="<%- drink.name %>">
@@ -347,8 +352,8 @@
     <div class="container-lg container-fluid ">
         <div class="ubc-box__header ubc-box__header-spacing ">
             <div class=" text-center ">
-                <div class="col-lg-8 m-auto ">
-                    <h4 class="h4 pb-3"><b>Tin tức</b></h4>
+                <div class="col-lg-8 m-auto tilte-menu mb-3">
+                    <h4 class="h4 "><b>Tin tức</b></h4>
                 </div>
             </div>
         </div>
@@ -369,7 +374,8 @@
                         </div>
                         <div class="mt-auto "><button
                                 class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a
-                                    href="# " class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                                    href="# " style="text-decoration:none"><span class="text ">ĐỌC
+                                        TIẾP</span></a></button></div>
                     </div>
                 </div>
             </div>
@@ -388,7 +394,8 @@
                         </div>
                         <div class="ubc-blog-card__content__footer mt-auto "><button
                                 class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a
-                                    href="# " class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                                    href="# " style="text-decoration:none"><span class="text ">ĐỌC
+                                        TIẾP</span></a></button></div>
                     </div>
                 </div>
             </div>
@@ -407,7 +414,8 @@
                         </div>
                         <div class="ubc-blog-card__content__footer mt-auto "><button
                                 class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a
-                                    href="# " class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                                    href="# " style="text-decoration:none"><span class="text ">ĐỌC
+                                        TIẾP</span></a></button></div>
                     </div>
                 </div>
             </div>
@@ -426,7 +434,8 @@
                         </div>
                         <div class="ubc-blog-card__content__footer mt-auto "><button
                                 class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a
-                                    href="# " class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                                    href="# " style="text-decoration:none"><span class="text ">ĐỌC
+                                        TIẾP</span></a></button></div>
                     </div>
                 </div>
             </div>
@@ -445,7 +454,8 @@
                         </div>
                         <div class="ubc-blog-card__content__footer mt-auto "><button
                                 class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a
-                                    href="# " class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                                    href="# " style="text-decoration:none"><span class="text ">ĐỌC
+                                        TIẾP</span></a></button></div>
                     </div>
                 </div>
             </div>
@@ -464,7 +474,8 @@
                         </div>
                         <div class="ubc-blog-card__content__footer mt-auto "><button
                                 class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a
-                                    href="# " class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                                    href="# " style="text-decoration:none"><span class="text ">ĐỌC
+                                        TIẾP</span></a></button></div>
                     </div>
                 </div>
             </div>
