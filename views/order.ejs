@@ -1,5 +1,5 @@
 <!-- Menu order -->
-<section class="container-lg container-fluid py-5">
+<section class="container-lg container-fluid py-5" style="margin-top: 80px;">
     <div class="row text-center">
         <div class="col-lg-8 m-auto tilte-menu">
             <h4 class="h4"><b>Đem cả Urban Café về nhà</b></h4>
@@ -66,6 +66,42 @@
         </li>
 
         <li class="ml-2 ml-lg-3 mb-2 nav-item ">
+            <a class="nav-link nav-link nav-link-category m-0 border-0 " href="#cake" data-bs-toggle="tab"
+                aria-selected="true">
+                <div class="ubc-category-card d-flex flex-column">
+                    <div
+                        class="d-flex justify-content-center align-items-center ubc-category-card__image ubc-category-card--circle ">
+                        <img src="/img/cake.png" alt="cake">
+                    </div>
+                    <div class="ubc-category-card__content ">
+                        <h5 class="ubc-category-card__title text-center mb-0">
+                            Bánh
+                        </h5>
+                    </div>
+                </div>
+
+            </a>
+        </li>
+
+        <li class="ml-2 ml-lg-3 mb-2 nav-item ">
+            <a class="nav-link nav-link nav-link-category m-0 border-0 " href="#snacks" data-bs-toggle="tab"
+                aria-selected="true">
+                <div class="ubc-category-card d-flex flex-column">
+                    <div
+                        class="d-flex justify-content-center align-items-center ubc-category-card__image ubc-category-card--circle ">
+                        <img src="/img/snacks.png" alt="">
+                    </div>
+                    <div class="ubc-category-card__content ">
+                        <h5 class="ubc-category-card__title text-center mb-0">
+                            Snacks
+                        </h5>
+                    </div>
+                </div>
+
+            </a>
+        </li>
+
+        <li class="ml-2 ml-lg-3 mb-2 nav-item ">
             <a class="nav-link nav-link nav-link-category m-0 border-0 " href="#coffeebean" data-bs-toggle="tab"
                 aria-selected="true">
                 <div class="ubc-category-card d-flex flex-column">
@@ -83,23 +119,7 @@
             </a>
         </li>
 
-        <li class="ml-2 ml-lg-3 mb-2 nav-item ">
-            <a class="nav-link nav-link nav-link-category m-0 border-0 " href="#cakeandsnack" data-bs-toggle="tab"
-                aria-selected="true">
-                <div class="ubc-category-card d-flex flex-column">
-                    <div
-                        class="d-flex justify-content-center align-items-center ubc-category-card__image ubc-category-card--circle ">
-                        <img src="/img/snacks.png" alt="">
-                    </div>
-                    <div class="ubc-category-card__content ">
-                        <h5 class="ubc-category-card__title text-center mb-0">
-                            Bánh - Snacks
-                        </h5>
-                    </div>
-                </div>
-
-            </a>
-        </li>
+        
 
     </ul>
     <div class="card-body tab-content">
@@ -223,27 +243,27 @@
         <div id="coffeebean" class="tab-pane">
             <div class="row mb-4 mb-lg-5">
                 <% if(drinks !='' ) { %>
-                    <% drinks.coffeeBean.forEach(function(drink, index) { %>
+                    <% drinks.coffeeBean.forEach(function(coffeeBean, index) { %>
                         <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3 ">
-                            <a href="/drinks/<%= drink._id %>" class="item-menu-order">
+                            <a href="/drinks/<%= coffeeBean._id %>" class="item-menu-order">
                                 <div class="ubc-product__card d-flex flex-lg-column ml-0 ">
                                     <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border ">
-                                        <img src="<%- drink.img %>" alt="<%- drink.name %>">
+                                        <img src="<%- coffeeBean.img %>" alt="<%- coffeeBean.name %>">
                                     </div>
                                     <div
                                         class="ubc-product__content ubc-product__content--mobile-padding d-flex flex-column ">
                                         <div class="ubc-product__content__top mb-1 mb-lg-3 ">
                                             <h4 class="ubc-product-content__title mb-0 ">
-                                                <%- drink.name %>
+                                                <%- coffeeBean.name %>
                                             </h4>
                                         </div>
                                         <div
                                             class="ubc-product__content__footer d-flex justify-content-between align-items-center mt-auto ">
                                             <p class="mb-0 "><span class="d-block ">
-                                                    <%- drink.price %> đ
+                                                    <%- coffeeBean.price %> đ
                                                 </span>
                                             </p>
-                                            <a href="/add-to-cart/<%= drink._id %>">
+                                            <a href="/add-to-cart/<%= coffeeBean._id %>">
                                                 <div data-toggle="modal " data-target="#cardModal "
                                                     class="btn add-to-cart p-0 "><img class="add-to-cart "
                                                         src="/img/add.png" alt="add to cart "></div>
@@ -258,30 +278,68 @@
             </div>
         </div>
 
-        <div id="cakeandsnack" class="tab-pane">
+        <div id="snacks" class="tab-pane">
             <div class="row mb-4 mb-lg-5">
                 <% if(drinks !='' ) { %>
-                    <% drinks.cakeAndSnack.forEach(function(drink, index) { %>
+                    <% drinks.snacks.forEach(function(snacks, index) { %>
                         <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3 ">
-                            <a href="/drinks/<%= drink._id %>" class="item-menu-order">
+                            <a href="/drinks/<%= snacks._id %>" class="item-menu-order">
                                 <div class="ubc-product__card d-flex flex-lg-column ml-0 ">
                                     <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border ">
-                                        <img src="<%- drink.img %>" alt="<%- drink.name %>">
+                                        <img src="<%- snacks.img %>" alt="<%- snacks.name %>">
                                     </div>
                                     <div
                                         class="ubc-product__content ubc-product__content--mobile-padding d-flex flex-column ">
                                         <div class="ubc-product__content__top mb-1 mb-lg-3 ">
                                             <h4 class="ubc-product-content__title mb-0 ">
-                                                <%- drink.name %>
+                                                <%- snacks.name %>
                                             </h4>
                                         </div>
                                         <div
                                             class="ubc-product__content__footer d-flex justify-content-between align-items-center mt-auto ">
                                             <p class="mb-0 "><span class="d-block ">
-                                                    <%- drink.price %> đ
+                                                    <%- snacks.price %> đ
                                                 </span>
                                             </p>
-                                            <a href="/add-to-cart/<%= drink._id %>">
+                                            <a href="/add-to-cart/<%= snacks._id %>">
+                                                <div data-toggle="modal " data-target="#cardModal "
+                                                    class="btn add-to-cart p-0 "><img class="add-to-cart "
+                                                        src="/img/add.png" alt="add to cart "></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <% }) %>
+                            <% } %>
+            </div>
+        </div>
+
+        <div id="cake" class="tab-pane">
+            <div class="row mb-4 mb-lg-5">
+                <% if(drinks !='' ) { %>
+                    <% drinks.cake.forEach(function(cake, index) { %>
+                        <div class="col-12 col-md-6 col-lg-3 col-xl-2 mt-2 mt-lg-3 ">
+                            <a href="/drinks/<%= cake._id %>" class="item-menu-order">
+                                <div class="ubc-product__card d-flex flex-lg-column ml-0 ">
+                                    <div class="ubc-product__image ubc-product--lg__image ubc-product-img-border ">
+                                        <img src="<%- cake.img %>" alt="<%- cake.name %>">
+                                    </div>
+                                    <div
+                                        class="ubc-product__content ubc-product__content--mobile-padding d-flex flex-column ">
+                                        <div class="ubc-product__content__top mb-1 mb-lg-3 ">
+                                            <h4 class="ubc-product-content__title mb-0 ">
+                                                <%- cake.name %>
+                                            </h4>
+                                        </div>
+                                        <div
+                                            class="ubc-product__content__footer d-flex justify-content-between align-items-center mt-auto ">
+                                            <p class="mb-0 "><span class="d-block ">
+                                                    <%- cake.price %> đ
+                                                </span>
+                                            </p>
+                                            <a href="/add-to-cart/<%= cake._id %>">
                                                 <div data-toggle="modal " data-target="#cardModal "
                                                     class="btn add-to-cart p-0 "><img class="add-to-cart "
                                                         src="/img/add.png" alt="add to cart "></div>

@@ -12,8 +12,9 @@ const Cart = require('../models/Cart');
         const coffee = await Drink.find({'category':'Cà phê'}); 
         const fruitTea = await Drink.find({'category':'Trà trái cây'});
         const coffeeBean = await Drink.find({'category':'Cà phê bột'});
-        const cakeAndSnack = await Drink.find({'category':'Bánh-Snacks'});
-        const drinks = { coffee, fruitTea, coffeeBean, cakeAndSnack }; 
+        const snacks = await Drink.find({'category':'Snacks'});
+        const cake = await Drink.find({'category' : 'Bánh'})
+        const drinks = { coffee, fruitTea, coffeeBean, snacks, cake }; 
 
 
         let count = await Drink.find().countDocuments();
@@ -54,8 +55,9 @@ exports.exploreOrder = async(req, res) => {
         const coffee = await Drink.find({'category':'Cà phê'}); 
         const fruitTea = await Drink.find({'category':'Trà trái cây'});
         const coffeeBean = await Drink.find({'category':'Cà phê bột'});
-        const cakeAndSnack = await Drink.find({'category':'Bánh-Snacks'});
-        const drinks = { coffee, fruitTea, coffeeBean, cakeAndSnack }; 
+        const snacks = await Drink.find({'category':'Snacks'});
+        const cake = await Drink.find({'category' : 'Bánh'})
+        const drinks = { coffee, fruitTea, coffeeBean, snacks, cake };
 
 
         let count = await Drink.find().countDocuments();
