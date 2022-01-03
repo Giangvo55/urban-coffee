@@ -77,10 +77,11 @@ exports.exploreOrder = async(req, res) => {
  */
 exports.exploreMyCart = async(req, res, next) => {
     if(!req.session.cart){
-        res.render('my-cart', {title : 'Giỏ hàng', products : null}); 
+        res.render('my-cart', {title : 'Giỏ hàng', products: undefined }); 
+    } else{
+        var cart = new Cart(req.session.cart); 
+        res.render('my-cart', {title : 'Giỏ hàng', products: cart.generateArray(), totalPrice: cart.totalPrice, totalQty: cart.totalQty }); 
     }
-    var cart = new Cart(req.session.cart); 
-    res.render('my-cart', {title : 'Giỏ hàng', products: cart.generateArray(), totalPrice: cart.totalPrice }); 
 }
 
 /**

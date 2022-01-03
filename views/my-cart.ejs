@@ -7,7 +7,13 @@
 <ul class="pb-5 d-flex pt-3">
     <div class="product-details col-lg-8 pb-3 ubc-product-card--shadow m-auto"
         style="background-color: white; border-radius: 20px;">
-        <div class="d-flex justify-content-between px-5 pt-3" style=" font-weight: 500;"><span>Bạn đã đặt <b class="text-light bg-dark px-2" style="font-weight: bold;">5</b> loại sản phẩm</span>
+        <div class="d-flex justify-content-between px-5 pt-3" style=" font-weight: 500;"><span>Bạn đã đặt <b class="text-light bg-dark px-2" style="font-weight: bold;">
+            <% if(typeof products !== "undefined" ) { %>
+                <%- totalQty %></b> loại sản phẩm
+            <% } else { %>
+                    0</b> loại sản phẩm
+            <% } %>
+        </span>
             <div class="d-flex flex-row align-items-center">
                 <h6 class="text-black-100">Sắp xếp theo: &nbsp</h6>
                 <select class="form-select" aria-label="Default select example" style="width: fit-content; border: 2px solid #122223; font-weight: 500;">
@@ -17,82 +23,47 @@
                   </select>
             </div>
         </div>
-        
         <hr class="mx-3">
         <div style="overflow: auto; max-height: 400px; width: 100%;">
-            <div class="d-flex justify-content-between align-items-center mt-3 p-2 mx-4 items rounded">
-                <div class="d-flex flex-row"><img class="rounded" src="/img/example_coffee.jpg" width="40">
-                    <div class="ml-2">
-                        <h6 class=" d-block">Bạc ngon Xĩu</h6>
-                        <div class="spec">Vừa (L), Đá</div>
+            <% if (typeof products !== "undefined") { %>
+                <% products.forEach(function(product){ %> 
+                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 mx-4 items rounded">
+                        <div class="d-flex flex-row"><img class="rounded" src="<%- product.item.img %>" width="40">
+                            <div class="ml-2">
+                                <h6 class=" d-block"><%- product.item.name %></h6>
+                                <div class="spec">Vừa (L), Đá</div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row" style="font-weight: 600;">x<%- product.qty %></div>
+                        <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span class="d-block"
+                                style="padding-right: 20px;"><%= product.price %></span>&Tab;<i class="far fa-trash-alt text-black-50"
+                                style="padding-right: 10px;"></i></div>
                     </div>
-                </div>
-                <div class="d-flex flex-row" style="font-weight: 600;">x3</div>
-                <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span class="d-block"
-                        style="padding-right: 20px;">75.000VNĐ</span>&Tab;<i class="far fa-trash-alt text-black-50"
-                        style="padding-right: 10px;"></i></div>
-            </div>
-            <!-- <div class="d-flex justify-content-between align-items-center mt-3 p-2 mx-4 items rounded">
-                <div class="d-flex flex-row"><img class="rounded" src="/img/example_coffee.jpg" width="40">
-                    <div class="ml-2">
-                        <h6 class=" d-block">Bạc ngon Xĩu</h6>
-                        <div class="spec">Vừa (L), Đá</div>
-                    </div>
-                </div>
-                <div class="d-flex flex-row" style="font-weight: 600;">x3</div>
-                <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span class="d-block"
-                        style="padding-right: 20px;">75.000VNĐ</span>&Tab;<i class="far fa-trash-alt text-black-50"
-                        style="padding-right: 10px;"></i></div>
-            </div> -->
-
-            <!-- <div class="d-flex justify-content-between align-items-center mt-3 p-2 mx-4 items rounded">
-                <div class="d-flex flex-row"><img class="rounded" src="/img/example_coffee.jpg" width="40">
-                    <div class="ml-2">
-                        <h6 class=" d-block">Bạc ngon Xĩu</h6>
-                        <div class="spec">Vừa (L), Đá</div>
-                    </div>
-                </div>
-                <div class="d-flex flex-row" style="font-weight: 600;">x3</div>
-                <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span class="d-block"
-                        style="padding-right: 20px;">75.000VNĐ</span>&Tab;<i class="far fa-trash-alt text-black-50"
-                        style="padding-right: 10px;"></i></div>
-            </div> -->
-
-            <!-- <div class="d-flex justify-content-between align-items-center mt-3 p-2 mx-4 items rounded">
-                <div class="d-flex flex-row"><img class="rounded" src="/img/example_coffee.jpg" width="40">
-                    <div class="ml-2">
-                        <h6 class=" d-block">Bạc ngon Xĩu</h6>
-                        <div class="spec">Vừa (L), Đá</div>
-                    </div>
-                </div>
-                <div class="d-flex flex-row" style="font-weight: 600;">x3</div>
-                <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span class="d-block"
-                        style="padding-right: 20px;">75.000VNĐ</span>&Tab;<i class="far fa-trash-alt text-black-50"
-                        style="padding-right: 10px;"></i></div>
-            </div> -->
-
-            <!-- <div class="d-flex justify-content-between align-items-center mt-3 p-2 mx-4 items rounded">
-                <div class="d-flex flex-row"><img class="rounded" src="/img/example_coffee.jpg" width="40">
-                    <div class="ml-2">
-                        <h6 class=" d-block">Bạc ngon Xĩu</h6>
-                        <div class="spec">Vừa (L), Đá</div>
-                    </div>
-                </div>
-                <div class="d-flex flex-row" style="font-weight: 600;">x3</div>
-                <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span class="d-block"
-                        style="padding-right: 20px;">75.000VNĐ</span>&Tab;<i class="far fa-trash-alt text-black-50"
-                        style="padding-right: 10px;"></i></div>
-            </div> -->
+            <%  })} else { %>
+                <p>No item found</p>
+            <% } %>
         </div>
 
         <hr class="mx-3">
         <div class="d-flex justify-content-between align-items-center mt-3 mx-5 rounded">
             <h5 style="font-weight: 600;"> Tổng tiền:</h5>
-            <h5 class="d-flex flex-row" style="font-weight: 600;"> <%- totalPrice %> </h5>
+            <h5 class="d-flex flex-row" style="font-weight: 600;">
+                <% if(typeof products !== "undefined" ) { %>
+                    <%- totalPrice %>
+                <% } else { %>
+                        0
+                <% }%>
+            </h5>
         </div>
         <div class="d-flex justify-content-between align-items-center mt-3 mx-5 rounded">
             <h5 style="font-weight: 500; color: coral;"> Điểm thưởng:</h5>
-            <h5 class="d-flex flex-row" style="font-weight: 600;color: coral;"> 225 Điểm </h5>
+            <h5 class="d-flex flex-row" style="font-weight: 600;color: coral;">
+                <% if(typeof products !== "undefined" ) { %>
+                    <%- totalPrice / 1000 %> điểm
+                <% } else { %>
+                        0 điểm
+                <% }%>
+            </h5>
         </div>
         <div class="align-center">
             <a href="payment.html" class="btn btn-detail-order" data-abc="true"> Thanh toán <i
