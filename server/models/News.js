@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const newsSchema = new mongoose.Schema({
-    name: {
+    title: {
         type: String,
         required: 'This field is required.'
     },
@@ -15,4 +15,4 @@ const newsSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('newsSchema', categorySchema)
+module.exports = mongoose.model('news', newsSchema)
