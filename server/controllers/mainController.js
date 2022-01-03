@@ -99,6 +99,29 @@ exports.addToCart = async(req, res, next) => {
        cart.add(drink, drink.id); 
        req.session.cart = cart; 
       console.log(req.session.cart);
-      res.redirect('/'); 
-    }); 
+    })
+}
+
+/**
+ * GET /
+ * News detail
+ */
+ exports.getDetailNews = async(req, res) => {
+    try {
+      
+        // const coffee = await Drink.find({'category':'Cà phê'}); 
+        // const fruitTea = await Drink.find({'category':'Trà trái cây'});
+        // const coffeeBean = await Drink.find({'category':'Cà phê bột'});
+        // const cakeAndSnack = await Drink.find({'category':'Bánh-Snacks'});
+        // const drinks = { coffee, fruitTea, coffeeBean, cakeAndSnack }; 
+
+        // const newsArticles = await News.find({});
+        // let count = await Drink.find().countDocuments();
+        // let random = Math.floor(Math.random() * count);
+        // let bestSeller = await Drink.findOne().skip(random).exec();
+        
+        res.render('detail-news', {});
+    } catch (error) {
+        res.status(500).send({message: error.message || "Error Occured" });
+    }
 }
