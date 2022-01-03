@@ -2,6 +2,7 @@ require('../models/database');
 const Category = require('../models/Category');
 const Drink = require('../models/Drink');
 const Cart = require('../models/Cart'); 
+const News = require('../models/News')
 /**
  * GET /
  * Homepage
@@ -16,12 +17,12 @@ const Cart = require('../models/Cart');
         const cake = await Drink.find({'category' : 'Bánh'})
         const drinks = { coffee, fruitTea, coffeeBean, snacks, cake }; 
 
-
+        const newsArticles = await News.find({});
         let count = await Drink.find().countDocuments();
         let random = Math.floor(Math.random() * count);
         let bestSeller = await Drink.findOne().skip(random).exec();
         
-        res.render('homepage', {title: 'Urban Coffee', drinks, bestSeller});
+        res.render('homepage', {title: 'Urban Coffee', drinks, bestSeller, newsArticles});
     } catch (error) {
         res.status(500).send({message: error.message || "Error Occured" });
     }
