@@ -59,8 +59,8 @@
             <div class="navbar align-self-center d-flex">
                 <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
                     <div class="input-group">
-                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
-                        <div class="input-group-text">
+                        <input type="text" class="form-control" id="inputMobileSearch" placeholder="Nhập từ khóa cần tìm...">
+                        <div class="input-group-text btn-success">
                             <i class="fa fa-fw fa-search"></i>
                         </div>
                     </div>
@@ -222,13 +222,13 @@
 
     <!-- Form -->
 
-    <section class="signin-up" style="margin-top: 120px; margin-bottom: 50px;">
+    <section class="signin-up body-content" style="padding-top: 60px; padding-bottom: 100px;">
         <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="signin-tab" data-bs-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true" style="width: 180px; text-align: center;">Đăng nhập</a>
+                <a class="nav-link nav-link-signin active" id="signin-tab" data-bs-toggle="tab" href="#signin" role="tab" aria-controls="signin" aria-selected="true" style="width: 180px; text-align: center;">Đăng nhập</a>
             </li>
             <li class="nav-item" role="presentation">
-                <a class="nav-link" id="signup-tab" data-bs-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="false" style="width: 180px;text-align: center;">Đăng ký</a>
+                <a class="nav-link nav-link-signin" id="signup-tab" data-bs-toggle="tab" href="#signup" role="tab" aria-controls="signup" aria-selected="false" style="width: 180px;text-align: center;">Đăng ký</a>
             </li>
 
         </ul>
@@ -274,8 +274,7 @@
                             <div class="form-row">
                                 <div class="form-group form-icon">
                                     <label for="birth_date">Ngày sinh</label>
-                                    <input type="text" class="form-input" name="birth_date" id="birth_date" placeholder="MM-DD-YYYY" />
-                                    <button type="button" class="ui-datepicker-trigger valid" aria-invalid="false"><i class="far fa-calendar-alt" ></i></button>
+                                    <input class="datebirth" type="date" id="birthdaytime" name="birthday">
                                 </div>
                                 <div class="form-radio">
                                     <label for="gender" style="font-size:13px">Giới tính</label>
@@ -347,8 +346,9 @@
                             <li><a class="text-decoration-none " href="# ">Best-seller</a></li>
                             <li><a class="text-decoration-none " href="# ">Cà phê</a></li>
                             <li><a class="text-decoration-none " href="# ">Trà trái cây</a></li>
+                            <li><a class="text-decoration-none " href="# ">Bánh</a></li>
+                            <li><a class="text-decoration-none " href="# ">Snacks</a></li>
                             <li><a class="text-decoration-none " href="# ">Cà phê bột</a></li>
-                            <li><a class="text-decoration-none " href="# ">Bánh - Snacks</a></li>
 
                         </ul>
                     </div>
@@ -431,6 +431,7 @@
         </div>
     </footer>
     <!-- End Footer -->
+
 
     <!-- Start Script -->
     <script src="assets/js/bootstrap.bundle.min.js "></script>
