@@ -17,8 +17,8 @@ const News = require('../models/News')
         const cake = await Drink.find({'category' : 'Bánh'})
         const drinks = { coffee, fruitTea, coffeeBean, snacks, cake }; 
 
-        const newsLimit = 5
-        const newsArticles = await News.find({}).limit(newsLimit);
+        const newsLimit = 6
+        const newsArticles = await News.find({}).sort({_id: -1}).limit(newsLimit);
         let count = await Drink.find().countDocuments();
         let random = Math.floor(Math.random() * count);
         let bestSeller = await Drink.findOne().skip(random).exec();
