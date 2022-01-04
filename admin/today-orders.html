@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Urban Café</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./img/logo/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/logo/favicon.svg" type="image/x-icon">
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -21,10 +21,10 @@
         <aside class="sidebar">
             <div class="sidebar-start">
                 <div class="sidebar-head">
-                    <a href="/" class="logo-wrapper" title="Home">
+                    <a href="./" class="logo-wrapper" title="Home">
                         <span class="sr-only">Home</span>
-                        <span class="icon logo" aria-hidden="true"><img src="/img/logo/favicon.svg" alt=""></span>
-                        <img src="/img/logo/slogan_logo_transparent.svg" alt="" style="height: 45px; width: auto;">
+                        <span class="icon logo" aria-hidden="true"><img src="./assets/img/logo/favicon.svg" alt=""></span>
+                        <img src="./assets/img/logo/slogan_logo_transparent.svg" alt="" style="height: 45px; width: auto;">
 
                     </a>
                     <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
@@ -71,10 +71,13 @@
                                     <a href="menu-fruit-tea.html">• Trà trái cây</a>
                                 </li>
                                 <li>
-                                    <a href="menu-coffee-powder.html">• Cà phê bột</a>
+                                    <a href="menu-cakes.html">• Bánh</a>
                                 </li>
                                 <li>
-                                    <a href="menu-cakes&snacks.html">• Bánh - Snacks</a>
+                                    <a href="menu-snacks.html">• Snacks</a>
+                                </li>
+                                <li>
+                                    <a href="menu-coffee-powder.html">• Cà phê bột</a>
                                 </li>
                             </ul>
                         </li>
@@ -86,8 +89,8 @@
                             </a>
                         </li>
                         <li>
-                            <a class="" href="blogs.html">
-                                <span class="icon blog-sidebar" aria-hidden="true"></span>Blogs
+                            <a class="" href="news.html">
+                                <span class="icon blog-sidebar" aria-hidden="true"></span>Tin tức
                                 </span>
                             </a>
                         </li>
@@ -103,7 +106,7 @@
             <div class="sidebar-footer">
                 <a href="##" class="sidebar-user">
                     <span class="sidebar-user-img">
-                <picture><source srcset="./img/avatar/avatar-illustrated-01.webp" type="image/webp"><img src="./img/avatar/avatar-illustrated-01.png" alt="User name"></picture>
+                <picture><source srcset="./assets/img/avatar/avatar-illustrated-01.webp" type="image/webp"><img src="./assets/img/avatar/avatar-illustrated-01.png" alt="User name"></picture>
             </span>
                     <div class="sidebar-user-info">
                         <span class="sidebar-user__title">An thịnh</span>
@@ -150,15 +153,14 @@
           <span class="icon notification active" aria-hidden="true"></span>
         </button>
                             <ul class="users-item-dropdown notification-dropdown dropdown">
-                                <li>
+                                <li class=" d-flex align-items-center">
                                     <a href="##">
                                         <div class="notification-dropdown-icon info">
                                             <i data-feather="check"></i>
                                         </div>
                                         <div class="notification-dropdown-text">
-                                            <span class="notification-dropdown__title">System just updated</span>
-                                            <span class="notification-dropdown__subtitle">The system has been successfully upgraded. Read more
-                  here.</span>
+                                            <span class="notification-dropdown__title d-flex align-items-center">Đơn hàng mới <br> UC-999999</span>
+
                                         </div>
                                     </a>
                                 </li>
@@ -168,9 +170,7 @@
                                             <i data-feather="info" aria-hidden="true"></i>
                                         </div>
                                         <div class="notification-dropdown-text">
-                                            <span class="notification-dropdown__title">The cache is full!</span>
-                                            <span class="notification-dropdown__subtitle">Unnecessary caches take up a lot of memory space and
-                  interfere ...</span>
+                                            <span class="notification-dropdown__title">Đơn hàng bị hủy <br> UC-999999</span>
                                         </div>
                                     </a>
                                 </li>
@@ -180,13 +180,12 @@
                                             <i data-feather="check" aria-hidden="true"></i>
                                         </div>
                                         <div class="notification-dropdown-text">
-                                            <span class="notification-dropdown__title">New Subscriber here!</span>
-                                            <span class="notification-dropdown__subtitle">A new subscriber has subscribed.</span>
+                                            <span class="notification-dropdown__title">Đơn hàng mới <br> UC-999999</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="link-to-page" href="##">Go to Notifications page</a>
+                                    <a class="link-to-page" href="#">Đến trang quản lý thông tin</a>
                                 </li>
                             </ul>
                         </div>
@@ -194,26 +193,20 @@
                             <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
           <span class="sr-only">My profile</span>
           <span class="nav-user-img">
-            <picture><source srcset="./img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="./img/avatar/avatar-illustrated-02.png" alt="User name"></picture>
+            <picture><source srcset="./assets/img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="./assets/img/avatar/avatar-illustrated-02.png" alt="User name"></picture>
           </span>
         </button>
                             <ul class="users-item-dropdown nav-user-dropdown dropdown">
-                                <li>
-                                    <a href="##">
+                                <li style="padding: 10px;">
+                                    <a href="my-profile.html">
                                         <i data-feather="user" aria-hidden="true"></i>
-                                        <span>Profile</span>
+                                        <span>Hồ sơ</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="##">
-                                        <i data-feather="settings" aria-hidden="true"></i>
-                                        <span>Account settings</span>
-                                    </a>
-                                </li>
-                                <li>
+                                <li style="padding: 10px;">
                                     <a class="danger" href="##">
                                         <i data-feather="log-out" aria-hidden="true"></i>
-                                        <span>Log out</span>
+                                        <span>Đăng xuất</span>
                                     </a>
                                 </li>
                             </ul>
@@ -222,339 +215,244 @@
                 </div>
             </nav>
             <!-- ! Main -->
-            <main class="main users chart-page" id="skip-target">
-                <div class="container">
+            <div class="container" style="padding-top: 20px; padding-right: 20px;"> <button class="action-today-order transparent-btn action-cancel" type="button " title="Cancel order " style="position: absolute; right: 6.5%;">
+                <div class="contrast-icon"><img src="./assets/img/svg/trash-2.svg" ></div>
+            </button></div>
 
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="users-table table-wrapper">
-                                <table class="posts-table">
-                                    <thead>
-                                        <tr class="users-table-info" style=" text-align:center">
-                                            <th>Order ID</th>
-                                            <th>User ID</th>
-                                            <th>Account</th>
-                                            <th>Time</th>
-                                            <th>Total</th>
-                                            <th>Note</th>
-                                            <th>Status</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>UC-12345678
-                                            </td>
-                                            <td>
-                                                MUC-12345678
-                                            </td>
-                                            <td>
-                                                <img src="./img/avatar/avatar-face-04.png" alt="User Name"> Jenny Wilson
-                                            </td>
-                                            <td style="padding: 10px;">10:15</td>
-                                            <td>200.000 VNĐ</td>
-                                            <td class="long-text">
-                                                <div class="long-text">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
-                                            </td>
-                                            <td><span class="badge-disabled ">Đang giao</span></td>
-
-                                            <td>
-                                                <button id="viewDetail" class="action-today-order transparent-btn action-detail " type="button " title="Detail ">
-                                                    <img src="/img/svg/eye.svg " class="">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
-                                                  <img src="/img/svg/check-circle.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
-                                                  <img src="/img/svg/truck.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
-                                                  <img src="/img/svg/shopping-bag.svg ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-cancel " type="button " title="Cancel order ">
-                                                    <img src="/img/svg/trash-2.svg " >
-                                                </button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>UC-12345678
-                                            </td>
-                                            <td>
-                                                MUC-12345678
-                                            </td>
-                                            <td>
-                                                <img src="./img/avatar/avatar-face-04.png " alt="User Name "> Giang Võ
-
-                                            </td>
-                                            <td style="padding: 10px; ">10:15</td>
-                                            <td>200.000 VNĐ</td>
-                                            <td class="long-text ">
-                                                <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
-                                            </td>
-                                            <td><span class="badge-active ">Nhận đơn</span></td>
-                                            <td>
-                                                <button class="action-today-order transparent-btn action-detail " type="button " title="Detail ">
-                                                    <img src="./img/svg/eye.svg " class=" ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
-                                                  <img src="/img/svg/check-circle.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
-                                                  <img src="/img/svg/truck.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
-                                                  <img src="/img/svg/shopping-bag.svg ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-cancel " type="button " title="Cancel order ">
-                                                    <img src="/img/svg/x-circle.svg " >
-                                                </button>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>UC-12345678
-                                            </td>
-                                            <td>
-                                                MUC-12345678
-                                            </td>
-                                            <td>
-                                                <img src="./img/avatar/avatar-face-04.png " alt="User Name "> Giang Võ
-
-                                            </td>
-                                            <td style="padding: 10px; ">10:15</td>
-                                            <td>200.000 VNĐ</td>
-                                            <td class="long-text ">
-                                                <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
-                                            </td>
-                                            <td><span class="badge-success ">Hoàn thành</span></td>
-                                            <td>
-                                                <button class="action-today-order transparent-btn action-detail " type="button " title="Detail ">
-                                                    <img src="./img/svg/eye.svg " class=" ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
-                                                  <img src="/img/svg/check-circle.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
-                                                  <img src="/img/svg/truck.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
-                                                  <img src="/img/svg/shopping-bag.svg ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-cancel " type="button " title="Cancel order ">
-                                                    <img src="/img/svg/x-circle.svg " >
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>UC-12345678
-                                            </td>
-                                            <td>
-                                                MUC-12345678
-                                            </td>
-                                            <td>
-                                                <img src="./img/avatar/avatar-face-04.png " alt="User Name "> Giang Võ
-
-                                            </td>
-                                            <td style="padding: 10px; ">10:15</td>
-                                            <td>200.000 VNĐ</td>
-                                            <td class="long-text ">
-                                                <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
-                                            </td>
-                                            <td><span class="badge-success ">Hoàn thành</span></td>
-                                            <td>
-                                                <button class="action-today-order transparent-btn action-detail " type="button " title="Detail ">
-                                                    <img src="./img/svg/eye.svg " class=" ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
-                                                  <img src="/img/svg/check-circle.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
-                                                  <img src="/img/svg/truck.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
-                                                  <img src="/img/svg/shopping-bag.svg ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-cancel " type="button " title="Cancel order ">
-                                                    <img src="/img/svg/x-circle.svg " >
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>UC-12345678
-                                            </td>
-                                            <td>
-                                                MUC-12345678
-                                            </td>
-                                            <td>
-                                                <img src="./img/avatar/avatar-face-04.png " alt="User Name "> Giang Võ
-
-                                            </td>
-                                            <td style="padding: 10px; ">10:15</td>
-                                            <td>200.000 VNĐ</td>
-                                            <td class="long-text ">
-                                                <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
-                                            </td>
-                                            <td><span class="badge-success ">Hoàn thành</span></td>
-                                            <td>
-                                                <button class="action-today-order transparent-btn action-detail " type="button " title="Detail ">
-                                                    <img src="./img/svg/eye.svg " class=" ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
-                                                  <img src="/img/svg/check-circle.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
-                                                  <img src="/img/svg/truck.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
-                                                  <img src="/img/svg/shopping-bag.svg ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-cancel " type="button " title="Cancel order ">
-                                                    <img src="/img/svg/x-circle.svg " >
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>UC-12345678
-                                            </td>
-                                            <td>
-                                                MUC-12345678
-                                            </td>
-                                            <td>
-                                                <img src="./img/avatar/avatar-face-04.png " alt="User Name "> Giang Võ
-
-                                            </td>
-                                            <td style="padding: 10px; ">10:15</td>
-                                            <td>200.000 VNĐ</td>
-                                            <td class="long-text ">
-                                                <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
-                                            </td>
-                                            <td><span class="badge-success ">Hoàn thành</span></td>
-                                            <td>
-                                                <button class="action-today-order transparent-btn action-detail " type="button " title="Detail ">
-                                                    <img src="./img/svg/eye.svg " class=" ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
-                                                  <img src="/img/svg/check-circle.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
-                                                  <img src="/img/svg/truck.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
-                                                  <img src="/img/svg/shopping-bag.svg ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-cancel " type="button " title="Cancel order ">
-                                                    <img src="/img/svg/x-circle.svg " >
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>UC-12345678
-                                            </td>
-                                            <td>
-                                                MUC-12345678
-                                            </td>
-                                            <td>
-                                                <img src="./img/avatar/avatar-face-04.png " alt="User Name "> Giang Võ
-
-                                            </td>
-                                            <td style="padding: 10px; ">10:15</td>
-                                            <td>200.000 VNĐ</td>
-                                            <td class="long-text ">
-                                                <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
-                                            </td>
-                                            <td><span class="badge-success ">Hoàn thành</span></td>
-                                            <td>
-                                                <button class="action-today-order transparent-btn action-detail " type="button " title="Detail ">
-                                                    <img src="./img/svg/eye.svg " class=" ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
-                                                  <img src="/img/svg/check-circle.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
-                                                  <img src="/img/svg/truck.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
-                                                  <img src="/img/svg/shopping-bag.svg ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-cancel " type="button " title="Cancel order ">
-                                                    <img src="/img/svg/x-circle.svg " >
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>UC-12345678
-                                            </td>
-                                            <td>
-                                                MUC-12345678
-                                            </td>
-                                            <td>
-                                                <img src="./img/avatar/avatar-face-04.png " alt="User Name "> Giang Võ
-
-                                            </td>
-                                            <td style="padding: 10px; ">10:15</td>
-                                            <td>200.000 VNĐ</td>
-                                            <td class="long-text ">
-                                                <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
-                                            </td>
-                                            <td><span class="badge-success ">Hoàn thành</span></td>
-                                            <td>
-                                                <button class="action-today-order transparent-btn action-detail " type="button " title="Detail ">
-                                                    <img src="./img/svg/eye.svg " class=" ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
-                                                  <img src="/img/svg/check-circle.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
-                                                  <img src="/img/svg/truck.svg ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
-                                                  <img src="/img/svg/shopping-bag.svg ">
-                                                </button>
-                                                <br>
-                                                <button class="action-today-order transparent-btn action-cancel " type="button " title="Cancel order ">
-                                                    <img src="/img/svg/x-circle.svg " >
-                                                </button>
-                                            </td>
-                                        </tr>
+            <div class="container main ">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="users-table table-wrapper">
+                            <table class="m-auto">
+                                <thead style="display: table; width: fit-content;">
+                                    <tr class="users-table-info" style=" text-align:center">
+                                        <th class="col-select">Select</th>
+                                        <th class="col-order-id">Order ID</th>
+                                        <th class="col-customer-id">Customer ID</th>
+                                        <th class="col-time">Time</th>
+                                        <th class="col-total">Total</th>
+                                        <th class="col-note"> Note </th>
+                                        <th class="col-status">Status</th>
+                                        <th class="col-action-today-order">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="display: block; ">
+                                        <td class="col-select"><input type="checkbox" style="padding: auto;">
+                                        </td>
+                                        <td class="primary-key col-order-id viewDetail">UC-99999999
+                                        </td>
+                                        <td class="col-customer-id viewDetail">
+                                            MUC-12345678
+                                        </td>
+                                        <td class="col-time viewDetail">10:15</td>
+                                        <td class="col-total viewDetail">200.000 VNĐ</td>
+                                        <td class="col-note viewDetail">
+                                            <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
+                                        </td>
+                                        <td class="col-status "><span class="badge-active ">Nhận đơn</span></td>
 
 
-                                    </tbody>
-                                </table>
-                            </div>
+                                        <td class="col-action-today-order ">
+
+                                            <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/check-circle.svg"></div>
+                                                  
+                                                </button>
+                                            <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/truck.svg ">
+                                                    </div>
+
+                                                </button>
+                                            <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/shopping-bag.svg "></div>
+
+                                                </button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-select "><input type="checkbox"></td>
+                                        <td class="primary-key col-order-id ">UC-99999999
+                                        </td>
+                                        <td class="col-customer-id ">
+                                            MUC-12345678
+                                        </td>
+                                        <td class="col-time ">10:15</td>
+                                        <td class="col-total ">200.000 VNĐ</td>
+                                        <td class="col-note ">
+                                            <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
+                                        </td>
+                                        <td class="col-status "><span class="badge-disabled ">Đang giao</span></td>
+
+                                        <td class="col-action-today-order ">
+                                            <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/check-circle.svg "></div>
+                                                  
+                                                </button>
+                                            <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/truck.svg ">
+                                                    </div>
+
+                                                </button>
+                                            <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/shopping-bag.svg "></div>
+
+                                                </button>
+                                            <br>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-select "><input type="checkbox">
+                                        </td>
+                                        <td class="primary-key col-order-id ">UC-99999999
+                                        </td>
+                                        <td class="col-customer-id ">
+                                            MUC-12345678
+                                        </td>
+                                        <td class="col-time ">10:15</td>
+                                        <td class="col-total ">200.000 VNĐ</td>
+                                        <td class="col-note ">
+                                            <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
+                                        </td>
+                                        <td class="col-status "><span class="badge-success ">Hoàn thành</span></td>
+
+                                        <td class="col-action-today-order ">
+
+                                            <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/check-circle.svg "></div>
+                                                  
+                                                </button>
+                                            <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/truck.svg ">
+                                                    </div>
+
+                                                </button>
+                                            <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/shopping-bag.svg "></div>
+
+                                                </button>
+                                            <br>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-select "><input type="checkbox">
+                                        </td>
+                                        <td class="primary-key col-order-id ">UC-99999999
+                                        </td>
+                                        <td class="col-customer-id ">
+                                            MUC-12345678
+                                        </td>
+                                        <td class="col-time ">10:15</td>
+                                        <td class="col-total ">200.000 VNĐ</td>
+                                        <td class="col-note ">
+                                            <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
+                                        </td>
+                                        <td class="col-status "><span class="badge-success ">Hoàn thành</span></td>
+
+                                        <td class="col-action-today-order ">
+
+                                            <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/check-circle.svg "></div>
+                                                  
+                                                </button>
+                                            <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/truck.svg ">
+                                                    </div>
+
+                                                </button>
+                                            <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/shopping-bag.svg "></div>
+
+                                                </button>
+                                            <br>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-select "><input type="checkbox">
+                                        </td>
+                                        <td class="primary-key col-order-id ">UC-99999999
+                                        </td>
+                                        <td class="col-customer-id ">
+                                            MUC-12345678
+                                        </td>
+                                        <td class="col-time ">10:15</td>
+                                        <td class="col-total ">200.000 VNĐ</td>
+                                        <td class="col-note ">
+                                            <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
+                                        </td>
+                                        <td class="col-status "><span class="badge-success ">Hoàn thành</span></td>
+
+                                        <td class="col-action-today-order ">
+
+                                            <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/check-circle.svg "></div>
+                                                  
+                                                </button>
+                                            <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/truck.svg ">
+                                                    </div>
+
+                                                </button>
+                                            <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/shopping-bag.svg "></div>
+
+                                                </button>
+                                            <br>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-select "><input type="checkbox">
+                                        </td>
+                                        <td class="primary-key col-order-id ">UC-99999999
+                                        </td>
+                                        <td class="col-customer-id ">
+                                            MUC-12345678
+                                        </td>
+                                        <td class="col-time ">10:15</td>
+                                        <td class="col-total ">200.000 VNĐ</td>
+                                        <td class="col-note ">
+                                            <div class="long-text ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
+                                        </td>
+                                        <td class="col-status "><span class="badge-success ">Hoàn thành</span></td>
+
+                                        <td class="col-action-today-order ">
+
+                                            <button class="action-today-order transparent-btn action-accept " type="button " title="Accept order ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/check-circle.svg "></div>
+                                                  
+                                                </button>
+                                            <button class="action-today-order transparent-btn action-delivery " type="button " title="On delivery ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/truck.svg ">
+                                                    </div>
+
+                                                </button>
+                                            <button class="action-today-order transparent-btn action-finish " type="button " title="Finish ">
+                                                    <div class="contrast-icon "><img src="./assets/img/svg/shopping-bag.svg "></div>
+
+                                                </button>
+                                            <br>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
+                    </div>
 
-                    </div>
                 </div>
-            </main>
-            <!-- ! Footer -->
-            <footer class="footer ">
-                <div class="container footer--flex ">
-                    <div class="footer-start ">
-                        <p>2021 © Elegant Dashboard - <a href="elegant-dashboard.com " target="_blank " rel="noopener noreferrer ">elegant-dashboard.com</a></p>
-                    </div>
-                    <ul class="footer-end ">
-                        <li><a href="## ">About</a></li>
-                        <li><a href="## ">Support</a></li>
-                        <li><a href="## ">Puchase</a></li>
-                    </ul>
-                </div>
-            </footer>
+            </div>
+
         </div>
     </div>
 
@@ -563,24 +461,24 @@
     <div id="myModal" class="modal">
 
         <!-- Modal content -->
-        <div class="row-modal align-items-center">
+        <div class="align-items-center ">
 
-            <div class="modal-content col-lg-6 col-md-6 col-sm-6">
+            <div class="modal-content col-lg-6 col-md-6 col-sm-6 ">
                 <div class="modal-header ">
-                    <span id="modal-close" class="close">&times;</span>
+                    <span id="modal-close " class="close ">&times;</span>
                     <h2 style="text-align: center; padding: 10px;">Chi tiết đơn hàng</h2>
-                    <div class="col-lg-10 col-md-6 col-sm-6 mx-top-modal">
+                    <div class="col-lg-10 col-md-10 col-sm-10 m-auto pb-2">
                         <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Mã đơn hàng:
-                            <div>Đang giao</div>
+                            <div>UC-99999999 </div>
                         </div>
                         <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Mã khách hàng:
-                            <div>Đang giao</div>
+                            <div>MUC-12345678 </div>
                         </div>
                         <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Thời gian đặt:
-                            <div>Đang giao</div>
+                            <div>10:15</div>
                         </div>
                         <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Ghi chú:
-                            <div class="note-modal">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả, được dùng vào việc trình bày và dàn trang phục vụ cho in ấn. Lorem Ipsum đã được sử dụng như một văn bản chuẩn cho ngành công nghiệp in ấn từ những năm 1500.</div>
+                            <div class="note-modal ">Anh shipper nhớ đeo khẩu trang khi giao hàng và tuân thủ thông điệp 5k để bảo vệ sức khỏe chính bản thân và mọi người xung quanh nhé</div>
                         </div>
                         <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Trạng thái:
                             <div>Đang giao</div>
@@ -590,50 +488,53 @@
 
                 </div>
 
-                <div class="modal-body ">
-                    <div class="product-details pb-3 " style="background-color: white; ">
-                        <div class="d-flex flex-row justify-content-between align-items-center m-3 p-2 items rounded ">
-                            <div class="d-flex flex-row ">
-                                <div class=" ml-2 ">
-                                    <div class="d-flex flex-row align-items-center d-block drinks-modal "><span class="d-block ">Bạc ngon Xĩu</span></div>
-                                    <div class="d-flex flex-row align-items-center d-block "><span class="d-block "> Vừa (L), Đá</span></div>
+                <div class="modal-body">
+                    <div class="product-details pb-3 " style="background-color: #e0f2f5; ">
+                        <div style="overflow-x: auto; height: 200px;">
+                            <div class="d-flex flex-row justify-content-between align-items-center m-3 p-2 items rounded ">
+                                <div class="d-flex flex-row">
+                                    <div class=" ml-2 ">
+                                        <div class="d-flex flex-row align-items-center d-block drinks-modal "><span class="d-block ">Bạc ngon Xĩu</span></div>
+                                        <div class="d-flex flex-row align-items-center d-block "><span class="d-block "> Vừa (L), Đá</span></div>
+                                    </div>
                                 </div>
+                                <div class="d-flex flex-row px-4 " style="font-weight: 600; ">x3</div>
+                                <div class="d-flex flex-row align-items-center d-block p-4 " style="font-weight: 500; "><span class="d-block ">75.000VNĐ</span></div>
                             </div>
-                            <div class="d-flex flex-row px-4 " style="font-weight: 600; ">x3</div>
-                            <div class="d-flex flex-row align-items-center d-block p-4 " style="font-weight: 500; "><span class="d-block ">75.000VNĐ</span></div>
-                        </div>
 
-                        <div class="d-flex flex-row justify-content-between align-items-center m-3 p-2 items rounded ">
-                            <div class="d-flex flex-row ">
-                                <div class=" ml-2 ">
-                                    <div class="d-flex flex-row align-items-center d-block drinks-modal "><span class="d-block ">Bạc ngon Xĩu</span></div>
-                                    <div class="d-flex flex-row align-items-center d-block "><span class="d-block "> Vừa (L), Đá</span></div>
+                            <div class="d-flex flex-row justify-content-between align-items-center m-3 p-2 items rounded ">
+                                <div class="d-flex flex-row ">
+                                    <div class=" ml-2 ">
+                                        <div class="d-flex flex-row align-items-center d-block drinks-modal "><span class="d-block ">Bạc ngon Xĩu</span></div>
+                                        <div class="d-flex flex-row align-items-center d-block "><span class="d-block "> Vừa (L), Đá</span></div>
+                                    </div>
                                 </div>
+                                <div class="d-flex flex-row px-4 " style="font-weight: 600; ">x3</div>
+                                <div class="d-flex flex-row align-items-center d-block p-4 " style="font-weight: 500; "><span class="d-block ">75.000VNĐ</span></div>
                             </div>
-                            <div class="d-flex flex-row px-4 " style="font-weight: 600; ">x3</div>
-                            <div class="d-flex flex-row align-items-center d-block p-4 " style="font-weight: 500; "><span class="d-block ">75.000VNĐ</span></div>
-                        </div>
 
-                        <div class="d-flex flex-row justify-content-between align-items-center m-3 p-2 items rounded ">
-                            <div class="d-flex flex-row ">
-                                <div class=" ml-2 ">
-                                    <div class="d-flex flex-row align-items-center d-block drinks-modal "><span class="d-block ">Bạc ngon Xĩu</span></div>
-                                    <div class="d-flex flex-row align-items-center d-block "><span class="d-block "> Vừa (L), Đá</span></div>
+                            <div class="d-flex flex-row justify-content-between align-items-center m-3 p-2 items rounded ">
+                                <div class="d-flex flex-row ">
+                                    <div class=" ml-2 ">
+                                        <div class="d-flex flex-row align-items-center d-block drinks-modal "><span class="d-block ">Bạc ngon Xĩu</span></div>
+                                        <div class="d-flex flex-row align-items-center d-block "><span class="d-block "> Vừa (L), Đá</span></div>
+                                    </div>
                                 </div>
+                                <div class="d-flex flex-row px-4 " style="font-weight: 600; ">x3</div>
+                                <div class="d-flex flex-row align-items-center d-block p-4 " style="font-weight: 500; "><span class="d-block ">75.000VNĐ</span></div>
                             </div>
-                            <div class="d-flex flex-row px-4 " style="font-weight: 600; ">x3</div>
-                            <div class="d-flex flex-row align-items-center d-block p-4 " style="font-weight: 500; "><span class="d-block ">75.000VNĐ</span></div>
-                        </div>
 
-                        <div class="d-flex flex-row justify-content-between align-items-center m-3 p-2 items rounded ">
-                            <div class="d-flex flex-row ">
-                                <div class=" ml-2 ">
-                                    <div class="d-flex flex-row align-items-center d-block drinks-modal "><span class="d-block ">Bạc ngon Xĩu</span></div>
-                                    <div class="d-flex flex-row align-items-center d-block "><span class="d-block "> Vừa (L), Đá</span></div>
+                            <div class="d-flex flex-row justify-content-between align-items-center m-3 p-2 items rounded ">
+                                <div class="d-flex flex-row ">
+                                    <div class=" ml-2 ">
+                                        <div class="d-flex flex-row align-items-center d-block drinks-modal "><span class="d-block ">Bạc ngon Xĩu</span></div>
+                                        <div class="d-flex flex-row align-items-center d-block "><span class="d-block "> Vừa (L), Đá</span></div>
+                                    </div>
                                 </div>
+                                <div class="d-flex flex-row px-4 " style="font-weight: 600; ">x3</div>
+                                <div class="d-flex flex-row align-items-center d-block p-4 " style="font-weight: 500; "><span class="d-block ">75.000VNĐ</span></div>
                             </div>
-                            <div class="d-flex flex-row px-4 " style="font-weight: 600; ">x3</div>
-                            <div class="d-flex flex-row align-items-center d-block p-4 " style="font-weight: 500; "><span class="d-block ">75.000VNĐ</span></div>
+
                         </div>
 
                         <hr class="mx-3 ">
@@ -641,7 +542,6 @@
                             <h4 style="font-weight: 600; "> Tạm tính:</h4>
                             <h4 class="d-flex flex-row " style="font-weight: 600; "> 225.000VNĐ</h4>
                         </div>
-
                         <br>
                         <div class="d-flex justify-content-between align-items-center mx-5 ">
                             <h4 style="font-weight: 600; "> Giảm giá:</h4>
@@ -669,6 +569,7 @@
             </div>
         </div>
     </div>
+
 
     <!-- Chart library -->
     <script src="./plugins/chart.js "></script>

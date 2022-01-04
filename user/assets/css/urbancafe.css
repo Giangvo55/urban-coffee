@@ -402,8 +402,8 @@ IX. Detailed News
     }
     
     .ubc-product__card .ubc-product__image img {
-        width: 100%;
-        height: 100%;
+        width: 158px;
+        height: 158px;
         -o-object-fit: cover;
         object-fit: cover
     }
@@ -917,9 +917,8 @@ IX. Detailed News
         border-color: #333333 !important;
     }
     
-    .img_content {
+    .img_content img {
         height: 300px;
-        background-image: url("/assets/img/banner_about_us.png");
     }
     /* Character */
     /* Carousel Slider Admin */
@@ -1396,6 +1395,16 @@ IX. Detailed News
         color: #fff;
     }
     /* Product detailed */
+    
+    .long-text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 250px;
+        padding-right: 10px;
+        text-decoration: none;
+        color: #000;
+    }
     
     .btn-back a {
         color: #122223;
