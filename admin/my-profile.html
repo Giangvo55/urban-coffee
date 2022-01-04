@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Urban Café</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/img/logo/favicon.svg" type="image/x-icon">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <div class="layer"></div>
+    <!-- ! Body -->
+    <div class="page-flex">
+        <!-- ! Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-start">
+                <div class="sidebar-head">
+                    <a href="./" class="logo-wrapper" title="Home">
+                        <span class="sr-only">Home</span>
+                        <span class="icon logo" aria-hidden="true"><img src="./assets/img/logo/favicon.svg" alt=""></span>
+                        <img src="./assets/img/logo/slogan_logo_transparent.svg" alt="" style="height: 45px; width: auto;">
+
+                    </a>
+                    <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span class="icon menu-toggle" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="sidebar-body">
+                    <span class="system-menu__title">Tổng quan</span>
+                    <ul class="sidebar-body-menu">
+                        <li>
+                            <a class="" href="today-orders.html"><span class="icon order-today" aria-hidden="true"></span> Đơn hàng hôm nay</a>
+                        </li>
+
+                        <li>
+                            <a class="" href="history.html">
+                                <span class="icon history" aria-hidden="true"></span>Lịch sử đơn hàng
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="manage-customers.html">
+                                <span class="icon manage-cus" aria-hidden="true"></span>Quản lý khách hàng
+                            </a>
+
+                        </li>
+
+                    </ul>
+                    <span class="system-menu__title" style="padding-top: 20px;">Hệ thống</span>
+                    <ul class="sidebar-body-menu">
+                        <li>
+                            <a class="show-cat-btn">
+                                <span class="icon menu-sidebar" aria-hidden="true"></span> Menu
+                                <span class="category__btn transparent-btn" title="Open list">
+                            <span class="sr-only">Open list</span>
+                                <span class="icon arrow-down" aria-hidden="true"></span>
+                                </span>
+                            </a>
+                            <ul class="cat-sub-menu">
+                                <li>
+                                    <a href="menu-coffee.html">• Cà Phê</a>
+                                </li>
+                                <li>
+                                    <a href="menu-fruit-tea.html">• Trà trái cây</a>
+                                </li>
+                                <li>
+                                    <a href="menu-cakes.html">• Bánh</a>
+                                </li>
+                                <li>
+                                    <a href="menu-snacks.html">• Snacks</a>
+                                </li>
+                                <li>
+                                    <a href="menu-coffee-powder.html">• Cà phê bột</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+
+                            <a class="" href="promotions.html">
+                                <span class="icon promotions" aria-hidden="true"></span>Khuyến mãi
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="news.html">
+                                <span class="icon blog-sidebar" aria-hidden="true"></span>Tin tức
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="" href="manage-staffs.html">
+                                <span class="icon manage-admin" aria-hidden="true"></span>Quản lý thành viên
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-footer">
+                <a href="##" class="sidebar-user">
+                    <span class="sidebar-user-img">
+                <picture><source srcset="./assets/img/avatar/avatar-illustrated-01.webp" type="image/webp"><img src="./assets/img/avatar/avatar-illustrated-01.png" alt="User name"></picture>
+            </span>
+                    <div class="sidebar-user-info">
+                        <span class="sidebar-user__title">An thịnh</span>
+                        <span class="sidebar-user__subtitle">Hỗ trợ kĩ thuật</span>
+                    </div>
+                </a>
+            </div>
+        </aside>
+        <div class="main-wrapper">
+            <!-- ! Main nav -->
+            <nav class="main-nav--bg">
+                <div class="container main-nav">
+                    <div class="main-nav-start">
+                        <div class="search-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            <input type="text" placeholder="Nhập từ khóa cần tìm..." required="">
+                        </div>
+                    </div>
+                    <h2 class="main-title">Hồ sơ</h2>
+
+                    <div class="main-nav-end">
+                        <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
+        <span class="sr-only">Toggle menu</span>
+        <span class="icon menu-toggle--gray" aria-hidden="true"></span>
+      </button>
+                        <div class="lang-switcher-wrapper">
+                            <button class="lang-switcher transparent-btn" type="button">
+          VN
+          <i data-feather="chevron-down" aria-hidden="true"></i>
+        </button>
+                            <ul class="lang-menu dropdown">
+                                <li><a href="##">Vietnam</a></li>
+                                <li><a href="##">English</a></li>
+                            </ul>
+                        </div>
+                        <button class="theme-switcher gray-circle-btn" type="button" title="Switch theme">
+        <span class="sr-only">Switch theme</span>
+        <i class="sun-icon" data-feather="sun" aria-hidden="true"></i>
+        <i class="moon-icon" data-feather="moon" aria-hidden="true"></i>
+      </button>
+                        <div class="notification-wrapper">
+                            <button class="gray-circle-btn dropdown-btn" title="To messages" type="button">
+          <span class="sr-only">To messages</span>
+          <span class="icon notification active" aria-hidden="true"></span>
+        </button>
+                            <ul class="users-item-dropdown notification-dropdown dropdown">
+                                <li class=" d-flex align-items-center">
+                                    <a href="##">
+                                        <div class="notification-dropdown-icon info">
+                                            <i data-feather="check"></i>
+                                        </div>
+                                        <div class="notification-dropdown-text">
+                                            <span class="notification-dropdown__title d-flex align-items-center">Đơn hàng mới <br> UC-999999</span>
+
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="##">
+                                        <div class="notification-dropdown-icon danger">
+                                            <i data-feather="info" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="notification-dropdown-text">
+                                            <span class="notification-dropdown__title">Đơn hàng bị hủy <br> UC-999999</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="##">
+                                        <div class="notification-dropdown-icon info">
+                                            <i data-feather="check" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="notification-dropdown-text">
+                                            <span class="notification-dropdown__title">Đơn hàng mới <br> UC-999999</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="link-to-page" href="#">Đến trang quản lý thông tin</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-user-wrapper">
+                            <button href="##" class="nav-user-btn dropdown-btn" title="My profile" type="button">
+          <span class="sr-only">My profile</span>
+          <span class="nav-user-img">
+            <picture><source srcset="./assets/img/avatar/avatar-illustrated-02.webp" type="image/webp"><img src="./assets/img/avatar/avatar-illustrated-02.png" alt="User name"></picture>
+          </span>
+        </button>
+                            <ul class="users-item-dropdown nav-user-dropdown dropdown">
+                                <li style="padding: 10px;">
+                                    <a href="my-profile.html">
+                                        <i data-feather="user" aria-hidden="true"></i>
+                                        <span>Hồ sơ</span>
+                                    </a>
+                                </li>
+                                <li style="padding: 10px;">
+                                    <a class="danger" href="##">
+                                        <i data-feather="log-out" aria-hidden="true"></i>
+                                        <span>Đăng xuất</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- ! Main -->
+            <div class="container input-group">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                        <div class="card h-100" style="border-radius: 3%;">
+                            <div class="card-body">
+                                <div class="account-settings">
+                                    <div class="user-profile">
+                                        <div class="user-avatar">
+                                            <img src="assets/img/traidep.png" alt="Trai đẹp">
+                                        </div>
+                                        <h5 class="user-name">An</h5>
+                                        <h6 class="user-email">andeptraicuteso1@gmail.com</h6>
+                                    </div>
+                                    <div class="text-center">
+                                        <h6>Đổi ảnh đại diện</h6>
+                                        <input type="file" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                        <div class="card h-100" style="border-radius: 2%;">
+                            <div class="card-body">
+                                <div class=" col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                    <div class="mb-2 align-center tilte-menu" style="font-weight: bold; font-size: 20px;width: 100%;">Thông tin cá nhân</div>
+                                </div>
+                                <div class="row m-3">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
+                                        <div class="form-group ">
+                                            <label for="fullName ">Họ và tên</label>
+                                            <input type="text " class="form-control " id="fullName " value="Nguyễn Bá Thịnh An ">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
+                                        <div class="form-group ">
+                                            <label for="eMail ">Email</label>
+                                            <input type="email " class="form-control " id="eMail " value="andeptraicuteso1@gmail.com ">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
+                                        <div class="form-group ">
+                                            <label for="phone ">Số điện thoại</label>
+                                            <input type="text " class="form-control " id="phone " value="+84356781109 ">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
+                                        <div class="form-group ">
+                                            <label for="birthday">Ngày sinh</label>
+                                            <input class="datebirth" type="date" id="birthdaytime" name="birthday" style="height: 38px;">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                    <div class="mb-2 bg-dark text-light border-2 text-center" style="font-weight: 500; font-size: 18px;border-radius: 10px;">Địa chỉ</div>
+                                </div>
+                                <div class="row m-3">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
+                                        <div class="form-group ">
+                                            <label for="address ">Số nhà</label>
+                                            <input type="name " class="form-control " id="address " placeholder="Nhập số nhà ">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
+                                        <div class="form-group ">
+                                            <label for="street ">Đường</label>
+                                            <input type="name " class="form-control " id="street " placeholder="Nhập tên đường ">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
+                                        <div class="form-group ">
+                                            <label for="sTate ">Phường / Quận</label>
+                                            <input type="text " class="form-control " id="district " placeholder="Nhập tên phường hoặc quận ">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 ">
+                                        <div class="form-group ">
+                                            <label for="city ">Thành phố</label>
+                                            <input type="text " class="form-control " id="city " placeholder="Nhập tên thành phố ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                                        <div class="align-center ">
+                                            <button type="button " id="submit " name="submit " class="btn btn-primary ">Cập nhật</button>
+
+                                            <button type="button " id="submit " name="submit " class="btn btn-secondary ">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Chart library -->
+            <script src="./plugins/chart.js"></script>
+            <!-- Icons library -->
+            <script src="plugins/feather.js"></script>
+            <!-- Custom scripts -->
+            <script src="js/script.js"></script>
+</body>
+
+</html>
