@@ -6,7 +6,11 @@
             <article class="post-52 post type-post status-publish format-standard has-post-thumbnail hentry category-lifestyle category-travel tag-fashion tag-hobby tag-trend" id="post-52">
                 <header class="entry-header post-title">
 
-                    <h1 class="entry-title display-4 display-2-lg mt-2">The Best Red Carpet Looks From the Opening Weekend</h1>
+                    <% if (newsArticle != null) { %>
+                        <h1 class="entry-title display-4 display-2-lg mt-2"><%= newsArticle.title %></h1>
+                    <% } else {%>
+                        <h1 class="entry-title display-4 display-2-lg mt-2">Title</h1>
+                    <% } %>
                     <div class="entry-meta post-atribute mb-3 small fw-normal text-muted">
 
                         <span class="byline me-2 me-md-3">

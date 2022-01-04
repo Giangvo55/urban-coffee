@@ -105,6 +105,20 @@ exports.addToCart = async(req, res, next) => {
 
 /**
  * GET /
+ * All news
+ */
+ exports.getAllNews = async(req, res) => {
+    try {
+        const newsArticles = await News.find({}).sort({_id: -1});
+
+        res.render('news', {newsArticles});
+    } catch (error) {
+        res.status(500).send({message: error.message || "Error Occured" });
+    }
+}
+
+/**
+ * GET /
  * News detail
  */
  exports.getDetailNews = async(req, res) => {
@@ -118,13 +132,15 @@ exports.addToCart = async(req, res, next) => {
 
 /**
  * GET /
- * News detail
+ * A news article with Id
  */
- exports.getAllNews = async(req, res) => {
+ exports.getDetailNewsWithId = async(req, res) => {
     try {
-        const newsArticles = await News.find({}).sort({_id: -1});
+        let newsId = req.params.id; 
+        const newsArticle = await News.findById(newsId);
 
-        res.render('news', {newsArticles});
+        // res.render('order', {title: 'Urban Coffee', drinks, bestSeller});
+        res.render('detail-news', {newsArticle});
     } catch (error) {
         res.status(500).send({message: error.message || "Error Occured" });
     }
