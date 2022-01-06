@@ -260,8 +260,8 @@
                                         <td class="col-point viewDetail">
                                             1500 points
                                         </td>
-                                        <td class="col-action-edit">
-                                            <button class="action-today-order transparent-btn action-accept " type="button " title="Edit">
+                                        <td class="col-action-edit ">
+                                            <button class="action-today-order transparent-btn action-accept editBtn" type="button " title="Edit">
                                                     <div class="contrast-icon"><img src="./assets/img/svg/edit.svg "></div>
                                                   
                                                 </button>
@@ -290,7 +290,7 @@
                                             1500 points
                                         </td>
                                         <td class="col-action-edit ">
-                                            <button class="action-today-order transparent-btn action-accept " type="button" title="Edit">
+                                            <button class="action-today-order transparent-btn action-accept editBtn" type="button" title="Edit">
                                                 <div class="contrast-icon"><img src="./assets/img/svg/edit.svg "></div>
                                               
                                             </button>
@@ -357,7 +357,7 @@
 
                     <div class="modal-footer align-items-center ">
                         <div class="align-center m-3">
-                            <button class="action-today-order transparent-btn action-edit m-3" type="button " title="Edit">
+                            <button class="action-today-order transparent-btn action-edit m-3" id="edt-detail" type="button " title="Edit">
                                 <img src="./assets/img/svg/edit-white.svg">
                               </button>
                             <button class="action-today-order transparent-btn action-cancel m-3" type="button " title="Delete">
@@ -368,13 +368,84 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Chart library -->
-        <script src="./plugins/chart.js"></script>
-        <!-- Icons library -->
-        <script src="plugins/feather.js"></script>
-        <!-- Custom scripts -->
-        <script src="js/script.js"></script>
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="row-modal align-items-center">
+
+            <div class="modal-content col-lg-6 col-md-6 col-sm-6">
+                <div class="modal-header ">
+                    <span id="modal-close" class="close">&times;</span>
+                    <h2 style="text-align: center; padding: 10px;">Thông tin khách hàng</h2>
+                    <div class="align-center"> <img class="img-cus-detail" src="./assets/img/avt1.png"></img>
+                    </div>
+                    <div class="" style="margin-right: auto; margin-left: auto; width: fit-content; height: auto; padding-bottom: 10px;">
+                        <label style="font-size: 16px;">Đổi avatar khách hàng</label>
+                        <input type="file" class="form-control" style="height: fit-content;">
+                    </div>
+                </div>
+
+                <div class="modal-body ">
+                    <div class="product-details " style="background-color: white; ">
+                        <hr class="mx-3 ">
+                        <div class="col-lg-10 col-md-6 col-sm-6 mx-top-modal">
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Mã khách hàng:
+                                <input type="text" value="MUC-12345678" style="direction: rtl;"></input>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Điểm tích lũy:
+                                <div><input type="text" value="1000" style="direction: rtl;"></input>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Họ và tên:
+                                <input type="text" value="Nguyễn Bá Thịnh An" style="direction: rtl;"></input>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Giới tính:
+                                <select name="gender" id="genders" style="border-radius: 6px; background-color: #eff0f6; min-height: 40px;border: solid transparent 2px!important;">
+                                    <option value="Male">Nam</option>
+                                    <option value="Female">Nữ</option>
+                                    <option value="Other">Khác</option>
+                                  </select>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Số điện thoại:
+                                <input type="text" value="0356781109" style="direction: rtl;"></input>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Email:
+                                <input type="text" value="andz1109@gmail.com" style="direction: rtl;"></input>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2">Địa chỉ:
+                                <textarea name="" id="" cols="35" rows="5" style="border-radius: 6px; background-color: #eff0f6; min-height: 100px;min-width: 300px; border: solid transparent 2px!important;">Ngõ 24, Bắc Kinh, TP Hải Dương, Tỉnh Hải Dương</textarea>
+
+                            </div>
+
+
+                        </div>
+                        <hr class="mx-3 ">
+
+                    </div>
+
+                    <div class="modal-footer align-items-center ">
+                        <div class="align-center m-3">
+                            <button class="action-today-order transparent-btn action-save m-3" type="button " title="Save">
+                                <img src="./assets/img/svg/save.svg">
+                              </button>
+                            <button class="action-today-order transparent-btn action-cancel btn-cancel m-3" type="button " title="Cancel">
+                                <img src="./assets/img/svg/x-square.svg" >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Chart library -->
+    <script src="./plugins/chart.js"></script>
+    <!-- Icons library -->
+    <script src="plugins/feather.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

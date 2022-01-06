@@ -244,7 +244,7 @@
                                             <div class="long-text">CACAO QUẾ - ĐÓN GIÁNG SINH THEO CÁCH CỦA URBAN CAFÉ</div>
                                         </td>
                                         <td class="col-avt viewDetail">
-                                            <img class="avt" src="./assets/img/avt1.png" alt="face customer">
+                                            <img class="avt" src="./assets/img/img-ex-land.jpg" alt="face customer">
                                         </td>
                                         <td class="col-name viewDetail">
                                             <div class="name-text">Nguyễn Bá Thịnh An</div>
@@ -253,7 +253,7 @@
                                         <td class="col-status"><span class="badge-disabled ">Ẩn</span></td>
 
                                         <td class="col-action-edit">
-                                            <button class="action-today-order transparent-btn action-accept " type="button " title="Edit">
+                                            <button class="action-today-order transparent-btn action-accept editBtn" type="button " title="Edit">
                                                     <div class="contrast-icon"><img src="./assets/img/svg/edit.svg "></div>
                                                   
                                                 </button>
@@ -268,7 +268,7 @@
                                             <div class="long-text">CACAO QUẾ - ĐÓN GIÁNG SINH THEO CÁCH CỦA URBAN CAFÉ</div>
                                         </td>
                                         <td class="col-avt viewDetail">
-                                            <img class="avt" src="./assets/img/avt1.png" alt="face customer">
+                                            <img class="avt" src="./assets/img/img-ex-land.jpg" alt="face customer">
                                         </td>
                                         <td class="col-name viewDetail">
                                             <div class="name-text">Nguyễn Bá Thịnh An</div>
@@ -276,7 +276,7 @@
                                         <td class="col-date-time viewDetail">12:59:59 - 30/12/2021</td>
                                         <td class="col-status "><span class="badge-success ">Hiện</span></td>
                                         <td class="col-action-edit">
-                                            <button class="action-today-order transparent-btn action-accept " type="button " title="Edit">
+                                            <button class="action-today-order transparent-btn action-accept editBtn" type="button " title="Edit">
                                                     <div class="contrast-icon"><img src="./assets/img/svg/edit.svg "></div>
                                                   
                                                 </button>
@@ -304,7 +304,7 @@
                 <div class="modal-header ">
                     <span id="modal-close" class="close">&times;</span>
                     <h2 style="text-align: center; padding: 10px;">Thông tin bài viết</h2>
-                    <div class="align-center"> <img class="img-cus-detail" src="./assets/img/avt1.png"></img>
+                    <div class="align-center"> <img class="img-cus-detail" src="./assets/img/img-ex-land.jpg"></img>
                         <div class="col-lg-10 col-md-10 col-sm-6 mx-top-modal">
                             <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Mã bài viết:
                                 <div>VC-12345678</div>
@@ -313,7 +313,7 @@
                                 <div>Hiện</div>
                             </div>
                             <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Tiêu đề:
-                                <div class="note-modal">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả</div>
+                                <div class="note-modal">CACAO QUẾ - ĐÓN GIÁNG SINH THEO CÁCH CỦA URBAN CAFÉ</div>
                             </div>
                             <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Nội dung:
                             </div>
@@ -337,7 +337,7 @@
 
                     <div class="modal-footer align-items-center ">
                         <div class="align-center m-3">
-                            <button class="action-today-order transparent-btn action-edit m-3" type="button " title="Edit">
+                            <button class="action-today-order transparent-btn action-edit m-3" type="button" id="edt-detail" title="Edit">
                                 <img src="./assets/img/svg/edit-white.svg">
                               </button>
                             <button class="action-today-order transparent-btn action-cancel m-3" type="button " title="Delete">
@@ -348,13 +348,78 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Chart library -->
-        <script src="./plugins/chart.js"></script>
-        <!-- Icons library -->
-        <script src="plugins/feather.js"></script>
-        <!-- Custom scripts -->
-        <script src="js/script.js"></script>
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="row-modal align-items-center">
+
+            <div class="modal-content col-lg-6 col-md-6 col-sm-6">
+                <div class="modal-header ">
+                    <span id="modal-close" class="close">&times;</span>
+                    <h2 style="text-align: center; padding: 10px;">Thông tin bài viết</h2>
+                    <div class="align-center"> <img class="img-cus-detail" src="./assets/img/img-ex-land.jpg"></img>
+                    </div>
+                    <div class="" style="margin-right: auto; margin-left: auto; width: fit-content; height: auto; padding-bottom: 10px;">
+                        <label style="font-size: 16px;">Đổi Thumbnail bài viết</label>
+                        <input type="file" class="form-control" style="height: fit-content;">
+                    </div>
+                    <div class="col-lg-10 col-md-6 col-sm-6 mx-top-modal">
+                        <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Mã bài viết:
+                            <input type="text" value="VC-12345678" style="direction: rtl;"></input>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Trạng thái:
+                            <div class="badge-success" style="margin: 0; font-size: 15px; width: 100px; padding: 5px;">Hiện</div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Tiêu đề:
+                            <textarea name="" id="" cols="35" rows="5" style="border-radius: 6px; background-color: #eff0f6; min-height: 100px;min-width: 300px; border: solid transparent 2px!important;">CACAO QUẾ - ĐÓN GIÁNG SINH THEO CÁCH CỦA URBAN CAFÉ</textarea>
+
+                        </div>
+                        <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Tác giả:
+                            <input type="text" value="10%" style="direction: rtl;"></input>
+                        </div>
+                        <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Ngày đăng:
+                            <input type="datetime-local" value=""></input>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body ">
+                    <div class="product-details " style="background-color: white; ">
+                        <div class="product-details " style="background-color: white; ">
+                            <hr class="mx-3 ">
+                            <div class="col-lg-10 col-md-6 col-sm-6 mx-top-modal">
+                                <textarea name="" id="" cols="70" rows="5" style="border-radius: 6px; background-color: #eff0f6; min-height: max-content;min-width: 300px; border: solid transparent 2px!important;">Lorem Ipsum chỉ đơn giản là một đoạn văn bản giả Lorem Ipsum chỉ đơn giản là một đoạn văn bản giảLorem Ipsum chỉ đơn giản là một đoạn văn bản giảLorem Ipsum chỉ đơn giản là một đoạn văn bản giả</textarea>
+                            </div>
+
+                            <hr class="mx-3 ">
+
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer align-items-center ">
+                        <div class="align-center m-3">
+                            <button class="action-today-order transparent-btn action-save m-3" type="button" title="Save">
+                                <img src="./assets/img/svg/save.svg">
+                              </button>
+                            <button class="action-today-order transparent-btn action-cancel btn-cancel m-3" type="button " title="Cancel">
+                                <img src="./assets/img/svg/x-square.svg" >
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Chart library -->
+    <script src="./plugins/chart.js"></script>
+    <!-- Icons library -->
+    <script src="plugins/feather.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>

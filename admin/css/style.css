@@ -3607,6 +3607,16 @@ label {
     background-color: #063fd1;
 }
 
+.action-save {
+    background-color: #4d71ca;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #ffffff;
+}
+
+.action-save:hover {
+    background-color: #063fd1;
+}
+
 
 /* -----------Modal----------------- */
 
@@ -4193,26 +4203,4 @@ label {
 
 .darkmode .action-edit:hover {
     background-color: #063fd1;
-}
-
-input[type="date"] {
-    background-color: #0080ff;
-    padding: 15px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    font-family: "Roboto Mono", monospace;
-    color: #ffffff;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-}
-
-::-webkit-calendar-picker-indicator {
-    background-color: #ffffff;
-    padding: 5px;
-    cursor: pointer;
-    border-radius: 3px;
 }
