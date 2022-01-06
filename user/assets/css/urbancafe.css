@@ -1485,6 +1485,7 @@ IX. Detailed News
     
     .img_carousel_small {
         width: 80px;
+        height: 80px;
         border: 2px solid #122223;
     }
     
@@ -1946,7 +1947,6 @@ IX. Detailed News
     .tch-sale-card .tch-sale-card-image {
         position: relative;
         width: var(--space-80);
-        height: var(--space-80);
         border-radius: var(--space-8);
         flex-shrink: 0;
         flex-basis: 36%;

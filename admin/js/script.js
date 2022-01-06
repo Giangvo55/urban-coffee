@@ -562,3 +562,16 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+function AcceptOrder() {
+    document.getElementById('status-order').innerHTML = '<div class="badge-active" style="margin: 0; font-size: 15px; width: fit-content; padding: 5px;">Nhận đơn</div>';
+}
+
+function OnDelivery() {
+    document.getElementById('status-order').innerHTML = '<div class="badge-disabled" style="margin: 0; font-size: 15px; width: fit-content; padding: 5px;">Đang giao</div>';
+
+}
+
+function FinishOrder() {
+    document.getElementById('status-order').innerHTML = '<div class="badge-success" style="margin: 0; font-size: 15px; width: fit-content; padding: 5px;">Hoàn thành</div>';
+}
