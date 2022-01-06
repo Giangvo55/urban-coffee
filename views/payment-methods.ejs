@@ -1,0 +1,157 @@
+<!-- Payment Method Form -->
+<div class="container btn-back mt-3"
+    style="font-size: 25px; position: absolute; left: 35px; width: fit-content; border:3px solid white;">
+    <a href="javascript:history.back()"><i class="fas fa-chevron-left"></i></a>
+</div>
+<div class="container py-5 body-content">
+    <div class="row d-flex align-items-center">
+        <div class=" col-lg-6 py-3">
+            <div class="card" style="border-radius: 2%;">
+                <div class="card-body ">
+                    <div class="row input-group m-auto">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h6 class="mb-2 py-2 text-light bg-dark align-center"
+                                style="font-weight: bold; font-size: 20px;">Thông tin người nhận</h6>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="fullName">Họ và tên</label>
+                                <input type="text" class="form-control" id="fullName" value=""
+                                    placeholder="Họ tên người nhận" placeholder="Nhập tên người nhận">
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại</label>
+                                <input type="text" class="form-control" id="phone" value="" placeholder="Số điện thoại">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row input-group m-auto">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h6 class="mb-2 text-primary border-bottom" style="font-weight: bold; font-size: 20px;">Địa chỉ</h6>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="address">Số nhà</label>
+                                <input type="name" class="form-control" id="address" placeholder="Nhập số nhà">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="street">Đường</label>
+                                <input type="name" class="form-control" id="street" placeholder="Nhập tên đường">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="sTate">Phường / Quận</label>
+                                <input type="text" class="form-control" id="district"
+                                    placeholder="Nhập tên phường hoặc quận">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                            <div class="form-group">
+                                <label for="city">Thành phố</label>
+                                <input type="text" class="form-control" id="city" placeholder="Nhập tên thành phố">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 m-auto border p-2">
+                        <h6 class="px-5 py-2 text-uppercase align-center text-light"
+                            style="background-color: #122223; font-weight: 550;">Tổng đơn hàng</h6>
+                        <div class="d-flex justify-content-between px-2 border-bottom border-dark">
+                            <h5 class="">Tổng tiền</h5>
+                            <h5 class="">202.500 VNĐ</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mx-auto">
+            <div class="card-header" style="background-color: white; border-radius: 2%;">
+                <div class="shadow-sm mt-2 pl-2 pr-2">
+                    <!-- Credit card form tabs -->
+                    <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                        <li class="nav-item">
+                            <a data-bs-toggle="pill" href="#net-banking" class="nav-link "> <i
+                                    class="fas fa-mobile-alt mr-2"></i> Internet Banking </a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-toggle="pill" href="#internet-banking" class="nav-link active"> <i
+                                    class="fas fa-wallet mr-2"></i> Ví điện tử </a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-bs-toggle="pill" href="#cash-on-delivery" class="nav-link "> <i
+                                    class="fas fa-box mr-2"></i> Thanh toán nhận hàng </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End -->
+
+                <!-- Credit card form content -->
+                <div class="tab-content">
+                    <!-- credit card info-->
+                    <div id="cash-on-delivery" class="tab-pane fade  p-5">
+                        <div class="card-footer align-center"> <button type="button"
+                                class="subscribe btn btn-warning btn-block shadow-sm"> Xác nhận thanh toán khi nhận hàng
+                            </button>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- End -->
+
+
+                    <!-- End -->
+
+                    <!-- bank transfer info -->
+                    <div id="net-banking" class="tab-pane fade px-5 pt-3">
+                        <div class="form-group"><select class="form-control" id="ccmonth">
+                                <option value="" selected disabled>--Hãy chọn ngân hàng--</option>
+                                <option>BIDV</option>
+                                <option>Vietcombank</option>
+                                <option>Techcombank</option>
+                                <option>VP Bank</option>
+                            </select> </div>
+                        <div class="form-group">
+                            <p class="align-center"> <button type="button" class="btn btn-primary "><i
+                                        class="fas fa-mobile-alt mr-2"></i> Đến trang thanh toán ngân hàng</button> </p>
+                        </div>
+                        <p class="text-muted">Note: After clicking on the button, you will be directed to a secure
+                            gateway for payment. After completing the payment process, you will be redirected back to
+                            the website to view details of your order. </p>
+                    </div>
+                    <div id="internet-banking" class="tab-pane fade show active px-5 pt-3">
+                        <div class="form-group "> <select class="form-control" id="ccmonth">
+                                <option value="" selected disabled>--Hãy chọn ví điện tử--</option>
+                                <option>Momo</option>
+                                <option>Moca</option>
+                                <option>Zalopay</option>
+                                <option>Viettel Pay</option>
+                            </select> </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <h3 class="mt-0 mb-3 text-center">Scan the QR code to pay</h3>
+                                <div class="row align-center mb-3">
+                                    <div id="qr"> <img src="/img/qr-code.jpg" width="200px" height="200px"> </div>
+                                </div>
+                                <h6 class="mt-0 text-center" style="padding-bottom: 10px;">Sau khi bạn thanh toán thành
+                                    công trên ví điện, đơn hàng sẽ được chấp nhận đã thanh toán.</h6>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End -->
+                </div>
+            </div>
+            <div class="align-center pt-2">
+                <a href="home.html" class="btn btn-detail-order rounded-pill py-2">Hoàn tất thanh toán <i
+                        class="fa fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--End Payment Method Form -->

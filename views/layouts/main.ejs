@@ -14,6 +14,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="/css/fontawesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 </head>
@@ -42,7 +43,7 @@
                             <a class="nav-link active" href="/">Trang chủ</a>
                         </li>
                         <li class="nav-item p-1">
-                            <a class="nav-link" href="#">About us</a>
+                            <a class="nav-link" href="/about-us">About us</a>
                         </li>
                         <li class="nav-item p-1">
                             <a class="nav-link" href="/order">Đặt hàng</a>
@@ -80,7 +81,9 @@
                         <span class=" counter counter-lg">
                             <%= session.cart.totalQty %>
                         </span>
-                            <% } %>
+                        <% } else { %>
+                            <span class=" counter counter-lg">0</span> 
+                        <% } %>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="/my-cart" style="font-size: 14px;">Giỏ hàng</a></li>
@@ -334,6 +337,7 @@
     <script src="/js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script src="/js/ubc.js" type="text/javascript"></script>
     <script src="/js/custom.js" type="text/javascript"></script>
+    
     <!-- End Script -->
 
 </body>

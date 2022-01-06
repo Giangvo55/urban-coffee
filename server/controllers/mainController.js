@@ -77,7 +77,7 @@ exports.exploreOrder = async(req, res) => {
  */
 exports.exploreMyCart = async(req, res, next) => {
     if(!req.session.cart){
-        res.render('my-cart', {title : 'Giỏ hàng', products: undefined }); 
+        res.render('my-cart', {title : 'Giỏ hàng', products: undefined, totalPrice: 0, totalQty: 0}); 
     } else{
         var cart = new Cart(req.session.cart); 
         res.render('my-cart', {title : 'Giỏ hàng', products: cart.generateArray(), totalPrice: cart.totalPrice, totalQty: cart.totalQty }); 
@@ -93,12 +93,40 @@ exports.addToCart = async(req, res, next) => {
    var cart = new Cart(req.session.cart ? req.session.cart : {});
 
    Drink.findById(drinkId, function(err, drink){
-       if(err){
-           return res.redirect('/'); 
-       }
-       cart.add(drink, drink.id); 
-       req.session.cart = cart; 
-      console.log(req.session.cart);
-      res.redirect('/'); 
+        if(err){
+            return res.redirect('/'); 
+        }
+        cart.add(drink, drink.id); 
+        req.session.cart = cart; 
+        req.session.reload(function(err){
+        }); 
+        res.redirect('/'); 
     }); 
+}
+exports.deleteCart = async(req, res, next) =>{
+    var cart = new Cart(req.session.cart);
+    cart.delete(req.body.prodID); 
+    req.session.cart = cart; 
+    req.session.reload(function(err){
+
+    }); 
+    console.log(req.session.cart); 
+    res.redirect('/my-cart'); 
+}
+
+exports.explorePayment = async(req, res) => {
+    if(!req.session.cart){
+        res.render('payment', {title : 'Thanh toán đơn hàng - Urban Coffee', products: undefined, totalPrice: 0, totalQty: 0}); 
+    } else{
+        var cart = new Cart(req.session.cart); 
+        res.render('payment', {title: 'Thanh toán đơn hàng - Urban Coffee', products: cart.generateArray(), totalPrice: cart.totalPrice, totalQty: cart.totalQty}); 
+    }
+}
+
+exports.explorePaymentMethods = async(req, res) => {
+    res.render('payment-methods', {title: 'Chọn phương thức thanh toán - Urban Coffee'}); 
+}
+
+exports.exploreAboutUs = async(req, res, next) => {
+    res.render('about-us', {title: 'About Us - Urban Coffee'});
 }

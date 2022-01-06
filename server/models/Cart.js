@@ -14,11 +14,12 @@ module.exports = function Cart(oldCart) {
         var storedItem = this.items[id];
         if (!storedItem) {
             storedItem = this.items[id] = {qty: 0, item: item, price: 0};
-        }
+        } 
         storedItem.qty++;
-        storedItem.price = storedItem.item.price * storedItem.qty;
+        storedItem.price += storedItem.item.price ;
         this.totalQty++;
-        this.totalPrice += storedItem.price;
+        this.totalPrice += storedItem.item.price;
+        
     };
 
     this.generateArray = function () {
@@ -27,5 +28,18 @@ module.exports = function Cart(oldCart) {
             arr.push(this.items[id]);
         }
         return arr;
+    };
+    this.delete = function (productId) { 
+        if(this.items[productId].qty > 1){
+            this.items[productId].qty --; 
+            this.totalQty--; 
+            this.items[productId].price -= this.items[productId].item.price; 
+            this.totalPrice -= this.items[productId].item.price; 
+        } 
+        else {
+            this.totalQty--; 
+            this.totalPrice -= this.items[productId].price; 
+            delete this.items[productId]; 
+        }
     };
 };

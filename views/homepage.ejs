@@ -166,7 +166,7 @@
             </a>
         </li>
 
-        
+
 
     </ul>
     <div class="card-body tab-content">
@@ -190,10 +190,11 @@
                                     <div
                                         class="ubc-product__content__footer d-flex justify-content-between align-items-center mt-auto ">
                                         <p class="mb-0 "><span class="d-block ">
-                                                <%- bestSeller.price %> đ
+                                                <%- bestSeller.price.toLocaleString('it-IT', {style : 'currency' ,
+                                                    currency : 'VND' }) %>
                                             </span>
                                         </p>
-                                        <a href="/add-to-cart/<%= bestSeller._id %>">
+                                        <a href="/add-to-cart/<%= bestSeller._id %>" target="_self">
                                             <div data-toggle="modal " data-target="#cardModal "
                                                 class="btn add-to-cart p-0 ">
                                                 <img class="add-to-cart " src="/img/add.png" alt="add to cart ">
@@ -230,7 +231,8 @@
                                         <div
                                             class="ubc-product__content__footer d-flex justify-content-between align-items-center mt-auto ">
                                             <p class="mb-0 "><span class="d-block ">
-                                                    <%- drink.price %> đ
+                                                    <%- drink.price.toLocaleString('it-IT', {style : 'currency' ,
+                                                        currency : 'VND' }) %>
                                                 </span>
                                             </p>
                                             <a href="/add-to-cart/<%= drink._id %>">
@@ -269,7 +271,8 @@
                                         <div
                                             class="ubc-product__content__footer d-flex justify-content-between align-items-center mt-auto ">
                                             <p class="mb-0 "><span class="d-block ">
-                                                    <%- drink.price %> đ
+                                                    <%- drink.price.toLocaleString('it-IT', {style : 'currency' ,
+                                                        currency : 'VND' }) %>
                                                 </span>
                                             </p>
                                             <a href="/add-to-cart/<%= drink._id %>">
@@ -307,7 +310,8 @@
                                         <div
                                             class="ubc-product__content__footer d-flex justify-content-between align-items-center mt-auto ">
                                             <p class="mb-0 "><span class="d-block ">
-                                                    <%- coffeeBean.price %> đ
+                                                    <%- coffeeBean.price.toLocaleString('it-IT', {style : 'currency' ,
+                                                        currency : 'VND' }) %>
                                                 </span>
                                             </p>
                                             <a href="/add-to-cart/<%= coffeeBean._id %>">
@@ -345,7 +349,8 @@
                                         <div
                                             class="ubc-product__content__footer d-flex justify-content-between align-items-center mt-auto ">
                                             <p class="mb-0 "><span class="d-block ">
-                                                    <%- snacks.price %> đ
+                                                    <%- snacks.price.toLocaleString('it-IT', {style : 'currency' ,
+                                                        currency : 'VND' }) %>
                                                 </span>
                                             </p>
                                             <a href="/add-to-cart/<%= snacks._id %>">
@@ -383,7 +388,8 @@
                                         <div
                                             class="ubc-product__content__footer d-flex justify-content-between align-items-center mt-auto ">
                                             <p class="mb-0 "><span class="d-block ">
-                                                    <%- cake.price %> đ
+                                                    <%- cake.price.toLocaleString('it-IT', {style : 'currency' ,
+                                                        currency : 'VND' }) %>
                                                 </span>
                                             </p>
                                             <a href="/add-to-cart/<%= cake._id %>">
