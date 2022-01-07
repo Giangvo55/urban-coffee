@@ -56,14 +56,8 @@ exports.exploreOrder = async(req, res) => {
         const coffee = await Drink.find({'category':'Cà phê'}); 
         const fruitTea = await Drink.find({'category':'Trà trái cây'});
         const coffeeBean = await Drink.find({'category':'Cà phê bột'});
-<<<<<<< HEAD
-        const snacks = await Drink.find({'category':'Snacks'});
-        const cake = await Drink.find({'category' : 'Bánh'})
-        const drinks = { coffee, fruitTea, coffeeBean, snacks, cake };
-=======
         const cakeAndSnack = await Drink.find({'category':'Bánh-Snacks'});
         const drinks = { coffee, fruitTea, coffeeBean, cakeAndSnack }; 
->>>>>>> fd27744451b4cbf94620152da578701919875870
 
 
         let count = await Drink.find().countDocuments();
@@ -81,21 +75,12 @@ exports.exploreOrder = async(req, res) => {
  * GET /
  * My Cart 
  */
-<<<<<<< HEAD
-exports.exploreMyCart = async(req, res, next) => {
-    if(!req.session.cart){
-        res.render('my-cart', {title : 'Giỏ hàng', products : null}); 
-    }
-    var cart = new Cart(req.session.cart); 
-    res.render('my-cart', {title : 'Giỏ hàng', products: cart.generateArray(), totalPrice: cart.totalPrice }); 
-=======
 exports.exploreMyCart = async(req, res) => {
     try {
         res.render('my-cart', {title : 'Giỏ hàng'}); 
     } catch (error) {
         res.status(500).send({message: error.message || "Error Occured" });
     }
->>>>>>> fd27744451b4cbf94620152da578701919875870
 }
 
 /**
@@ -118,7 +103,6 @@ exports.addToCart = async(req, res, next) => {
 
 /**
  * GET /
-<<<<<<< HEAD
  * All news
  */
  exports.getAllNews = async(req, res) => {
@@ -133,8 +117,6 @@ exports.addToCart = async(req, res, next) => {
 
 /**
  * GET /
-=======
->>>>>>> fd27744451b4cbf94620152da578701919875870
  * News detail
  */
  exports.getDetailNews = async(req, res) => {
@@ -148,7 +130,6 @@ exports.addToCart = async(req, res, next) => {
 
 /**
  * GET /
-<<<<<<< HEAD
  * A news article with Id
  */
  exports.getDetailNewsWithId = async(req, res) => {
@@ -164,16 +145,3 @@ exports.addToCart = async(req, res, next) => {
         res.status(500).send({message: error.message || "Error Occured" });
     }
 }
-=======
- * News detail
- */
- exports.getAllNews = async(req, res) => {
-    try {
-        const newsArticles = await News.find({}).sort({_id: -1});
-
-        res.render('news', {newsArticles});
-    } catch (error) {
-        res.status(500).send({message: error.message || "Error Occured" });
-    }
-}
->>>>>>> fd27744451b4cbf94620152da578701919875870
