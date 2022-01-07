@@ -21,7 +21,7 @@ const Cart = require('../models/Cart');
         let random = Math.floor(Math.random() * count);
         let bestSeller = await Drink.findOne().skip(random).exec();
         
-        res.render('homepage', {title: 'Urban Coffee', drinks, bestSeller});
+        res.render('homepage', {title: 'Urban Café', drinks, bestSeller, req : req});
     } catch (error) {
         res.status(500).send({message: error.message || "Error Occured" });
     }
@@ -114,6 +114,11 @@ exports.deleteCart = async(req, res, next) =>{
     res.redirect('/my-cart'); 
 }
 
+/**
+ * GET /
+ * Explore Payment page  
+ */
+
 exports.explorePayment = async(req, res) => {
     if(!req.session.cart){
         res.render('payment', {title : 'Thanh toán đơn hàng - Urban Coffee', products: undefined, totalPrice: 0, totalQty: 0}); 
@@ -123,10 +128,56 @@ exports.explorePayment = async(req, res) => {
     }
 }
 
+/**
+ * GET /
+ * Explore Payment method page  
+ */
+
 exports.explorePaymentMethods = async(req, res) => {
     res.render('payment-methods', {title: 'Chọn phương thức thanh toán - Urban Coffee'}); 
 }
 
+/**
+ * GET /
+ * Explore About us page  
+ */ 
+
 exports.exploreAboutUs = async(req, res, next) => {
-    res.render('about-us', {title: 'About Us - Urban Coffee'});
+    var members = [{
+        "name" : "Nguyễn Bá Thịnh An",
+        "studentID": "K194111517" , 
+        "role" : "DESIGNER & FE DEVELOPER", 
+        "img" : "/img/avt1.png", 
+        "quotes" : "Tất cả những gì bạn thấy đều được thực hiện từ tâm huyết của nhóm và mang màu sắc riêng. Khiến bạn say đắm trong lần đầu."
+    },
+    {
+        "name" : "Võ Chí Giang",
+        "studentID": "K194111533" , 
+        "role" : "Full-Stack DEVELOPER",
+        "img" : "/img/avt2.jpg",
+        "quotes" : "Mọi thao tác trên trang web rất mượt mà. Trước khi được đưa vào thực tế, trang web đã trải qua các bước thử nghiệm khắt khe của Dev Ly Tran"
+    },
+    {
+        "name" : "Trần Thị Thảo Ly",
+        "studentID": "K194111546" , 
+        "role" : "Full-Stack DEVELOPER",
+        "img" : "/img/avt3.jpg",
+        "quotes" : "Sứ mệnh của chúng tôi là khơi dậy trí tưởng tượng và mang đến cho khách hàng những trải nghiệm cảm xúc khác biệt về Việt Nam."
+    },
+    {
+        "name" : "Trịnh Thị Tâm Oanh",
+        "studentID": "K194111560" , 
+        "role" : "BA & FE DEVELOPER, Tester",
+        "img" : "/img/avt4.jpg", 
+        "quotes" : "Chúng tôi đang không ngừng sáng tạo với mục tiêu là tiến xa hơn để mang Cộng đến với thế giới; lan toả và truyền cảm hứng bằng trái tim của mỗi thành viên."
+    },
+    {
+        "name" : "Phạm Minh Đạt",
+        "studentID": "K194111530" , 
+        "role" : "BA & FE DEVELOPER, Tester",
+        "img" : "/img/avt5.jpg",
+        "quotes" : " Urban Café sẽ là nơi mọi người xích lại gần nhau, đề cao giá trị kết nối con người và sẻ chia thân tình bên những tách cà phê, ly trà đượm hương, truyền cảm hứng về lối sống hiện đại."
+    },
+    ]
+    res.render('about-us', {title: 'About Us - Urban Coffee', members : members });
 }

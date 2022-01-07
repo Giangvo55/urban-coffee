@@ -40,13 +40,13 @@
                 <div class="flex-fill">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item p-1 ">
-                            <a class="nav-link active" href="/">Trang chủ</a>
+                            <a class="nav-link active" href="/" id="homepage">Trang chủ</a>
                         </li>
                         <li class="nav-item p-1">
-                            <a class="nav-link" href="/about-us">About us</a>
+                            <a class="nav-link" href="/about-us" id="aboutus" >About us</a>
                         </li>
                         <li class="nav-item p-1">
-                            <a class="nav-link" href="/order">Đặt hàng</a>
+                            <a class="nav-link" href="/order" id="order">Đặt hàng</a>
                         </li>
                         <li class="nav-item p-1">
                             <a class="nav-link" href="#">Tin tức</a>
@@ -279,7 +279,7 @@
                                 <a class="text-decoration-none " href="# "> <i class="fa fa-map-marker-alt fa-fw"></i> 24 Bắc Kinh, Hải Dương</a>
                             </li>
                             <li>
-                                <a class="text-decoration-none " href="tel:010-020-0340 "><i class="fa fa-phone fa-fw "></i> 03-5678-1109</a>
+                                <a class="text-decoration-none " href="tel:0356781109"><i class="fa fa-phone fa-fw "></i> 03-5678-1109</a>
                             </li>
                             <li>
 
@@ -292,7 +292,7 @@
             </div>
 
             <div class="row text-light my-3 ">
-                <ul class="col-lg-2 col-md-2 list-inline text-center footer-icons align-self-center">
+                <ul class="col-lg-2 col-md-2 list-inline text-center footer-icons align-self-center my-2">
                     <li class="list-inline-item border  rounded-circle text-center ">
                         <a class="text-light text-decoration-none " target="_blank " href="http://facebook.com/ "><i class="fab fa-facebook-f fa-lg fa-fw "></i></a>
                     </li>
@@ -305,7 +305,7 @@
                 <div class="col-lg-5 col-md-10">
                     <div class="input-group mb-2 align-self-center">
                         <input type="text" class="form-control bg-light text-dark" id="subscribeEmail " placeholder="Nhập Email của bạn để đăng ký nhận tin" width="fit-content;">
-                        <button type="submit" class="input-group-text btn-success text-light">Đăng ký</button>
+                        <button type="submit" class="input-group-text btn-success text-light" onclick="alert('Bạn đã đăng ký nhận tin thành công!')">Đăng ký</button>
                     </div>
                 </div>
             </div>
@@ -323,7 +323,7 @@
                     </div>
                     <div class="col-5 col-lg-2">
                         <div class="ubc-footer__bottom-logo ml-auto">
-                            <a href="http://online.gov.vn/Home/WebDetails/48042" target="blank"><img src="./assets/img/copyright.png" alt="" class="ml-auto" width="75%"></a>
+                            <a href="http://online.gov.vn/Home/WebDetails/48042" target="blank"><img src="/img/copyright.png" alt="" class="ml-auto" width="75%"></a>
                         </div>
                     </div>
                 </div>
@@ -332,6 +332,7 @@
         </div>
     </footer>
     <!-- End Footer -->
+
 
     <!-- Start Script -->
     <script src="/js/bootstrap.bundle.min.js" type="text/javascript"></script>
