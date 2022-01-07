@@ -144,7 +144,7 @@ exports.explorePaymentMethods = async(req, res) => {
 
 exports.exploreAboutUs = async(req, res, next) => {
     var members = [{
-        "name" : "Nguyễn Bá Thịnh An",
+        "name" : "Nguyễn Bá Thịnh An (Team Lead)",
         "studentID": "K194111517" , 
         "role" : "DESIGNER & FE DEVELOPER", 
         "img" : "/img/avt1.png", 

@@ -917,9 +917,8 @@ IX. Detailed News
         border-color: #333333 !important;
     }
     
-    .img_content {
+    .img_content img {
         height: 300px;
-        background-image: url("/assets/img/banner_about_us.png");
     }
     /* Character */
     /* Carousel Slider Admin */
@@ -1397,6 +1396,16 @@ IX. Detailed News
     }
     /* Product detailed */
     
+    .long-text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 250px;
+        padding-right: 10px;
+        text-decoration: none;
+        color: #000;
+    }
+    
     .btn-back a {
         color: #122223;
     }
@@ -1476,6 +1485,7 @@ IX. Detailed News
     
     .img_carousel_small {
         width: 80px;
+        height: 80px;
         border: 2px solid #122223;
     }
     
@@ -1937,7 +1947,6 @@ IX. Detailed News
     .tch-sale-card .tch-sale-card-image {
         position: relative;
         width: var(--space-80);
-        height: var(--space-80);
         border-radius: var(--space-8);
         flex-shrink: 0;
         flex-basis: 36%;
