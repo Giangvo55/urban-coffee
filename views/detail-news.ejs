@@ -1,501 +1,154 @@
- <!-- Detail -->
- <div class="container" style="margin-top: 100px;">
-    <div class="row">
-        <!--Main content-->
-        <div class="col-md-8">
-            <article class="post-52 post type-post status-publish format-standard has-post-thumbnail hentry category-lifestyle category-travel tag-fashion tag-hobby tag-trend" id="post-52">
-                <header class="entry-header post-title">
-
-                    <% if (newsArticle != null) { %>
-                        <h1 class="entry-title display-4 display-2-lg mt-2"><%= newsArticle.title %></h1>
-                    <% } else {%>
-                        <h1 class="entry-title display-4 display-2-lg mt-2">Title</h1>
-                    <% } %>
-                    <div class="entry-meta post-atribute mb-3 small fw-normal text-muted">
-
-                        <span class="byline me-2 me-md-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-person me-1" viewBox="0 0 16 16">
-                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>
-                </svg> by<span class="author vcard"><a class="url fn n fw-bold" href="https://demo.bootstrap.news/flat/author/admin/"> An Thinh</a></span></span><span class="posted-on me-2 me-md-3">
-            <span title="Posted on"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil-square me-1" viewBox="0 0 16 16">
-              <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"></path>
-              <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"></path>
-            </svg></span> <time class="entry-date published" datetime="2019-09-11T05:51:34+00:00">September 11, 2019</time> <time class="updated d-none d-md-inline-block" datetime="2019-09-14T10:57:35+00:00"> ( September 14, 2019 ) </time></span>
-                        <span class="me-2 me-md-3 text-muted d-none d-md-inline-block">
-           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chat-left-dots me-1" viewBox="0 0 16 16">
-              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
-              <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
-            </svg> 0 Comments            </span>
-                        <!-- comments -->
-
-                        <span class="me-2 me-md-3 text-muted d-md-none">
-           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chat-left-dots me-1" viewBox="0 0 16 16">
-              <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"></path>
-              <path d="M5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
-            </svg> 0            </span>
-                        <!-- comments mobile -->
-
-                        <span class="me-2 me-md-3">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye me-1" viewBox="0 0 16 16">
-              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"></path>
-              <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"></path>
-            </svg> Views 236            </span>
-                        <!--end view-->
-
-                    </div>
-                    <!-- .entry-meta -->
-
-
-                </header>
-                <!-- .entry-header -->
-
-                <div class="entry-content post-content">
-                    <figure class="image-single-wrapper">
-                        <img width="750" height="500" src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1565007578343-2136fcfbd7fb-1024x683.jpg" class="img-fluid lazy wp-post-image entered loaded" alt="The Best Red Carpet Looks From the Opening Weekend"
-                            loading="lazy" data-src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1565007578343-2136fcfbd7fb-1024x683.jpg" srcset="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1565007578343-2136fcfbd7fb-1024x683.jpg 1024w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1565007578343-2136fcfbd7fb-300x200.jpg 300w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1565007578343-2136fcfbd7fb-750x500.jpg 750w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1565007578343-2136fcfbd7fb.jpg 1500w"
-                            sizes="(max-width: 750px) 100vw, 750px" data-ll-status="loaded">
-                        <figcaption class="bg-themes">beautiful day</figcaption>
-                    </figure>
-
-
-                    <p><span class="dropcaps dropcaps-one">T</span>his study examines the classroom talk about models and modelling of two secondary science teachers implementing a model-based inquiry instructional unit. The goal was to better understand
-                        the opportunities for explicit metamodeling talk in the science classroom.</p>
-
-
-
-                    <blockquote class="wp-block-quote">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><cite>quote by Ari Budin</cite></blockquote>
-
-
-
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                        specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                        passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-                <!-- .entry-content -->
-
-                <footer class="entry-footer">
-
-                    <div class="tags-links mb-3"><span class="fw-bold me-2">Category</span> <a href="https://demo.bootstrap.news/flat/category/lifestyle/" rel="category tag">Lifestyle</a> <a href="https://demo.bootstrap.news/flat/category/travel/" rel="category tag">Travel</a></div>
-                    <div class="tags-links tagcloud"><span class="fw-bold me-2">Tags</span> <a href="https://demo.bootstrap.news/flat/tag/fashion/" rel="tag">fashion</a><a href="https://demo.bootstrap.news/flat/tag/hobby/" rel="tag">hobby</a><a href="https://demo.bootstrap.news/flat/tag/trend/"
-                            rel="tag">trend</a></div>
-                </footer>
-                <!-- .entry-footer -->
-
-            </article>
-            <!-- #post-## -->
-            <hr>
-            <!--social share-->
-
-            <div class="social-share mb-3">
-                <!-- share facebook -->
-                <a class="btn btn-light btn-sm blank-windows" href="https://www.facebook.com/sharer.php?u=https://demo.bootstrap.news/flat/2019/09/the-best-red-carpet-looks-from-the-opening-weekend/" target="_blank" rel="noopener" title="Share to facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
-    </svg>
-                    <span class="d-none d-sm-inline">Facebook</span>
-                </a>
-                <!-- share twitter -->
-                <a class="btn btn-light btn-sm blank-windows" href="https://www.twitter.com/share?url=https://demo.bootstrap.news/flat/2019/09/the-best-red-carpet-looks-from-the-opening-weekend/" target="_blank" rel="noopener" title="Share to twitter">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
-    </svg>
-                    <span class="d-none d-sm-inline">Twitter</span>
-                </a>
-                <!-- share linkedin -->
-                <a class="btn btn-light btn-sm blank-windows" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://demo.bootstrap.news/flat/2019/09/the-best-red-carpet-looks-from-the-opening-weekend/" target="_blank" rel="noopener" title="Share to Linkedin">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" viewBox="0 0 512 512"><path d="M444.17,32H70.28C49.85,32,32,46.7,32,66.89V441.61C32,461.91,49.85,480,70.28,480H444.06C464.6,480,480,461.79,480,441.61V66.89C480.12,46.7,464.6,32,444.17,32ZM170.87,405.43H106.69V205.88h64.18ZM141,175.54h-.46c-20.54,0-33.84-15.29-33.84-34.43,0-19.49,13.65-34.42,34.65-34.42s33.85,14.82,34.31,34.42C175.65,160.25,162.35,175.54,141,175.54ZM405.43,405.43H341.25V296.32c0-26.14-9.34-44-32.56-44-17.74,0-28.24,12-32.91,23.69-1.75,4.2-2.22,9.92-2.22,15.76V405.43H209.38V205.88h64.18v27.77c9.34-13.3,23.93-32.44,57.88-32.44,42.13,0,74,27.77,74,87.64Z"></path></svg>
-                    <span class="d-none d-sm-inline">Linkedin</span>
-                </a>
-                <!-- share to whatsapp -->
-                <a class="btn btn-light btn-sm d-md-none" href="whatsapp://send?text=Read&nbsp;more&nbsp;in&nbsp;https://demo.bootstrap.news/flat/2019/09/the-best-red-carpet-looks-from-the-opening-weekend/" data-action="share/whatsapp/share" target="_blank" rel="noopener"
-                    title="Share to whatsapp">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" viewBox="0 0 512 512"><path d="M414.73,97.1A222.14,222.14,0,0,0,256.94,32C134,32,33.92,131.58,33.87,254A220.61,220.61,0,0,0,63.65,365L32,480l118.25-30.87a223.63,223.63,0,0,0,106.6,27h.09c122.93,0,223-99.59,223.06-222A220.18,220.18,0,0,0,414.73,97.1ZM256.94,438.66h-.08a185.75,185.75,0,0,1-94.36-25.72l-6.77-4L85.56,427.26l18.73-68.09-4.41-7A183.46,183.46,0,0,1,71.53,254c0-101.73,83.21-184.5,185.48-184.5A185,185,0,0,1,442.34,254.14C442.3,355.88,359.13,438.66,256.94,438.66ZM358.63,300.47c-5.57-2.78-33-16.2-38.08-18.05s-8.83-2.78-12.54,2.78-14.4,18-17.65,21.75-6.5,4.16-12.07,1.38-23.54-8.63-44.83-27.53c-16.57-14.71-27.75-32.87-31-38.42s-.35-8.56,2.44-11.32c2.51-2.49,5.57-6.48,8.36-9.72s3.72-5.56,5.57-9.26.93-6.94-.46-9.71-12.54-30.08-17.18-41.19c-4.53-10.82-9.12-9.35-12.54-9.52-3.25-.16-7-.2-10.69-.2a20.53,20.53,0,0,0-14.86,6.94c-5.11,5.56-19.51,19-19.51,46.28s20,53.68,22.76,57.38,39.3,59.73,95.21,83.76a323.11,323.11,0,0,0,31.78,11.68c13.35,4.22,25.5,3.63,35.1,2.2,10.71-1.59,33-13.42,37.63-26.38s4.64-24.06,3.25-26.37S364.21,303.24,358.63,300.47Z" style="fill-rule:evenodd"></path></svg>
-                    <span class="d-none d-sm-inline">Whatsapp</span>
-                </a>
-                <!--Share to pinterest-->
-                <a class="btn btn-light btn-sm blank-windows" href="http://pinterest.com/pin/create/button/?url=https://demo.bootstrap.news/flat/2019/09/the-best-red-carpet-looks-from-the-opening-weekend/" target="_blank" rel="noopener" title="Share to Pinterest">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="currentColor" viewBox="0 0 512 512"><path d="M256.05,32c-123.7,0-224,100.3-224,224,0,91.7,55.2,170.5,134.1,205.2-.6-15.6-.1-34.4,3.9-51.4,4.3-18.2,28.8-122.1,28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2,19.2-58,43.2-58,20.4,0,30.2,15.3,30.2,33.6,0,20.5-13.1,51.1-19.8,79.5-5.6,23.8,11.9,43.1,35.4,43.1,42.4,0,71-54.5,71-119.1,0-49.1-33.1-85.8-93.2-85.8-67.9,0-110.3,50.7-110.3,107.3,0,19.5,5.8,33.3,14.8,43.9,4.1,4.9,4.7,6.9,3.2,12.5-1.1,4.1-3.5,14-4.6,18-1.5,5.7-6.1,7.7-11.2,5.6-31.3-12.8-45.9-47-45.9-85.6,0-63.6,53.7-139.9,160.1-139.9,85.5,0,141.8,61.9,141.8,128.3,0,87.9-48.9,153.5-120.9,153.5-24.2,0-46.9-13.1-54.7-27.9,0,0-13,51.6-15.8,61.6-4.7,17.3-14,34.5-22.5,48a225.13,225.13,0,0,0,63.5,9.2c123.7,0,224-100.3,224-224S379.75,32,256.05,32Z"></path></svg>
-                    <span class="d-none d-sm-inline">Pinterest</span>
-                </a>
-                <!-- share via email -->
-                <a class="btn btn-light btn-sm" href="mailto:?subject=Your&nbsp;post&nbsp;title&amp;body=Read&nbsp;complete&nbsp;article&nbsp;in&nbsp;here&nbsp;https://demo.bootstrap.news/flat/2019/09/the-best-red-carpet-looks-from-the-opening-weekend/" target="_blank"
-                    rel="noopener" title="Share by Email">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"></path>
-    </svg>
-                    <span class="d-none d-sm-inline">Email</span>
-                </a>
-            </div>
-            <!-- social share -->
-            <hr>
-
-            <!--author-->
-            <div class="row">
-                <div class="col-lg-3">
-                    <img alt="" src="assets/img/slogan_logo.svg" class="avatar avatar-100 photo" height="200px" width="200px"> </div>
-                <div class="col-lg-9">
-                    <h4 class="mb-2 font-weight-bold">ari budin</h4>
-                    <a class="author-website mb-1" target="_blank" rel="noopener" href="https://bootstrap.news">
-        https://bootstrap.news        </a>
-                    <p>Programmer, Father, Husband, I design and develop Bootstrap template, founder of Bootstrap.news</p>
-                </div>
-            </div>
-            <hr>
-
-            <!--related-->
-            <div class="related-post mb-4">
-
-                <div class="block-title-13">
-                    <h4 class="h5 title-box-dot"><span>Related article</span></h4>
-                    <div class="dot-line"></div>
-                </div>
-                <div class="row">
-                    <article class="col-6 col-md-4">
-                        <div class="card card-full hover-a mb-4">
-                            <!--thumbnail-->
-                            <div class="ratio_230-129 image-wrapper">
-                                <a href="https://demo.bootstrap.news/flat/2019/09/copper-colored-has-been-popular-in-interior-home-decor/">
-                                    <img width="230" height="129" src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-230x129.jpeg" class="img-fluid lazy wp-post-image entered loaded" alt="Copper Colored has Been Popular in Interior Home Decor." loading="lazy"
-                                        data-src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-230x129.jpeg" srcset="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-230x129.jpeg 230w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-372x208.jpeg 372w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-360x202.jpeg 360w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-251x141.jpeg 251w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-203x114.jpeg 203w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-165x92.jpeg 165w"
-                                        sizes="(max-width: 230px) 100vw, 230px" data-ll-status="loaded"> </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-text mb-2 text-muted small">
-                                    <!--author-->
-                                    <span class="fw-bold d-none d-sm-inline me-1">
-                        <a href="https://demo.bootstrap.news/flat/author/admin/" title="Posts by ari budin" rel="author">ari budin</a>						</span>
-                                    <!--date-->
-                                    <time class="news-date" datetime="2019-09-11">Sep 11, 2019</time>
-                                    <!--comments-->
-                                    <span title="0 Comment" class="float-right">
-                        <span class="fa fa-comments" aria-hidden="true"></span> 0 </span>
-                                </div>
-                                <!--title-->
-                                <h2 class="card-title h5"><a href="https://demo.bootstrap.news/flat/2019/09/copper-colored-has-been-popular-in-interior-home-decor/">Copper Colored has Been Popular in Interior Home Decor.</a></h2>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-6 col-md-4">
-                        <div class="card card-full hover-a mb-4">
-                            <!--thumbnail-->
-                            <div class="ratio_230-129 image-wrapper">
-                                <a href="https://demo.bootstrap.news/flat/2019/09/one-plus-size-writer-on-what-lizzo-means-to-her/">
-                                    <img width="230" height="129" src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1530271010811-d382d6ac28a7-230x129.jpg" class="img-fluid lazy wp-post-image entered loaded" alt="One Plus Size Writer on What Lizzo Means to Her" loading="lazy"
-                                        data-src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1530271010811-d382d6ac28a7-230x129.jpg" srcset="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1530271010811-d382d6ac28a7-230x129.jpg 230w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1530271010811-d382d6ac28a7-372x208.jpg 372w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1530271010811-d382d6ac28a7-360x202.jpg 360w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1530271010811-d382d6ac28a7-251x141.jpg 251w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1530271010811-d382d6ac28a7-203x114.jpg 203w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1530271010811-d382d6ac28a7-165x92.jpg 165w"
-                                        sizes="(max-width: 230px) 100vw, 230px" data-ll-status="loaded"> </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-text mb-2 text-muted small">
-                                    <!--author-->
-                                    <span class="fw-bold d-none d-sm-inline me-1">
-                        <a href="https://demo.bootstrap.news/flat/author/admin/" title="Posts by ari budin" rel="author">ari budin</a>						</span>
-                                    <!--date-->
-                                    <time class="news-date" datetime="2019-09-11">Sep 11, 2019</time>
-                                    <!--comments-->
-                                    <span title="0 Comment" class="float-right">
-                        <span class="fa fa-comments" aria-hidden="true"></span> 0 </span>
-                                </div>
-                                <!--title-->
-                                <h2 class="card-title h5"><a href="https://demo.bootstrap.news/flat/2019/09/one-plus-size-writer-on-what-lizzo-means-to-her/">One Plus Size Writer on What Lizzo Means to Her</a></h2>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="col-6 col-md-4">
-                        <div class="card card-full hover-a mb-4">
-                            <!--thumbnail-->
-                            <div class="ratio_230-129 image-wrapper">
-                                <a href="https://demo.bootstrap.news/flat/2019/09/minimalist-home-design-with-white-smooth-color/">
-                                    <img width="230" height="129" src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1498569026542-39c64353e401-230x129.jpg" class="img-fluid lazy wp-post-image entered loaded" alt="Minimalist Home Design with White Smooth Color" loading="lazy"
-                                        data-src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1498569026542-39c64353e401-230x129.jpg" srcset="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1498569026542-39c64353e401-230x129.jpg 230w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1498569026542-39c64353e401-372x208.jpg 372w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1498569026542-39c64353e401-360x202.jpg 360w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1498569026542-39c64353e401-251x141.jpg 251w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1498569026542-39c64353e401-203x114.jpg 203w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1498569026542-39c64353e401-165x92.jpg 165w"
-                                        sizes="(max-width: 230px) 100vw, 230px" data-ll-status="loaded"> </a>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-text mb-2 text-muted small">
-                                    <!--author-->
-                                    <span class="fw-bold d-none d-sm-inline me-1">
-                        <a href="https://demo.bootstrap.news/flat/author/admin/" title="Posts by ari budin" rel="author">ari budin</a>						</span>
-                                    <!--date-->
-                                    <time class="news-date" datetime="2019-09-11">Sep 11, 2019</time>
-                                    <!--comments-->
-                                    <span title="0 Comment" class="float-right">
-                        <span class="fa fa-comments" aria-hidden="true"></span> 0 </span>
-                                </div>
-                                <!--title-->
-                                <h2 class="card-title h5"><a href="https://demo.bootstrap.news/flat/2019/09/minimalist-home-design-with-white-smooth-color/">Minimalist Home Design with White Smooth Color</a></h2>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <!--End Related Posts-->
-            <!--suggestion post-->
-
-
-            <!--Comments-->
-            <div id="comments" class="mb-5">
-
-
-                <div id="respond" class="comment-respond">
-                    <h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/flat/2019/09/the-best-red-carpet-looks-from-the-opening-weekend/#respond" style="display:none;">Cancel reply</a></small></h3>
-                    <form action="https://demo.bootstrap.news/flat/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="">
-                        <p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p>
-                        <div class="form-group comment-form-comment">
-                            <textarea aria-label="comments" class=" mb-4" id="comment" placeholder="Comments *" name="comment" cols="95" rows="5" required="" height="100px"></textarea>
-                        </div>
-                        <div class="form-group comment-form-author"><input class="form-control mb-4" aria-label="name" id="author" placeholder="Name*" name="author" type="text" value="" size="30" aria-required="true" required=""></div>
-                        <div class="form-group comment-form-email"><input class="form-control mb-4" aria-label="email" id="email" placeholder="Email *" name="email" type="email" value="" size="30" aria-required="true" required=""></div>
-
-                        <div class="form-group form-check comment-form-cookies-consent mb-3"><input class="form-check-input" id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label class="form-check-label" for="wp-comment-cookies-consent">Save my name, email and website in this browser for the next time I comment</label></div>
-                        <p class="form-submit"><input name="submit" type="submit" id="submit" class="btn btn-primary" value="Post Comment"> <input type="hidden" name="comment_post_ID" value="52" id="comment_post_ID">
-                            <input type="hidden" name="comment_parent" id="comment_parent" value="0">
-                        </p>
-                    </form>
-                </div>
-                <!-- #respond -->
-            </div>
+    <!-- Detail -->
+    <div class="container body-content pt-3">
+        <div class="container btn-back" style="font-size: 25px; position: fixed; left: 35px; width: fit-content; border:3px solid white;">
+            <a href="javascript:history.back()"><i class="fas fa-chevron-left"></i></a>
         </div>
-        <!-- left sidebar check -->
+        <div class="row" style="margin-top: 50px;">
+            <!--Main content-->
+            <div class="col-md-8 m-auto">
+                <div>
+                    <!-- header -->
+                    <div class="">
+                        <% if (newsArticle != null) { %>
+                            <h1 class="entry-title display-2-lg mt-2"><%= newsArticle.title %></h1>
+                        <% } else {%>
+                            <h1 class="entry-title display-2-lg mt-2">Title</h1>
+                        <% } %>
+                        <!-- <h1 class="entry-title display-2-lg mt-2">ESPRESSO LÀ GÌ? CÁCH PHÂN BIỆT CÁC LOẠI ESPRESSO</h1> -->
 
-        <!-- right sidebar check -->
-
-
-        <div class="col-md-4 " id="right-sidebar">
-
-            <div id="bootnews_custompost-2" class="px-3 position-relative">
-                <div class="block-title-13">
-                    <h4 class="h5"><span>Popular post</span></h4>
-                    <div class="dot-line"></div>
-                </div>
-                <!--style 1-->
-                <div class="small-post">
-                    <!--post list-->
-                    <article class="card card-full hover-a mb-4">
-                        <div class="row">
-                            <div class="col-3 col-md-4 pe-2 pe-md-0">
-                                <!--thumbnail-->
-                                <div class="ratio_110-77 image-wrapper">
-                                    <a href="https://demo.bootstrap.news/flat/2019/09/copper-colored-has-been-popular-in-interior-home-decor/">
-                                        <img width="110" height="77" src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-110x77.jpeg" class="img-fluid lazy wp-post-image entered loaded" alt="Copper Colored has Been Popular in Interior Home Decor." loading="lazy"
-                                            data-src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-110x77.jpeg" srcset="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-110x77.jpeg 110w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-99x68.jpeg 99w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-115x80.jpeg 115w"
-                                            sizes="(max-width: 110px) 100vw, 110px" data-ll-status="loaded">
-                                        <!-- post type -->
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-9 col-md-8">
-                                <div class="card-body pt-0">
-                                    <!--title-->
-                                    <h3 class="card-title h6 h5-sm h6-md">
-                                        <a href="https://demo.bootstrap.news/flat/2019/09/copper-colored-has-been-popular-in-interior-home-decor/">Copper Colored has Been Popular in Interior Home Decor.</a>
-                                    </h3>
-                                    <!--date-->
-                                    <div class="card-text small text-muted">
-                                        <time class="news-date" datetime="2019-09-11T06:14:15+00:00">September 11, 2019</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <!--End post list-->
-                    <!--post list-->
-                    <article class="card card-full hover-a mb-4">
-                        <div class="row">
-                            <div class="col-3 col-md-4 pe-2 pe-md-0">
-                                <!--thumbnail-->
-                                <div class="ratio_110-77 image-wrapper">
-                                    <a href="https://demo.bootstrap.news/flat/2019/09/interior-enthusiasts-series-especially-scandinavian-style/">
-                                        <img width="110" height="77" src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-931887-110x77.jpeg" class="img-fluid lazy wp-post-image entered loaded" alt="Interior Enthusiasts series especially scandinavian style" loading="lazy"
-                                            data-src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-931887-110x77.jpeg" srcset="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-931887-110x77.jpeg 110w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-931887-99x68.jpeg 99w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-931887-115x80.jpeg 115w"
-                                            sizes="(max-width: 110px) 100vw, 110px" data-ll-status="loaded">
-                                        <!-- post type -->
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-9 col-md-8">
-                                <div class="card-body pt-0">
-                                    <!--title-->
-                                    <h3 class="card-title h6 h5-sm h6-md">
-                                        <a href="https://demo.bootstrap.news/flat/2019/09/interior-enthusiasts-series-especially-scandinavian-style/">Interior Enthusiasts series especially scandinavian style</a>
-                                    </h3>
-                                    <!--date-->
-                                    <div class="card-text small text-muted">
-                                        <time class="news-date" datetime="2019-09-11T06:04:14+00:00">September 11, 2019</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <!--End post list-->
-                    <!--post list-->
-                    <article class="card card-full hover-a mb-4">
-                        <div class="row">
-                            <div class="col-3 col-md-4 pe-2 pe-md-0">
-                                <!--thumbnail-->
-                                <div class="ratio_110-77 image-wrapper">
-                                    <a href="https://demo.bootstrap.news/flat/2019/09/sold-over-1-million-flower-in-the-first-month-of-launch/">
-                                        <img width="110" height="77" src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-707584-110x77.jpeg" class="img-fluid lazy wp-post-image entered loaded" alt="Sold Over 1 Million Flower in the First Month of Launch" loading="lazy"
-                                            data-src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-707584-110x77.jpeg" srcset="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-707584-110x77.jpeg 110w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-707584-99x68.jpeg 99w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-707584-115x80.jpeg 115w"
-                                            sizes="(max-width: 110px) 100vw, 110px" data-ll-status="loaded">
-                                        <!-- post type -->
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-9 col-md-8">
-                                <div class="card-body pt-0">
-                                    <!--title-->
-                                    <h3 class="card-title h6 h5-sm h6-md">
-                                        <a href="https://demo.bootstrap.news/flat/2019/09/sold-over-1-million-flower-in-the-first-month-of-launch/">Sold Over 1 Million Flower in the First Month of Launch</a>
-                                    </h3>
-                                    <!--date-->
-                                    <div class="card-text small text-muted">
-                                        <time class="news-date" datetime="2019-09-11T05:57:05+00:00">September 11, 2019</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <!--End post list-->
-                    <!--post list-->
-                    <article class="card card-full hover-a mb-4">
-                        <div class="row">
-                            <div class="col-3 col-md-4 pe-2 pe-md-0">
-                                <!--thumbnail-->
-                                <div class="ratio_110-77 image-wrapper">
-                                    <a href="https://demo.bootstrap.news/flat/2019/09/the-best-red-carpet-looks-from-the-opening-weekend/">
-                                        <img width="110" height="77" src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1565007578343-2136fcfbd7fb-110x77.jpg" class="img-fluid lazy wp-post-image entered loaded" alt="The Best Red Carpet Looks From the Opening Weekend" loading="lazy"
-                                            data-src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1565007578343-2136fcfbd7fb-110x77.jpg" srcset="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1565007578343-2136fcfbd7fb-110x77.jpg 110w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1565007578343-2136fcfbd7fb-99x68.jpg 99w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1565007578343-2136fcfbd7fb-115x80.jpg 115w"
-                                            sizes="(max-width: 110px) 100vw, 110px" data-ll-status="loaded">
-                                        <!-- post type -->
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="col-9 col-md-8">
-                                <div class="card-body pt-0">
-                                    <!--title-->
-                                    <h3 class="card-title h6 h5-sm h6-md">
-                                        <a href="https://demo.bootstrap.news/flat/2019/09/the-best-red-carpet-looks-from-the-opening-weekend/">The Best Red Carpet Looks From the Opening Weekend</a>
-                                    </h3>
-                                    <!--date-->
-                                    <div class="card-text small text-muted">
-                                        <time class="news-date" datetime="2019-09-11T05:51:34+00:00">September 11, 2019</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                    <!--End post list-->
-                </div>
-                <div class="gap-0"></div>
-
-            </div>
-            <div id="bootnews_latestside-1" class="px-3 position-relative">
-                <div class="block-title-13">
-                    <h4 class="h5 title-box-dot"><span>Latest Post</span></h4>
-                    <div class="dot-line"></div>
-                </div>
-                <!--output-->
-                <div class="big-post">
-                    <article class="card card-full hover-a mb-4">
-                        <!--thumbnail-->
-                        <div class="ratio_360-202 image-wrapper">
-                            <a href="https://demo.bootstrap.news/flat/2019/09/let-the-photograpic-team-capture-the-romance-your-wedding-day/">
-                                <img width="360" height="202" src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1471017579609-0c3c8c0115f8-360x202.jpg" class="img-fluid lazy wp-post-image entered loaded" alt="Let the Photograpic Team Capture The Romance Your Wedding Day"
-                                    loading="lazy" data-src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1471017579609-0c3c8c0115f8-360x202.jpg" srcset="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1471017579609-0c3c8c0115f8-360x202.jpg 360w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1471017579609-0c3c8c0115f8-372x208.jpg 372w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1471017579609-0c3c8c0115f8-251x141.jpg 251w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1471017579609-0c3c8c0115f8-230x129.jpg 230w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1471017579609-0c3c8c0115f8-203x114.jpg 203w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/photo-1471017579609-0c3c8c0115f8-165x92.jpg 165w"
-                                    sizes="(max-width: 360px) 100vw, 360px" data-ll-status="loaded">
-                                <!-- post type -->
-                            </a>
-                        </div>
-
-                        <div class="card-body">
-                            <!--title-->
-                            <h2 class="card-title h1-sm h3-md">
-                                <a href="https://demo.bootstrap.news/flat/2019/09/let-the-photograpic-team-capture-the-romance-your-wedding-day/">Let the Photograpic Team Capture The Romance Your Wedding Day</a>
-                            </h2>
-                            <div class="card-text text-muted small mb-2">
-                                <!--author-->
-                                <span class="d-none d-sm-inline fw-bold me-1">
-                                <a href="https://demo.bootstrap.news/flat/author/admin/" title="Posts by ari budin" rel="author">ari budin</a> 
+                        <div class="mb-3 small text-muted pt-2" style="text-align: right;">
+                            <span class="me-2 me-md-3"><i class="fas fa-user"></i>Viết bởi
+                            <span class="author vcard"><a class="url fn n fw-bold" href="https://www.facebook.com/andeptraicuteso1/"> An Thinh</a>
                             </span>
-                                <!--date-->
-                                <time class="news-date" datetime="2019-09-11T06:21:18+00:00">September 11, 2019</time>
-                            </div>
-                            <!--description-->
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text...</p>
-                        </div>
-                    </article>
-                </div>
+                            </span>
+                            <!-- written by -->
+                            <span class="me-2 me-md-3">
+                            <span title="Posted on"><i class="fas fa-edit"></i></span>
+                            <span class="published">September 11, 2019</span> </span>
+                            <!-- date time post -->
+                            <span class="me-2 me-md-3 text-muted d-none d-md-inline-block">
+                                <i class="fas fa-comments"></i> 0 Comments</span>
+                            <!-- comments -->
 
-                <div class="small-post">
-                    <!--post list-->
-                    <article class="card card-full hover-a mb-4">
-                        <div class="row">
-                            <div class="col-3 col-md-4 pe-2 pe-md-0">
-                                <!--thumbnail-->
-                                <div class="ratio_110-77 image-wrapper">
-                                    <a href="https://demo.bootstrap.news/flat/2019/09/heres-all-the-interior-news-you-missed-this-week/">
-                                        <img width="110" height="77" src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-2082095-110x77.jpeg" class="img-fluid lazy wp-post-image entered loaded" alt="Here’s All The Interior News You Missed This Week" loading="lazy"
-                                            data-src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-2082095-110x77.jpeg" srcset="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-2082095-110x77.jpeg 110w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-2082095-99x68.jpeg 99w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-2082095-115x80.jpeg 115w"
-                                            sizes="(max-width: 110px) 100vw, 110px" data-ll-status="loaded">
-                                        <!-- post type -->
-                                    </a>
-                                </div>
-                            </div>
 
-                            <div class="col-9 col-md-8">
-                                <div class="card-body pt-0">
-                                    <!--title-->
-                                    <h3 class="card-title h6 h5-sm h6-md">
-                                        <a href="https://demo.bootstrap.news/flat/2019/09/heres-all-the-interior-news-you-missed-this-week/">Here’s All The Interior News You Missed This Week</a>
-                                    </h3>
-                                    <!--date-->
-                                    <div class="card-text small text-muted">
-                                        <time class="news-date" datetime="2019-09-11T06:15:54+00:00">September 11, 2019</time>
-                                    </div>
-                                </div>
-                            </div>
+                            <span class="me-2 me-md-3">
+                                <i class="fas fa-eye"></i>Views 236</span>
+                            <!--end view-->
                         </div>
-                    </article>
-                    <!--End post list-->
-                    <!--post list-->
-                    <article class="card card-full hover-a mb-4">
-                        <div class="row">
-                            <div class="col-3 col-md-4 pe-2 pe-md-0">
-                                <!--thumbnail-->
-                                <div class="ratio_110-77 image-wrapper">
-                                    <a href="https://demo.bootstrap.news/flat/2019/09/copper-colored-has-been-popular-in-interior-home-decor/">
-                                        <img width="110" height="77" src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-110x77.jpeg" class="img-fluid lazy wp-post-image entered loaded" alt="Copper Colored has Been Popular in Interior Home Decor." loading="lazy"
-                                            data-src="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-110x77.jpeg" srcset="https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-110x77.jpeg 110w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-99x68.jpeg 99w, https://demo.bootstrap.news/flat/wp-content/uploads/2019/09/pexels-photo-1421023-115x80.jpeg 115w"
-                                            sizes="(max-width: 110px) 100vw, 110px" data-ll-status="loaded">
-                                        <!-- post type -->
-                                    </a>
-                                </div>
-                            </div>
+                    </div>
+                    <!-- end header -->
+                    <% if (newsArticle != null) { %>
+                        <img width="100%" height="500" src="<%= newsArticle.img %>" class="img-fluid m-auto">
+                    <% } else {%>
+                        <img width="100%" height="500" src="./assets/img/banner1.png" class="img-fluid m-auto">
+                    <% } %>
+                    <!-- content -->
+                    <div class="px-4" style="font-size: 20px;">
 
-                            <div class="col-9 col-md-8">
-                                <div class="card-body pt-0">
-                                    <!--title-->
-                                    <h3 class="card-title h6 h5-sm h6-md">
-                                        <a href="https://demo.bootstrap.news/flat/2019/09/copper-colored-has-been-popular-in-interior-home-decor/">Copper Colored has Been Popular in Interior Home Decor.</a>
-                                    </h3>
-                                    <!--date-->
-                                    <div class="card-text small text-muted">
-                                        <time class="news-date" datetime="2019-09-11T06:14:15+00:00">September 11, 2019</time>
-                                    </div>
-                                </div>
-                            </div>
+                        <% if (newsArticle != null) { %>
+                            <p class="pt-4"><%= newsArticle.content %></p>
+                        <% }%>
+
+                        <!-- <p class="pt-4">Espresso là một loại cà phê được bắt nguồn từ nước Ý vào khoảng năm 1930. Sau đó lan rộng sang Tây Ban Nha, phổ biến tại Anh những năm 1950, rồi dần sang các nước châu Âu và ngày nay thì Espresso đã có mặt khắp nơi trên thế giới.
+                            Trong tiếng Ý, “Espresso” có nghĩa là “tức thì, nhanh chóng”. Vậy nên, quá trình tạo ra Espresso và cả việc thưởng thức chúng cũng rất nhanh gọn. Thậm chí ở Ý, người ta gọi tách Espresso và uống ngay tại chỗ chỉ với vài hơi.
+                            Các số liệu cho biết đến 80% lượng Espresso của thế giới đang được tiêu thụ tại Ý.
+                        </p>
+
+                        <p class="pt-3" style="font-weight: 500;">Espresso là gì? </p>
+
+                        <p>Espresso nổi tiếng bởi chất lượng hảo hạng và quy trình chế biến đòi hỏi chuẩn chỉnh, tỉ mỉ nhất từ khâu chọn hạt cà phê đạt chất lượng đến khi được phục vụ đến tay khách hàng. Vậy Espresso là loại cà phê gì và nó được pha chế
+                            ra sao? </p>
+                        <p class="pt-3">
+                            Espresso là loại cà phê được pha bằng máy dưới áp suất khoảng 9 – 10 bars (bar - đơn vị đo áp suất) cùng với nước nóng. Để tạo ra được Espresso đúng chuẩn, yêu cầu các hạt cà phê phải nguyên chất, rang mộc, sau đó đi xay mịn và không tẩm bất kỳ tạp chất
+                            nào. Bên cạnh đó, nước dùng để pha Espresso phải là nước tinh khiết.
+                        </p> -->
+                    </div>
+                    <!-- end content -->
+
+                    <!-- entry-footer -->
+                    <div class="pt-3">
+
+                        <div class="mb-3">
+                            <span class="fw-bold me-2">Category</span>
+                            <a href="#">Espresso</a>
+                            <a href="#">CaPhe</a>
                         </div>
-                    </article>
-                    <!--End post list-->
+                        <div class="mb-3"><span class="fw-bold me-2">Tags</span>
+                            <a href="#" class="mr-1">cafe</a>
+                            <a href="#" class="mr-1">coffee</a>
+                            <a href="#" class="mr-1">Caphe</a></div>
+                    </div>
+                    <!-- .entry-footer -->
 
                 </div>
+                <!-- #post-## -->
+                <hr>
+
+                <!--social share-->
+                <div class="social-share mb-3 text-center">
+                    <!-- share facebook -->
+                    <a class="btn btn--blue text-light" href="#" target="_blank" title="Share to facebook">
+                        <i class="fab fa-facebook-square"></i>
+                        <span class="d-none d-sm-inline">Facebook</span>
+                    </a>
+                    <!-- share twitter -->
+                    <a class="btn btn--blue text-light" href="#" target="_blank" title="Share to twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span class="d-none d-sm-inline">Twitter</span>
+                    </a>
+                    <!-- share linkedin -->
+                    <a class="btn btn--blue text-light" href="#" target="_blank" title="Share to Linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="d-none d-sm-inline">Linkedin</span>
+                    </a>
+                    <!-- share via email -->
+                    <a class="btn btn--blue text-light" href="#" target="_blank" title="Share by Email">
+                        <i class="fas fa-envelope-square"></i>
+                        <span class="d-none d-sm-inline">Email</span>
+                    </a>
+                </div>
+                <!-- End social share -->
+                <hr>
+
+
+                <!--related-->
+
+                <div class="related-post mb-4">
+                    <h4 class="p-2 mb-3 text-light bg-dark">Bài viết liên quan
+                    </h4>
+                    <div class="row">
+                        <% if (typeof newsArr !== 'undefined' && newsArr.length > 0) { %>
+                            <% newsArr.forEach(function(article, index){ %>
+                                <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
+                                    <div class="ubc-blog-card d-flex flex-column ">
+                                        <a href="detail-news/<%= article._id %>" target="blank ">
+                                            <div class="ubc-blog-card__image "
+                                                style="background: url('<%= article.img %>') center center no-repeat; ">
+                                            </div>
+                                        </a>
+                                        <div class="ubc-blog-card__content d-flex flex-column ">
+                                            <div class="ubc-blog-card__content__header d-flex flex-column ">
+                                                <h5 class="ubc-blog-card__title ">
+                                                    <%= article.title %>
+                                                </h5>
+                                            </div>
+                                            <div class="mt-auto "><button
+                                                    class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a
+                                                        href="detail-news/<%= article._id %>" class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% }) %>
+                        <% } else {%>
+                            <p>No articles found >:( </p>
+                        <% } %>
+                    </div>
+                </div>
+                <!--End Related Posts-->
+
+
+                <!-- End Detail -->
 
             </div>
         </div>
     </div>
-</div>
-<!-- End Detail -->

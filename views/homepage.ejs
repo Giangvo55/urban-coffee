@@ -416,15 +416,14 @@
             </div>
         </div>
 
-        <div class="row ">
-
+        <div class="row">
             <% if (typeof newsArticles !== 'undefined' && newsArticles.length > 0) { %>
                 <% newsArticles.forEach(function(article, index){ %>
                     <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
                         <div class="ubc-blog-card d-flex flex-column ">
-                            <a href="detail-news" target="blank ">
+                            <a href="detail-news/<%= article._id %>" target="blank ">
                                 <div class="ubc-blog-card__image "
-                                    style="background: url(&quot;https://feed.thecoffeehouse.com//content/images/2021/08/img_8089_grande-1.jpg&quot;) center center no-repeat; ">
+                                    style="background: url('<%= article.img %>') center center no-repeat; ">
                                 </div>
                             </a>
                             <div class="ubc-blog-card__content d-flex flex-column ">
@@ -435,7 +434,7 @@
                                 </div>
                                 <div class="mt-auto "><button
                                         class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a
-                                            href="detail-news" class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                                            href="detail-news/<%= article._id %>" class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
                             </div>
                         </div>
                     </div>

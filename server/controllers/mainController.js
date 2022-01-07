@@ -139,8 +139,10 @@ exports.addToCart = async(req, res, next) => {
         let newsId = req.params.id; 
         const newsArticle = await News.findById(newsId);
 
-        // res.render('order', {title: 'Urban Coffee', drinks, bestSeller});
-        res.render('detail-news', {newsArticle});
+        const newsArrLimit = 3
+        const newsArr = await News.find({}).sort({_id: -1}).limit(newsArrLimit);
+
+        res.render('detail-news', {newsArticle, newsArr});
     } catch (error) {
         res.status(500).send({message: error.message || "Error Occured" });
     }
