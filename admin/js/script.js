@@ -540,6 +540,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Get the modal
 var modal = document.getElementById("myModal");
+var modal_2 = document.getElementById("editModal");
 
 // Get the button that opens the modal
 var btn = document.getElementsByClassName("viewDetail");
@@ -548,17 +549,63 @@ for (var i = 0; i < btn.length; i++) {
         modal.style.display = "block";
     }
 }
+// Get the button that opens the modal
+var btn_2 = document.getElementsByClassName("editBtn");
+for (var i = 0; i < btn_2.length; i++) {
+    btn_2[i].onclick = function() {
+        modal_2.style.display = "block";
+    }
+}
+
+var edtDetail = document.getElementById("edt-detail");
+edtDetail.onclick = function() {
+    modal.style.display = "none";
+    modal_2.style.display = "block";
+}
+
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+var span1 = document.getElementsByClassName("close")[1];
+var action_cancel = document.getElementsByClassName("btn-cancel")[0];
+var action_save = document.getElementsByClassName("action-save")[0];
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
 }
+span1.onclick = function() {
+    if (confirm("Thoát ra sẽ hủy bỏ những thay đổi của bạn")) {
+        modal_2.style.display = "none";
+    } else {}
+}
 
-// When the user clicks anywhere outside of the modal, close it
+action_cancel.onclick = function() {
+    if (confirm("Thoát ra sẽ hủy bỏ những thay đổi của bạn")) {
+        modal_2.style.display = "none";
+    } else {}
+}
+action_save.onclick = function() {
+        if (confirm("Bạn có chắc chắn lưu những thay đổi")) {
+            modal_2.style.display = "none";
+        } else {}
+    }
+    // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+function AcceptOrder() {
+    document.getElementById('status-order').innerHTML = '<div class="badge-active" style="margin: 0; font-size: 15px; width: fit-content; padding: 5px;">Nhận đơn</div>';
+}
+
+function OnDelivery() {
+    document.getElementById('status-order').innerHTML = '<div class="badge-disabled" style="margin: 0; font-size: 15px; width: fit-content; padding: 5px;">Đang giao</div>';
+
+}
+
+function FinishOrder() {
+    document.getElementById('status-order').innerHTML = '<div class="badge-success" style="margin: 0; font-size: 15px; width: fit-content; padding: 5px;">Hoàn thành</div>';
 }

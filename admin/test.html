@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="./assets/img/logo/favicon.svg" type="image/x-icon">
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
@@ -20,7 +21,7 @@
         <aside class="sidebar">
             <div class="sidebar-start">
                 <div class="sidebar-head">
-                    <a href="" class="logo-wrapper" title="Home">
+                    <a href="./" class="logo-wrapper" title="Home">
                         <span class="sr-only">Home</span>
                         <span class="icon logo" aria-hidden="true"><img src="./assets/img/logo/favicon.svg" alt=""></span>
                         <img src="./assets/img/logo/slogan_logo_transparent.svg" alt="" style="height: 45px; width: auto;">
@@ -35,17 +36,17 @@
                     <span class="system-menu__title">Tổng quan</span>
                     <ul class="sidebar-body-menu">
                         <li>
-                            <a href="today-orders.html"><span class="icon order-today" aria-hidden="true"></span> Đơn hàng hôm nay</a>
+                            <a class="" href="today-orders.html"><span class="icon order-today" aria-hidden="true"></span> Đơn hàng hôm nay</a>
                         </li>
 
                         <li>
-                            <a class="active">
+                            <a class="" href="history.html">
                                 <span class="icon history" aria-hidden="true"></span>Lịch sử đơn hàng
 
                             </a>
                         </li>
                         <li>
-                            <a href="manage-customers.html">
+                            <a class="active" href="#">
                                 <span class="icon manage-cus" aria-hidden="true"></span>Quản lý khách hàng
                             </a>
 
@@ -70,31 +71,33 @@
                                     <a href="menu-fruit-tea.html">• Trà trái cây</a>
                                 </li>
                                 <li>
-                                    <a href="menu-coffee-powder.html">• Cà phê bột</a>
+                                    <a href="menu-cakes.html">• Bánh</a>
                                 </li>
                                 <li>
-                                    <a href="menu-cakes&snacks.html">• Bánh - Snacks</a>
+                                    <a href="menu-snacks.html">• Snacks</a>
+                                </li>
+                                <li>
+                                    <a href="menu-coffee-powder.html">• Cà phê bột</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
 
-                            <a href="promotions.html">
+                            <a class="" href="promotions.html">
                                 <span class="icon promotions" aria-hidden="true"></span>Khuyến mãi
                                 </span>
                             </a>
                         </li>
                         <li>
-                            <a href="blogs.html">
-                                <span class="icon blog-sidebar" aria-hidden="true"></span>Blogs
+                            <a class="" href="news.html">
+                                <span class="icon blog-sidebar" aria-hidden="true"></span>Tin tức
                                 </span>
                             </a>
                         </li>
                         <li>
-                            <a href="manage-staffs.html">
+                            <a class="" href="manage-staffs.html">
                                 <span class="icon manage-admin" aria-hidden="true"></span>Quản lý thành viên
                             </a>
-
                         </li>
                     </ul>
                 </div>
@@ -119,10 +122,10 @@
                     <div class="main-nav-start">
                         <div class="search-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                            <input type="text" placeholder="Nhập ID hóa đơn cần tìm kiếm..." required="">
+                            <input type="text" placeholder="Nhập ID khách hàng cần tìm..." required="">
                         </div>
                     </div>
-                    <h2 class="main-title">Lịch sử đơn hàng</h2>
+                    <h2 class="main-title">Quản lý thông tin khách hàng</h2>
 
                     <div class="main-nav-end">
                         <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
@@ -135,8 +138,8 @@
           <i data-feather="chevron-down" aria-hidden="true"></i>
         </button>
                             <ul class="lang-menu dropdown">
-                                <li><a href="">Vietnam</a></li>
-                                <li><a href="">English</a></li>
+                                <li><a href="##">Vietnam</a></li>
+                                <li><a href="##">English</a></li>
                             </ul>
                         </div>
                         <button class="theme-switcher gray-circle-btn" type="button" title="Switch theme">
@@ -150,43 +153,39 @@
           <span class="icon notification active" aria-hidden="true"></span>
         </button>
                             <ul class="users-item-dropdown notification-dropdown dropdown">
-                                <li>
-                                    <a href="">
+                                <li class=" d-flex align-items-center">
+                                    <a href="##">
                                         <div class="notification-dropdown-icon info">
                                             <i data-feather="check"></i>
                                         </div>
                                         <div class="notification-dropdown-text">
-                                            <span class="notification-dropdown__title">System just updated</span>
-                                            <span class="notification-dropdown__subtitle">The system has been successfully upgraded. Read more
-                  here.</span>
+                                            <span class="notification-dropdown__title d-flex align-items-center">Đơn hàng mới <br> UC-999999</span>
+
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="##">
                                         <div class="notification-dropdown-icon danger">
                                             <i data-feather="info" aria-hidden="true"></i>
                                         </div>
                                         <div class="notification-dropdown-text">
-                                            <span class="notification-dropdown__title">The cache is full!</span>
-                                            <span class="notification-dropdown__subtitle">Unnecessary caches take up a lot of memory space and
-                  interfere ...</span>
+                                            <span class="notification-dropdown__title">Đơn hàng bị hủy <br> UC-999999</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
+                                    <a href="##">
                                         <div class="notification-dropdown-icon info">
                                             <i data-feather="check" aria-hidden="true"></i>
                                         </div>
                                         <div class="notification-dropdown-text">
-                                            <span class="notification-dropdown__title">New Subscriber here!</span>
-                                            <span class="notification-dropdown__subtitle">A new subscriber has subscribed.</span>
+                                            <span class="notification-dropdown__title">Đơn hàng mới <br> UC-999999</span>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="link-to-page" href="">Go to Notifications page</a>
+                                    <a class="link-to-page" href="#">Đến trang quản lý thông tin</a>
                                 </li>
                             </ul>
                         </div>
@@ -198,22 +197,16 @@
           </span>
         </button>
                             <ul class="users-item-dropdown nav-user-dropdown dropdown">
-                                <li>
-                                    <a href="">
+                                <li style="padding: 10px;">
+                                    <a href="my-profile.html">
                                         <i data-feather="user" aria-hidden="true"></i>
-                                        <span>Profile</span>
+                                        <span>Hồ sơ</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="">
-                                        <i data-feather="settings" aria-hidden="true"></i>
-                                        <span>Account settings</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="danger" href="">
+                                <li style="padding: 10px;">
+                                    <a class="danger" href="##">
                                         <i data-feather="log-out" aria-hidden="true"></i>
-                                        <span>Log out</span>
+                                        <span>Đăng xuất</span>
                                     </a>
                                 </li>
                             </ul>
@@ -222,104 +215,101 @@
                 </div>
             </nav>
             <!-- ! Main -->
-            <main class="main users chart-page" id="skip-target">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="users-table table-wrapper">
-                                <table class="posts-table">
-                                    <thead>
-                                        <tr class="users-table-info" style=" text-align:center;display: block">
-                                            <th>Order ID</th>
-                                            <th>User ID</th>
-                                            <th>Staff ID</th>
-                                            <th>Time</th>
-                                            <th>Date</th>
-                                            <th>Discount</th>
-                                            <th>Total</th>
-                                            <th>Status</th>
-                                            <th>Note</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody style="overflow-x:auto; height: 100px;display: block">
-                                        <tr style="text-align: center;">
-                                            <td>UC-12345678
-                                            </td>
-                                            <td>
-                                                MUC-12345678
-                                            </td>
-                                            <td>
-                                                <div class="pages-table-img">
-                                                    <picture>
-                                                        <source srcset="./assets/img/avatar/avatar-face-04.webp" type="image/webp"><img src="./assets/img/avatar/avatar-face-04.png" alt="User Name"></picture>
-                                                    UC-ANBT1109
-                                                </div>
-                                            </td>
-                                            <td style="padding: 10px;">10:15</td>
-                                            <td style="padding: 10px;">12/12/2021</td>
-                                            <td>
-                                                -20.000VNĐ
-                                            </td>
-                                            <td>200.000 VNĐ</td>
-                                            <td style="text-align: center;"><span class="badge-disabled">Hủy đơn</span></td>
-                                            <td class="long-text ">
-                                                <div class="long-text ">Khách kiểu bị bực bội sau ngày dài chạy deadline nên khóc và đòi boom hàng :(</div>
-                                            </td>
-                                            <td>
-                                                <button id="viewDetail" class="action-today-order transparent-btn action-detail " type="button " title="Detail ">
-                                                    <img src="./assets/img/svg/eye.svg " class=" ">
-                                                </button>
-                                                <button class="action-today-order transparent-btn action-cancel " type="button " title="Delete">
-                                                    <img src="./assets/img/svg/trash-2.svg " >
-                                                </button>
-                                            </td>
-                                        </tr>
+            <div class="container" style="padding-top: 20px; padding-right: 20px;"> <button class="action-today-order transparent-btn action-cancel" type="button " title="Cancel order " style="position: absolute; right: 2%;">
+                <div class="contrast-icon"><img src="./assets/img/svg/trash-2.svg" ></div>
+            </button></div>
 
-                                        </tr>
-                                        <tr style="text-align: center;">
-                                            <td>UC-12345678
-                                            </td>
-                                            <td>
-                                                MUC-12345678
-                                            </td>
-                                            <td>
-                                                <div class="pages-table-img">
-                                                    <picture>
-                                                        <source srcset="./assets/img/avatar/avatar-face-04.webp" type="image/webp"><img src="./assets/img/avatar/avatar-face-04.png" alt="User Name"></picture>
-                                                    UC-GVC0505
-                                                </div>
-                                            </td>
-                                            <td style="padding: 10px;">10:15</td>
-                                            <td style="padding: 10px;">12/12/2021</td>
-                                            <td>
-                                                -20.000VNĐ
-                                            </td>
-                                            <td>200.000 VNĐ</td>
-                                            <td><span class="badge-active">Hoàn thành</span></td>
-                                            <td>None</td>
-                                            <td>
-                                                <button id="viewDetail" class="action-today-order transparent-btn action-detail " type="button " title="Detail">
-                                                    <img src="./assets/img/svg/eye.svg " class=" ">
+
+            <div class="container main ">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="users-table table-wrapper">
+                            <table class="m-auto">
+                                <thead style="display: table; width: fit-content;">
+                                    <tr class="users-table-info" style=" text-align:center">
+                                        <th class="col-select">Select</th>
+                                        <th class="col-customer-id">Customer ID</th>
+                                        <th class="col-name">Name</th>
+                                        <th class="col-avt">Avatar</th>
+                                        <th class="col-gender">Gender</th>
+                                        <th class="col-phone">Phone</th>
+                                        <th class="col-address">Address</th>
+                                        <th class="col-email">Email</th>
+                                        <th class="col-point"> Bonus Point</th>
+                                        <th class="col-action-edit">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="col-select"><input type="checkbox"></td>
+                                        <td class="primary-key col-customer-id viewDetail">MUC-12345678</td>
+                                        <td class="col-name viewDetail">
+                                            <div class="name-text">Nguyễn Bá Thịnh An</div>
+                                        </td>
+                                        <td class="col-avt viewDetail">
+                                            <img class="avt" src="./assets/img/avt1.png" alt="face customer">
+                                        </td>
+                                        <td class="col-gender viewDetail">Nam</td>
+                                        <td class="col-phone viewDetail">0356781109</td>
+                                        <td class="col-address viewDetail">
+                                            <div class="medium-text">Ngõ 24, Bắc Kinh, TP Hải Dương, Tỉnh Hải Dương</div>
+                                        </td>
+                                        <td class="col-email viewDetail">
+                                            <div class="name-text">abc123@gmail.com</div>
+                                        </td>
+                                        <td class="col-point viewDetail">
+                                            1500 points
+                                        </td>
+                                        <td class="col-action-edit">
+                                            <button class="action-today-order transparent-btn action-accept " type="button " title="Edit">
+                                                    <div class="contrast-icon"><img src="./assets/img/svg/edit.svg "></div>
+                                                  
                                                 </button>
-                                                <button class="action-today-order transparent-btn action-cancel " type="button " title="Delete">
-                                                    <img src="./assets/img/svg/trash-2.svg " >
-                                                </button>
-                                            </td>
-                                    </tbody>
-                                </table>
-                            </div>
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-select "><input type="checkbox"> </td>
+                                        <td class="primary-key col-customer-id viewDetail">MUC-12345678 </td>
+                                        <td class="col-name viewDetail">
+                                            <div class="name-text">Nguyễn Bá Thịnh An</div>
+                                        </td>
+                                        <td class="col-avt viewDetail">
+                                            <img class="avt" src="./assets/img/avt1.png" alt="face customer">
+                                        </td>
+                                        <td class="col-gender viewDetail">Nữ</td>
+                                        <td class="col-phone viewDetail">0356781109</td>
+                                        <td class="col-address viewDetail">
+                                            <div class="medium-text">Ngõ 24, Bắc Kinh, TP Hải Dương, Tỉnh Hải Dương</div>
+                                        </td>
+                                        <td class="col-email viewDetail">
+                                            <div class="name-text"> abc123@gmail.com</div>
+                                        </td>
+                                        <td class="col-point viewDetail">
+                                            1500 points
+                                        </td>
+                                        <td class="col-action-edit ">
+                                            <button class="action-today-order transparent-btn action-accept " type="button" title="Edit">
+                                                <div class="contrast-icon"><img src="./assets/img/svg/edit.svg "></div>
+                                              
+                                            </button>
+
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
                         </div>
-
                     </div>
-                </div>
-            </main>
 
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
 
         <!-- Modal content -->
         <div class="row-modal align-items-center">
@@ -327,113 +317,64 @@
             <div class="modal-content col-lg-6 col-md-6 col-sm-6">
                 <div class="modal-header ">
                     <span id="modal-close" class="close">&times;</span>
-                    <h2 style="text-align: center; padding: 10px;">Chi tiết đơn hàng</h2>
-                    <div class="col-lg-6 col-md-6 col-sm-6 mx-top-modal">
-                        <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Mã đơn hàng:
-                            <div>Đang giao</div>
-                        </div>
-                        <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Mã khách hàng:
-                            <div>Đang giao</div>
-                        </div>
-                        <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Mã nhân viên:
-                            <div>Đang giao</div>
-                        </div>
-                        <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Thời gian đặt:
-                            <div>10:15 12-12-2021</div>
-                        </div>
-                        <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Trạng thái:
-                            <div>Bị hủy</div>
-                        </div>
-                        <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Lý do:
-                            <div class="note-modal">Khách kiểu bị bực bội sau ngày dài chạy deadline nên khóc và đòi boom hàng :(</div>
-                        </div>
-
-
+                    <h2 style="text-align: center; padding: 10px;">Thông tin khách hàng</h2>
+                    <div class="align-center"> <img class="img-cus-detail" src="./assets/img/avt1.png"></img>
                     </div>
 
                 </div>
 
                 <div class="modal-body ">
-                    <div class="product-details pb-3 " style="background-color: white; ">
-                        <div class="d-flex flex-row justify-content-between align-items-center m-3 p-2 items rounded ">
-                            <div class="d-flex flex-row ">
-                                <div class=" ml-2 ">
-                                    <div class="d-flex flex-row align-items-center d-block drinks-modal "><span class="d-block ">Bạc ngon Xĩu</span></div>
-                                    <div class="d-flex flex-row align-items-center d-block "><span class="d-block "> Vừa (L), Đá</span></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row px-4 " style="font-weight: 600; ">x3</div>
-                            <div class="d-flex flex-row align-items-center d-block p-4 " style="font-weight: 500; "><span class="d-block ">75.000VNĐ</span></div>
-                        </div>
-
-                        <div class="d-flex flex-row justify-content-between align-items-center m-3 p-2 items rounded ">
-                            <div class="d-flex flex-row ">
-                                <div class=" ml-2 ">
-                                    <div class="d-flex flex-row align-items-center d-block drinks-modal "><span class="d-block ">Bạc ngon Xĩu</span></div>
-                                    <div class="d-flex flex-row align-items-center d-block "><span class="d-block "> Vừa (L), Đá</span></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row px-4 " style="font-weight: 600; ">x3</div>
-                            <div class="d-flex flex-row align-items-center d-block p-4 " style="font-weight: 500; "><span class="d-block ">75.000VNĐ</span></div>
-                        </div>
-
-                        <div class="d-flex flex-row justify-content-between align-items-center m-3 p-2 items rounded ">
-                            <div class="d-flex flex-row ">
-                                <div class=" ml-2 ">
-                                    <div class="d-flex flex-row align-items-center d-block drinks-modal "><span class="d-block ">Bạc ngon Xĩu</span></div>
-                                    <div class="d-flex flex-row align-items-center d-block "><span class="d-block "> Vừa (L), Đá</span></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row px-4 " style="font-weight: 600; ">x3</div>
-                            <div class="d-flex flex-row align-items-center d-block p-4 " style="font-weight: 500; "><span class="d-block ">75.000VNĐ</span></div>
-                        </div>
-
-                        <div class="d-flex flex-row justify-content-between align-items-center m-3 p-2 items rounded ">
-                            <div class="d-flex flex-row ">
-                                <div class=" ml-2 ">
-                                    <div class="d-flex flex-row align-items-center d-block drinks-modal "><span class="d-block ">Bạc ngon Xĩu</span></div>
-                                    <div class="d-flex flex-row align-items-center d-block "><span class="d-block "> Vừa (L), Đá</span></div>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row px-4 " style="font-weight: 600; ">x3</div>
-                            <div class="d-flex flex-row align-items-center d-block p-4 " style="font-weight: 500; "><span class="d-block ">75.000VNĐ</span></div>
-                        </div>
-
+                    <div class="product-details " style="background-color: white; ">
                         <hr class="mx-3 ">
-                        <div class="d-flex justify-content-between align-items-center mx-5 ">
-                            <h4 style="font-weight: 600; "> Tạm tính:</h4>
-                            <h4 class="d-flex flex-row " style="font-weight: 600; "> 225.000VNĐ</h4>
+                        <div class="col-lg-10 col-md-6 col-sm-6 mx-top-modal">
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Mã khách hàng:
+                                <input type="text" value="MUC-12345678" style="direction: rtl;"></input>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Điểm tích lũy:
+                                <div><input type="text" value="1000" style="direction: rtl;"></input>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Họ và tên:
+                                <input type="text" value="Nguyễn Bá Thịnh An" style="direction: rtl;"></input>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Giới tính:
+                                <select name="gender" id="genders" style="border-radius: 6px; background-color: #eff0f6; min-height: 40px;border: solid transparent 2px!important;">
+                                    <option value="Male">Nam</option>
+                                    <option value="Female">Nữ</option>
+                                    <option value="Other">Khác</option>
+                                  </select>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Số điện thoại:
+                                <input type="text" value="0356781109" style="direction: rtl;"></input>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 ">Email:
+                                <input type="text" value="andz1109@gmail.com" style="direction: rtl;"></input>
+                            </div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2">Địa chỉ:
+                                <textarea name="" id="" cols="35" rows="5" style="border-radius: 6px; background-color: #eff0f6; min-height: 100px;min-width: 300px; border: solid transparent 2px!important;">Ngõ 24, Bắc Kinh, TP Hải Dương, Tỉnh Hải Dương</textarea>
+
+                            </div>
+
+
                         </div>
-
-                        <br>
-                        <div class="d-flex justify-content-between align-items-center mx-5 ">
-                            <h4 style="font-weight: 600; "> Giảm giá:</h4>
-                            <h4 class="d-flex flex-row " style="font-weight: 600; "> (-10%) -22.500VNĐ</h4>
-                        </div>
-
-                        <br>
-                        <div class="d-flex justify-content-between align-items-center mx-5 ">
-                            <h4 style="font-weight: 600; "> Phí giao hàng:</h4>
-                            <h4 class="d-flex flex-row " style="font-weight: 600; "> 15.000VNĐ</h4>
-                        </div>
-
-
                         <hr class="mx-3 ">
 
                     </div>
-                </div>
 
-                <div class="modal-footer align-items-center ">
-                    <div class="d-flex justify-content-between align-items-center m-3 mx-3 ">
-                        <h3 style="font-weight: 600; "> Tổng tiền:</h3>
-                        <h3 class="d-flex flex-row " style="font-weight: 600; "> 217.500VNĐ</h3>
+                    <div class="modal-footer align-items-center ">
+                        <div class="align-center m-3">
+                            <button class="action-today-order transparent-btn action-edit m-3" type="button " title="Edit">
+                                <img src="./assets/img/svg/edit-white.svg">
+                              </button>
+                            <button class="action-today-order transparent-btn action-cancel m-3" type="button " title="Delete">
+                                <img src="./assets/img/svg/trash-2.svg" >
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
     <!-- Chart library -->
     <script src="./plugins/chart.js"></script>
     <!-- Icons library -->

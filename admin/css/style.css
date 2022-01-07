@@ -2226,17 +2226,6 @@ label {
     border-width: 0
 }
 
-
-/* 
-.search-wrapper input::-webkit-input-placeholder {
-    background-color: #eff0f6;
-    font-size: 14px;
-    line-height: 2.43;
-    color: #d6d7e3;
-    -webkit-transition: .3s all;
-    transition: .3s all
-} */
-
 .search-wrapper input::-moz-placeholder {
     background-color: #eff0f6;
     font-size: 14px;
@@ -2679,16 +2668,15 @@ label {
 
 .form {
     -webkit-box-shadow: 0 5px 10px rgba(160, 163, 189, .1);
-    box-shadow: 0 5px 10px rgba(160, 163, 189, .1);
+    box-shadow: 0 5px 10px rgba(79, 79, 80, 0.5);
     border-radius: 10px;
-    padding: 40px 40px 56px;
+    padding: 40px 40px;
     background-color: #fff;
     text-align: left
 }
 
 .form-label {
     font-weight: 500;
-    font-size: 14px;
     line-height: 2.43;
     color: #171717;
     cursor: pointer;
@@ -2788,7 +2776,8 @@ label {
 }
 
 .sign-up__title {
-    font-size: 32px;
+    font-size: 26px;
+    font-weight: 550;
     line-height: 1.06;
     letter-spacing: 1px;
     color: #171717
@@ -3618,14 +3607,24 @@ label {
     background-color: #063fd1;
 }
 
+.action-save {
+    background-color: #4d71ca;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #d9d9d9, -2px -2px 5px #ffffff;
+}
+
+.action-save:hover {
+    background-color: #063fd1;
+}
+
 
 /* -----------Modal----------------- */
 
 .modal {
     display: none;
     /* Hidden by default */
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -3634,7 +3633,6 @@ label {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.6);
-    /* Black w/ opacity */
 }
 
 
@@ -3754,6 +3752,7 @@ label {
 
 .img-cus-detail {
     width: 150px;
+    height: 150px;
     margin-bottom: 10px;
 }
 
@@ -3795,18 +3794,12 @@ label {
 }
 
 .account-settings .user-profile {
-    margin: 0 0 1rem 0;
-    padding-bottom: 1rem;
     text-align: center;
 }
 
-.account-settings .user-profile .user-avatar {
-    margin: 0 0 1rem 0;
-}
-
 .account-settings .user-profile .user-avatar img {
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
@@ -3851,8 +3844,7 @@ label {
 }
 
 label {
-    text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 3px;
 }
 
@@ -3870,22 +3862,11 @@ label {
     color: #000000;
     font-weight: 500;
     background-clip: padding-box;
-    border-radius: 0.25rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .form-control {
     border: 1.5px solid #777777;
-    width: fit-content;
-}
-
-.row>* {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x) * .5);
-    padding-left: calc(var(--bs-gutter-x) * .5);
-    margin-top: var(--bs-gutter-y);
 }
 
 .btn {
