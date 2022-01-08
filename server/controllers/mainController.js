@@ -13,8 +13,9 @@ const News = require('../models/News')
         const coffee = await Drink.find({'category':'Cà phê'}); 
         const fruitTea = await Drink.find({'category':'Trà trái cây'});
         const coffeeBean = await Drink.find({'category':'Cà phê bột'});
-        const cakeAndSnack = await Drink.find({'category':'Bánh-Snacks'});
-        const drinks = { coffee, fruitTea, coffeeBean, cakeAndSnack }; 
+        const cake = await Drink.find({'category':'Bánh'});
+        const snacks = await Drink.find({'category':'Snacks'});
+        const drinks = { coffee, fruitTea, coffeeBean, cake, snacks }; 
 
         const newsLimit = 6
         const newsArticles = await News.find({}).sort({_id: -1}).limit(newsLimit);
@@ -56,8 +57,9 @@ exports.exploreOrder = async(req, res) => {
         const coffee = await Drink.find({'category':'Cà phê'}); 
         const fruitTea = await Drink.find({'category':'Trà trái cây'});
         const coffeeBean = await Drink.find({'category':'Cà phê bột'});
-        const cakeAndSnack = await Drink.find({'category':'Bánh-Snacks'});
-        const drinks = { coffee, fruitTea, coffeeBean, cakeAndSnack }; 
+        const cake = await Drink.find({'category':'Bánh'});
+        const snacks = await Drink.find({'category':'Snacks'});
+        const drinks = { coffee, fruitTea, coffeeBean, cake, snacks }; 
 
 
         let count = await Drink.find().countDocuments();
