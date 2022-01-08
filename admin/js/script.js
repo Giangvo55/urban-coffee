@@ -540,6 +540,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Get the modal
 var modal = document.getElementById("myModal");
+<<<<<<< HEAD
 var modal_2 = document.getElementById("editModal");
 
 // Get the button that opens the modal
@@ -569,11 +570,25 @@ var span1 = document.getElementsByClassName("close")[1];
 var action_cancel = document.getElementsByClassName("btn-cancel")[0];
 var action_save = document.getElementsByClassName("action-save")[0];
 
+=======
+
+// Get the button that opens the modal
+var btn = document.getElementById("viewDetail");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+>>>>>>> fd27744451b4cbf94620152da578701919875870
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
 }
+<<<<<<< HEAD
 span1.onclick = function() {
     if (confirm("Thoát ra sẽ hủy bỏ những thay đổi của bạn")) {
         modal_2.style.display = "none";
@@ -591,10 +606,15 @@ action_save.onclick = function() {
         } else {}
     }
     // When the user clicks anywhere outside of the modal, close it
+=======
+
+// When the user clicks anywhere outside of the modal, close it
+>>>>>>> fd27744451b4cbf94620152da578701919875870
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+<<<<<<< HEAD
 }
 
 function AcceptOrder() {
@@ -608,4 +628,6 @@ function OnDelivery() {
 
 function FinishOrder() {
     document.getElementById('status-order').innerHTML = '<div class="badge-success" style="margin: 0; font-size: 15px; width: fit-content; padding: 5px;">Hoàn thành</div>';
+=======
+>>>>>>> fd27744451b4cbf94620152da578701919875870
 }

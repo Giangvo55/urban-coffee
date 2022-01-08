@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+// $('#menu-list a').on('click', function(e) {
+//     e.preventDefault()
+//     $(this).tab('show')
+// });
+
+>>>>>>> fd27744451b4cbf94620152da578701919875870
 $(document).ready(function() {
 
     // Accordion

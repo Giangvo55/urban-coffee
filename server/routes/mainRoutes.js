@@ -15,4 +15,10 @@ router.post('/delete-cart', mainController.deleteCart);
 router.get('/about-us', mainController.exploreAboutUs); 
 router.get('/payment', mainController.explorePayment); 
 router.get('/payment/methods', mainController.explorePaymentMethods); 
+
+// News
+router.get('/detail-news', mainController.getDetailNews);
+router.get('/detail-news/:id', mainController.getDetailNewsWithId); 
+router.get('/news', mainController.getAllNews);
+
 module.exports = router;

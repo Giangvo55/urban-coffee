@@ -1,0 +1,154 @@
+    <!-- Detail -->
+    <div class="container body-content pt-3">
+        <div class="container btn-back" style="font-size: 25px; position: fixed; left: 35px; width: fit-content; border:3px solid white;">
+            <a href="javascript:history.back()"><i class="fas fa-chevron-left"></i></a>
+        </div>
+        <div class="row" style="margin-top: 50px;">
+            <!--Main content-->
+            <div class="col-md-8 m-auto">
+                <div>
+                    <!-- header -->
+                    <div class="">
+                        <% if (newsArticle != null) { %>
+                            <h1 class="entry-title display-2-lg mt-2"><%= newsArticle.title %></h1>
+                        <% } else {%>
+                            <h1 class="entry-title display-2-lg mt-2">Title</h1>
+                        <% } %>
+                        <!-- <h1 class="entry-title display-2-lg mt-2">ESPRESSO LÀ GÌ? CÁCH PHÂN BIỆT CÁC LOẠI ESPRESSO</h1> -->
+
+                        <div class="mb-3 small text-muted pt-2" style="text-align: right;">
+                            <span class="me-2 me-md-3"><i class="fas fa-user"></i>Viết bởi
+                            <span class="author vcard"><a class="url fn n fw-bold" href="https://www.facebook.com/andeptraicuteso1/"> An Thinh</a>
+                            </span>
+                            </span>
+                            <!-- written by -->
+                            <span class="me-2 me-md-3">
+                            <span title="Posted on"><i class="fas fa-edit"></i></span>
+                            <span class="published">September 11, 2019</span> </span>
+                            <!-- date time post -->
+                            <span class="me-2 me-md-3 text-muted d-none d-md-inline-block">
+                                <i class="fas fa-comments"></i> 0 Comments</span>
+                            <!-- comments -->
+
+
+                            <span class="me-2 me-md-3">
+                                <i class="fas fa-eye"></i>Views 236</span>
+                            <!--end view-->
+                        </div>
+                    </div>
+                    <!-- end header -->
+                    <% if (newsArticle != null) { %>
+                        <img width="100%" height="500" src="<%= newsArticle.img %>" class="img-fluid m-auto">
+                    <% } else {%>
+                        <img width="100%" height="500" src="./assets/img/banner1.png" class="img-fluid m-auto">
+                    <% } %>
+                    <!-- content -->
+                    <div class="px-4" style="font-size: 20px;">
+
+                        <% if (newsArticle != null) { %>
+                            <p class="pt-4"><%= newsArticle.content %></p>
+                        <% }%>
+
+                        <!-- <p class="pt-4">Espresso là một loại cà phê được bắt nguồn từ nước Ý vào khoảng năm 1930. Sau đó lan rộng sang Tây Ban Nha, phổ biến tại Anh những năm 1950, rồi dần sang các nước châu Âu và ngày nay thì Espresso đã có mặt khắp nơi trên thế giới.
+                            Trong tiếng Ý, “Espresso” có nghĩa là “tức thì, nhanh chóng”. Vậy nên, quá trình tạo ra Espresso và cả việc thưởng thức chúng cũng rất nhanh gọn. Thậm chí ở Ý, người ta gọi tách Espresso và uống ngay tại chỗ chỉ với vài hơi.
+                            Các số liệu cho biết đến 80% lượng Espresso của thế giới đang được tiêu thụ tại Ý.
+                        </p>
+
+                        <p class="pt-3" style="font-weight: 500;">Espresso là gì? </p>
+
+                        <p>Espresso nổi tiếng bởi chất lượng hảo hạng và quy trình chế biến đòi hỏi chuẩn chỉnh, tỉ mỉ nhất từ khâu chọn hạt cà phê đạt chất lượng đến khi được phục vụ đến tay khách hàng. Vậy Espresso là loại cà phê gì và nó được pha chế
+                            ra sao? </p>
+                        <p class="pt-3">
+                            Espresso là loại cà phê được pha bằng máy dưới áp suất khoảng 9 – 10 bars (bar - đơn vị đo áp suất) cùng với nước nóng. Để tạo ra được Espresso đúng chuẩn, yêu cầu các hạt cà phê phải nguyên chất, rang mộc, sau đó đi xay mịn và không tẩm bất kỳ tạp chất
+                            nào. Bên cạnh đó, nước dùng để pha Espresso phải là nước tinh khiết.
+                        </p> -->
+                    </div>
+                    <!-- end content -->
+
+                    <!-- entry-footer -->
+                    <div class="pt-3">
+
+                        <div class="mb-3">
+                            <span class="fw-bold me-2">Category</span>
+                            <a href="#">Espresso</a>
+                            <a href="#">CaPhe</a>
+                        </div>
+                        <div class="mb-3"><span class="fw-bold me-2">Tags</span>
+                            <a href="#" class="mr-1">cafe</a>
+                            <a href="#" class="mr-1">coffee</a>
+                            <a href="#" class="mr-1">Caphe</a></div>
+                    </div>
+                    <!-- .entry-footer -->
+
+                </div>
+                <!-- #post-## -->
+                <hr>
+
+                <!--social share-->
+                <div class="social-share mb-3 text-center">
+                    <!-- share facebook -->
+                    <a class="btn btn--blue text-light" href="#" target="_blank" title="Share to facebook">
+                        <i class="fab fa-facebook-square"></i>
+                        <span class="d-none d-sm-inline">Facebook</span>
+                    </a>
+                    <!-- share twitter -->
+                    <a class="btn btn--blue text-light" href="#" target="_blank" title="Share to twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span class="d-none d-sm-inline">Twitter</span>
+                    </a>
+                    <!-- share linkedin -->
+                    <a class="btn btn--blue text-light" href="#" target="_blank" title="Share to Linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="d-none d-sm-inline">Linkedin</span>
+                    </a>
+                    <!-- share via email -->
+                    <a class="btn btn--blue text-light" href="#" target="_blank" title="Share by Email">
+                        <i class="fas fa-envelope-square"></i>
+                        <span class="d-none d-sm-inline">Email</span>
+                    </a>
+                </div>
+                <!-- End social share -->
+                <hr>
+
+
+                <!--related-->
+
+                <div class="related-post mb-4">
+                    <h4 class="p-2 mb-3 text-light bg-dark">Bài viết liên quan
+                    </h4>
+                    <div class="row">
+                        <% if (typeof newsArr !== 'undefined' && newsArr.length > 0) { %>
+                            <% newsArr.forEach(function(article, index){ %>
+                                <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
+                                    <div class="ubc-blog-card d-flex flex-column ">
+                                        <a href="detail-news/<%= article._id %>" target="blank ">
+                                            <div class="ubc-blog-card__image "
+                                                style="background: url('<%= article.img %>') center center no-repeat; ">
+                                            </div>
+                                        </a>
+                                        <div class="ubc-blog-card__content d-flex flex-column ">
+                                            <div class="ubc-blog-card__content__header d-flex flex-column ">
+                                                <h5 class="ubc-blog-card__title ">
+                                                    <%= article.title %>
+                                                </h5>
+                                            </div>
+                                            <div class="mt-auto "><button
+                                                    class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a
+                                                        href="detail-news/<%= article._id %>" class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <% }) %>
+                        <% } else {%>
+                            <p>No articles found >:( </p>
+                        <% } %>
+                    </div>
+                </div>
+                <!--End Related Posts-->
+
+
+                <!-- End Detail -->
+
+            </div>
+        </div>
+    </div>
