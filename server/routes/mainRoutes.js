@@ -15,7 +15,7 @@ router.post('/delete-cart', mainController.deleteCart);
 router.get('/about-us', mainController.exploreAboutUs); 
 router.get('/payment', mainController.explorePayment); 
 router.get('/payment/methods', mainController.explorePaymentMethods); 
-
+router.get('/order-tracking', mainController.exploreOrderTracking); 
 // News
 router.get('/detail-news', mainController.getDetailNews);
 router.get('/detail-news/:id', mainController.getDetailNewsWithId); 

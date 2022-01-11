@@ -221,3 +221,15 @@ exports.getDetailNewsWithId = async (req, res) => {
         res.status(500).send({ message: error.message || "Error Occured" });
     }
 }
+
+/* 
+GET Order tracking page
+*/
+exports.exploreOrderTracking = async (req, res) => {
+    try {
+        res.render('order-tracking', { title : 'Tra cứu đơn hàng ' });
+    } catch (error) {
+        res.status(500).send({ message: error.message || "Error Occured" });
+    }
+}
+
