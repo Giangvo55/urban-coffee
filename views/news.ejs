@@ -12,7 +12,7 @@
         <div class="row">
             <% if (typeof newsArticles !== 'undefined' && newsArticles.length > 0) { %>
                 <% newsArticles.forEach(function(article, index){ %>
-                    <div class="col-12 col-sm-6 col-lg-4 mb-4 ">
+                    <div class="col-12 col-sm-6 col-lg-4 mb-4 p-4">
                         <div class="ubc-blog-card d-flex flex-column ">
                             <a href="detail-news/<%= article._id %>" target="blank ">
                                 <div class="ubc-blog-card__image "
@@ -25,16 +25,15 @@
                                         <%= article.title %>
                                     </h5>
                                 </div>
-                                <div class="mt-auto "><button
-                                        class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a
+                                <div class="mt-auto "><button class=" d-inline-block btn btn--blue align-items-center btn--radius-100 float-right "><a
                                             href="detail-news/<%= article._id %>" class=" "><span class="text ">ĐỌC TIẾP</span></a></button></div>
                             </div>
                         </div>
                     </div>
-                <% }) %>
-            <% } else {%>
-                <p>No articles found >:( </p>
-            <% } %>
+                    <% }) %>
+                        <% } else {%>
+                            <p>No articles found >:( </p>
+                            <% } %>
 
         </div>
         <!-- <div class="d-flex justify-content-center">
@@ -51,8 +50,8 @@
 </section>
 <!--End News -->
 <script>
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#homepage').removeClass('active');
         $('#news').addClass('active');
-    }); 
+    });
 </script>

@@ -402,8 +402,8 @@ IX. Detailed News
     }
     
     .ubc-product__card .ubc-product__image img {
-        width: 158px;
-        height: 158px;
+        max-width: 100%;
+        max-height: 100%;
         -o-object-fit: cover;
         object-fit: cover
     }
@@ -845,8 +845,8 @@ IX. Detailed News
     }
     
     .brand-img {
-        height: 100px;
-        width: 100px;
+        max-height: 100%;
+        max-width: 100%;
     }
     
     .main_content {

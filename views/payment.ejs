@@ -1,6 +1,5 @@
 <!-- Payment -->
-<div class="container btn-back mt-3"
-    style="font-size: 25px; position: absolute; left: 35px; width: fit-content; border:3px solid white;">
+<div class="container btn-back mt-3" style="font-size: 25px; position: absolute; left: 35px; width: fit-content; border:3px solid white;">
     <a href="javascript:history.back()"><i class="fas fa-chevron-left"></i></a>
 </div>
 <section class="container py-5 body-content">
@@ -15,18 +14,20 @@
                 <hr class="mx-3">
                 <div style="overflow: auto; max-height: 400px; width: 100%;">
                     <% products.forEach(function(product){ %>
-                        <div class="d-flex justify-content-between align-items-center mt-3 p-2 mx-4 items rounded">
-                            <div class="d-flex flex-row"><img class="rounded" src="<%- product.item.img %>" width="40">
+                        <div class="d-flex justify-content-between align-items-center mt-3 p-2 mx-4 items rounded" title="<%- product.item.name %>">
+                            <img class="rounded" src="<%- product.item.img %>" width="40" style="width: 40px;max-height: 70px;">
+
+                            <div class="d-flex flex-row">
                                 <div class="ml-2">
-                                    <h6 class=" d-block">
+                                    <h6 class=" d-block" style="white-space: nowrap; width: 100px; overflow: hidden; text-overflow: ellipsis;">
                                         <%- product.item.name %>
                                     </h6>
-                                    <div class="spec">Vừa (L), Đá</div>
                                 </div>
                             </div>
-                            <div class="d-flex flex-row" style="font-weight: 600;">x<%- product.qty %></div>
-                            <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span
-                                    class="d-block" style="padding-right: 20px;">
+                            <div class="d-flex flex-row" style="font-weight: 600;">x
+                                <%- product.qty %>
+                            </div>
+                            <div class="d-flex flex-row align-items-center" style="font-weight: 500;"><span class="d-block" style="padding-right: 20px;">
                                     <%= product.price.toLocaleString('it-IT', {style : 'currency' , currency : 'VND' })
                                         %>
                                 </span>&Tab;
@@ -49,54 +50,47 @@
             <div class="container">
                 <div class="row p-3 bg-white ubc-product-card--shadow my-3" style="border-radius: 20px;">
                     <div class="col-lg-6 m-auto my-3">
-                        <h6 class="mx-4 py-2 text-uppercase align-left"
-                            style="font-weight: 550; text-decoration: underline;">Mã giảm giá</h6>
+                        <h6 class="mx-4 py-2 text-uppercase align-left" style="font-weight: 550; text-decoration: underline;">Mã giảm giá</h6>
                         <div class="px-4">
                             <div class="input-group mb-4 border border-2 rounded-pill p-2">
-                                <input type="text" placeholder="Apply coupon" aria-describedby="button-addon3"
-                                    class="form-control border-0">
+                                <input type="text" placeholder="Apply coupon" aria-describedby="button-addon3" class="form-control border-0">
                                 <div class="input-group-append border-0">
-                                    <button id="button-addon3" type="button" class=" btn-primary px-3 rounded-pill"
-                                        style="padding: .375rem .75rem;"><i class="fa fa-gift">&nbsp;</i>Áp
+                                    <button id="button-addon3" type="button" class=" btn-primary px-3 rounded-pill" style="padding: .375rem .75rem;"><i class="fa fa-gift">&nbsp;</i>Áp
                                         dụng</button>
                                 </div>
                             </div>
                         </div>
-                        <h6 class="mx-4 py-2 text-uppercase align-left"
-                            style="font-weight: 550;text-decoration: underline;">Lưu ý</h6>
+                        <h6 class="mx-4 py-2 text-uppercase align-left" style="font-weight: 550;text-decoration: underline;">Lưu ý</h6>
                         <div class="px-4 pb-0">
-                            <p class="font-italic mb-4">Nếu bạn có bất cứ lưu ý gì cho cửa hàng hoặc nhân viên giao
-                                hàng, xin hãy ghi lại vào ô trống bên dưới.</p>
+                            <p class="font-italic mb-4">Nếu bạn có bất cứ lưu ý gì cho cửa hàng hoặc nhân viên giao hàng, xin hãy ghi lại vào ô trống bên dưới.</p>
                             <textarea name="" cols="35" rows="5" class="col-xs-4"></textarea>
                         </div>
                         <hr>
                     </div>
                     <div class="col-lg-6 m-auto border p-2 py-3 border-dark">
-                        <h6 class=" rounded-pill px-4 py-2 text-uppercase align-center"
-                            style="background-color: #85babd; font-weight: 550;">Tổng đơn hàng</h6>
+                        <h6 class=" rounded-pill px-4 py-2 text-uppercase align-center" style="background-color: #85babd; font-weight: 550;">Tổng đơn hàng</h6>
                         <div class="pt-4 px-4">
 
                             <ul class="list-unstyled mb-4">
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong
-                                        class="text-muted">Giá trị đơn hàng </strong><strong><%- totalPrice.toLocaleString('it-IT', {style : 'currency', currency : 'VND'}) %></strong></li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Giá trị đơn hàng </strong><strong><%- totalPrice.toLocaleString('it-IT', {style : 'currency', currency : 'VND'}) %></strong></li>
                                 <li class="d-flex justify-content-between py-3 border-bottom">
-                                    <strong
-                                        class="text-muted">Phí giao hàng</strong><strong>
+                                    <strong class="text-muted">Phí giao hàng</strong><strong>
                                             <% const shipFee = 10000 %> 
                                             <%= shipFee.toLocaleString('it-IT', {style : 'currency', currency : 'VND'}) %>
                                         </strong>
-                                    </li>
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong
-                                        class="text-muted">Giảm giá</strong><strong>- 0 VNĐ</strong></li>
+                                </li>
+                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Giảm giá</strong><strong>- 0 VNĐ</strong></li>
                                 <li class="d-flex justify-content-between py-3 border-bottom">
                                     <h5 class="">Tổng tiền</h5>
-                                    <h5 class=""><% const amount = totalPrice + shipFee %>
-                                        <%= amount.toLocaleString('it-IT', {style : 'currency', currency : 'VND'}) %>     
+                                    <h5 class="">
+                                        <% const amount = totalPrice + shipFee %>
+                                            <%= amount.toLocaleString('it-IT', {style : 'currency', currency : 'VND'}) %>
                                     </h5>
                                 </li>
                                 <div class="d-flex justify-content-between align-items-center mt-3 mx-5 rounded">
                                     <h5 style="font-weight: 400; color: coral;"> Điểm thưởng:</h5>
-                                    <h5 class="d-flex flex-row" style="font-weight: 500;color: coral;"> <%- amount / 1000 %> điểm </h5>
+                                    <h5 class="d-flex flex-row" style="font-weight: 500;color: coral;">
+                                        <%- amount / 1000 %> điểm </h5>
                                 </div>
                             </ul>
                             <div class="align-center">
