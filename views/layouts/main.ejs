@@ -273,11 +273,11 @@
                     <div class="col-12 col-md-6 col-lg-3">
                         <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#sanpham">Sản phẩm&nbsp;<i class="fa fa-caret-down align-self-center"></i></a>
                         <ul class="collapse text-light footer-link-list " id="sanpham" style="list-style-type: circle;">
-                            <li><a class="text-decoration-none " href="# ">Best-seller</a></li>
-                            <li><a class="text-decoration-none " href="# ">Cà phê</a></li>
-                            <li><a class="text-decoration-none " href="# ">Trà trái cây</a></li>
-                            <li><a class="text-decoration-none " href="# ">Cà phê bột</a></li>
-                            <li><a class="text-decoration-none " href="# ">Bánh - Snacks</a></li>
+                            <li><a class="text-decoration-none " href="/order">Best-seller</a></li>
+                            <li><a class="text-decoration-none " href="/order">Cà phê</a></li>
+                            <li><a class="text-decoration-none " href="/order">Trà trái cây</a></li>
+                            <li><a class="text-decoration-none " href="/order">Cà phê bột</a></li>
+                            <li><a class="text-decoration-none " href="/order">Bánh - Snacks</a></li>
 
                         </ul>
                     </div>
@@ -285,11 +285,11 @@
                     <div class="col-12 col-md-6 col-lg-3">
                         <a class="collapsed btn text-light justify-content-center d-flex border-bottom pb-2" data-bs-toggle="collapse" href="#thongtin">Thông tin website&nbsp;<i class="fas fa-caret-down align-self-center"></i></a>
                         <ul class="collapse text-light footer-link-list " id="thongtin" style="list-style-type: circle;">
-                            <li><a class="text-decoration-none " href="# ">Trang chủ</a></li>
-                            <li><a class="text-decoration-none " href="# ">About us</a></li>
+                            <li><a class="text-decoration-none " href="/">Trang chủ</a></li>
+                            <li><a class="text-decoration-none " href="/about-us">About us</a></li>
                             <li><a class="text-decoration-none " href="# ">Shop Locations</a></li>
                             <li><a class="text-decoration-none " href="# ">FAQs</a></li>
-                            <li><a class="text-decoration-none " href="# ">Contact</a></li>
+                            <li><a class="text-decoration-none " href="/about-us">Contact</a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
@@ -373,13 +373,12 @@
     
             /* Select the text field */
             copyText.select();
-            copyText.setSelectionRange(0, 99999); /* For mobile devices */
-    
+           
             /* Copy the text inside the text field */
             navigator.clipboard.writeText(copyText.value);
     
             /* Alert the copied text */
-            alert("Copied the text: " + copyText.value);
+            alert("Sao chép mã giảm giá vào bộ nhớ tạm: " + copyText.value);
         }
     </script>
     <!-- End Script -->
