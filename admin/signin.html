@@ -5,37 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elegant Dashboard | Sign In</title>
+    <title>Admin Urban Café</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./img/svg/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/logo/favicon.svg" type="image/x-icon">
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 
 <body>
-    <div class="layer"></div>
     <main class="page-center">
-        <article class="sign-up">
-            <h1 class="sign-up__title">Welcome back!</h1>
-            <p class="sign-up__subtitle">Sign in to your account to continue</p>
+        <div class="tilte-menu sign-up__title m-0">Quản lý Urban Café</div>
+        <p class="sign-up__subtitle d-flex align-items-center">Đăng nhập tài khoản thành viên của bạn để tiếp tục</p>
+        <div class="sign-up col-xl-4 col-lg-6 col-md-8 col-sm-8">
             <form class="sign-up-form form" action="" method="">
                 <label class="form-label-wrapper">
-        <p class="form-label">Email</p>
-        <input class="form-input" type="email" placeholder="Enter your email" required>
-      </label>
+                    <p class="form-label">Số điện thoại</p>
+                    <input class="form-input" type="phone" placeholder="Nhập số điện thoại" required>
+                </label>
                 <label class="form-label-wrapper">
-        <p class="form-label">Password</p>
-        <input class="form-input" type="password" placeholder="Enter your password" required>
-      </label>
-                <a class="link-info forget-link" href="##">Forgot your password?</a>
+                    <p class="form-label">Mật khẩu</p>
+                    <input class="form-input" type="password" placeholder="Nhập mật khẩu" required>
+                </label>
+                <a class="link-info forget-link" href="#">Quên mật khẩu?</a>
                 <label class="form-checkbox-wrapper">
         <input class="form-checkbox" type="checkbox" required>
-        <span class="form-checkbox-label">Remember me next time</span>
+        <span class="form-checkbox-label">Ghi nhớ đăng nhập</span>
       </label>
                 <button class="form-btn primary-default-btn transparent-btn">Sign in</button>
             </form>
-        </article>
+        </div>
     </main>
+
     <!-- Chart library -->
     <script src="./plugins/chart.js"></script>
     <!-- Icons library -->
