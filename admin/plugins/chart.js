@@ -27,60 +27,16 @@
         o = (t, e, i) => "start" === t ? e : "end" === t ? i : (e + i) / 2,
         s = (t, e, i) => "right" === t ? i : "center" === t ? (e + i) / 2 : e;
     var a = new class {
-<<<<<<< HEAD
 
 
-=======
-        constructor() {
-            this._request = null, this._charts = new Map, this._running = !1, this._lastDate = void 0
-        }
-        _notify(t, e, i, n) {
-            const o = e.listeners[n],
-                s = e.duration;
-            o.forEach(n => n({
-                chart: t,
-                initial: e.initial,
-                numSteps: s,
-                currentStep: Math.min(i - e.start, s)
-            }))
-        }
->>>>>>> fd27744451b4cbf94620152da578701919875870
         _refresh() {
             const e = this;
             e._request || (e._running = !0, e._request = t.call(window, () => {
                 e._update(), e._request = null, e._running && e._refresh()
             }))
         }
-<<<<<<< HEAD
 
 
-=======
-        _update(t = Date.now()) {
-            const e = this;
-            let i = 0;
-            e._charts.forEach((n, o) => {
-                if (!n.running || !n.items.length) return;
-                const s = n.items;
-                let a, r = s.length - 1,
-                    l = !1;
-                for (; r >= 0; --r)(a = s[r])._active ? (a._total > n.duration && (n.duration = a._total), a.tick(t), l = !0) : (s[r] = s[s.length - 1], s.pop());
-                l && (o.draw(), e._notify(o, n, t, "progress")), s.length || (n.running = !1, e._notify(o, n, t, "complete"), n.initial = !1), i += s.length
-            }), e._lastDate = t, 0 === i && (e._running = !1)
-        }
-        _getAnims(t) {
-            const e = this._charts;
-            let i = e.get(t);
-            return i || (i = {
-                running: !1,
-                initial: !0,
-                items: [],
-                listeners: {
-                    complete: [],
-                    progress: []
-                }
-            }, e.set(t, i)), i
-        }
->>>>>>> fd27744451b4cbf94620152da578701919875870
         listen(t, e, i) {
             this._getAnims(t).listeners[e].push(i)
         }
@@ -90,30 +46,7 @@
         has(t) {
             return this._getAnims(t).items.length > 0
         }
-<<<<<<< HEAD
 
-=======
-        start(t) {
-            const e = this._charts.get(t);
-            e && (e.running = !0, e.start = Date.now(), e.duration = e.items.reduce((t, e) => Math.max(t, e._duration), 0), this._refresh())
-        }
-        running(t) {
-            if (!this._running) return !1;
-            const e = this._charts.get(t);
-            return !!(e && e.running && e.items.length)
-        }
-        stop(t) {
-            const e = this._charts.get(t);
-            if (!e || !e.items.length) return;
-            const i = e.items;
-            let n = i.length - 1;
-            for (; n >= 0; --n) i[n].cancel();
-            e.items = [], this._notify(t, e, Date.now(), "complete")
-        }
-        remove(t) {
-            return this._charts.delete(t)
-        }
->>>>>>> fd27744451b4cbf94620152da578701919875870
     };
     const r = {
             0: 0,
@@ -733,22 +666,7 @@
         return "string" == typeof e ? et(ut(t, e), i) : et(ut(t, ""), e)
     }
     var gt = new class {
-<<<<<<< HEAD
 
-=======
-        constructor(t) {
-            this.animation = void 0, this.backgroundColor = "rgba(0,0,0,0.1)", this.borderColor = "rgba(0,0,0,0.1)", this.color = "#666", this.datasets = {}, this.devicePixelRatio = (t => t.chart.platform.getDevicePixelRatio()), this.elements = {}, this.events = ["mousemove", "mouseout", "click", "touchstart", "touchmove"], this.font = {
-                family: "'Helvetica Neue', 'Helvetica', 'Arial', sans-serif",
-                size: 12,
-                style: "normal",
-                lineHeight: 1.2,
-                weight: null
-            }, this.hover = {}, this.hoverBackgroundColor = ((t, e) => V(e.backgroundColor)), this.hoverBorderColor = ((t, e) => V(e.borderColor)), this.hoverColor = ((t, e) => V(e.color)), this.indexAxis = "x", this.interaction = {
-                mode: "nearest",
-                intersect: !0
-            }, this.maintainAspectRatio = !0, this.onHover = null, this.onClick = null, this.parsing = !0, this.plugins = {}, this.responsive = !0, this.scale = void 0, this.scales = {}, this.showLine = !0, this.describe(t)
-        }
->>>>>>> fd27744451b4cbf94620152da578701919875870
         set(t, e) {
             return ft(this, t, e)
         }
