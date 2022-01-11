@@ -94,7 +94,7 @@
                                 </div>
                             </ul>
                             <div class="align-center">
-                                <a href="/payment/methods" class="btn btn-detail-order rounded-pill py-2">Tiến hành
+                                <a href="/payment/methods/<%- amount %>" class="btn btn-detail-order rounded-pill py-2">Tiến hành
                                     thanh toán <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
@@ -106,3 +106,8 @@
     </div>
 </section>
 <!-- End Payment -->
+<script>
+    $(document).ready(function () {
+        $('#homepage').removeClass('active');
+    }); 
+</script>

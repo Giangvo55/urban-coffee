@@ -14,11 +14,11 @@ router.get('/add-to-cart/:id', mainController.addToCart);
 router.post('/delete-cart', mainController.deleteCart); 
 router.get('/about-us', mainController.exploreAboutUs); 
 router.get('/payment', mainController.explorePayment); 
-router.get('/payment/methods', mainController.explorePaymentMethods); 
+router.get('/payment/methods/:amount', mainController.explorePaymentMethods); 
 router.get('/order-tracking', mainController.exploreOrderTracking); 
 // News
 router.get('/detail-news', mainController.getDetailNews);
 router.get('/detail-news/:id', mainController.getDetailNewsWithId); 
 router.get('/news', mainController.getAllNews);
-
+router.get('/detail-order-tracking', mainController.exploreDetailOrder); 
 module.exports = router;

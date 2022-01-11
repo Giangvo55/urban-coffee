@@ -102,7 +102,8 @@ exports.addToCart = async (req, res, next) => {
         req.session.cart = cart;
         req.session.reload(function (err) {
         });
-        res.redirect('/');
+        res.redirect(req.get('referer'));
+
     });
 }
 exports.deleteCart = async (req, res, next) => {
@@ -147,7 +148,8 @@ exports.getAllNews = async (req, res) => {
  */
 
 exports.explorePaymentMethods = async (req, res) => {
-    res.render('payment-methods', { title: 'Chọn phương thức thanh toán - Urban Coffee' });
+    const amount = req.params.amount;
+    res.render('payment-methods', { title: 'Chọn phương thức thanh toán - Urban Coffee', amount });
 }
 
 /* News detail
@@ -228,6 +230,14 @@ GET Order tracking page
 exports.exploreOrderTracking = async (req, res) => {
     try {
         res.render('order-tracking', { title : 'Tra cứu đơn hàng ' });
+    } catch (error) {
+        res.status(500).send({ message: error.message || "Error Occured" });
+    }
+}
+
+exports.exploreDetailOrder = async (req, res) => {
+    try {
+        res.render('detail-order-tracking', { title : 'Chi tiết đơn hàng ' });
     } catch (error) {
         res.status(500).send({ message: error.message || "Error Occured" });
     }

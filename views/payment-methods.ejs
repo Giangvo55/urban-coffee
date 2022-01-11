@@ -15,16 +15,16 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                             <div class="form-group">
-                                <label for="fullName">Họ và tên</label>
-                                <input type="text" class="form-control" id="fullName" placeholder="Nhập tên người nhận">
+                                <label for="fullName">Họ và tên <span class="required">*</span></label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Nhập tên người nhận" required>
                             </div>
                         </div>
 
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                             <div class="form-group">
-                                <label for="phone">Số điện thoại</label>
+                                <label for="phone">Số điện thoại <span class="required">*</span></label>
                                 <input type="text" class="form-control" id="phone"
-                                    placeholder="Số điện thoại người nhận">
+                                    placeholder="Số điện thoại người nhận" required>
                             </div>
                         </div>
 
@@ -36,27 +36,27 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                             <div class="form-group">
-                                <label for="address">Số nhà</label>
-                                <input type="name" class="form-control" id="address" placeholder="Nhập số nhà">
+                                <label for="address">Số nhà <span class="required">*</span></label>
+                                <input type="name" class="form-control" id="address" placeholder="Nhập số nhà" required>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                             <div class="form-group">
-                                <label for="street">Đường</label>
-                                <input type="name" class="form-control" id="street" placeholder="Nhập tên đường">
+                                <label for="street">Đường <span class="required">*</span></label>
+                                <input type="name" class="form-control" id="street" placeholder="Nhập tên đường" required>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                             <div class="form-group">
-                                <label for="sTate">Phường / Quận</label>
+                                <label for="sTate">Phường / Quận <span class="required">*</span></label>
                                 <input type="text" class="form-control" id="district"
-                                    placeholder="Nhập tên phường hoặc quận">
+                                    placeholder="Nhập tên phường hoặc quận" required>
                             </div>
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
                             <div class="form-group">
-                                <label for="city">Thành phố</label>
-                                <input type="text" class="form-control" id="city" placeholder="Nhập tên thành phố">
+                                <label for="city">Thành phố <span class="required">*</span></label>
+                                <input type="text" class="form-control" id="city" placeholder="Nhập tên thành phố" required>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,9 @@
                             style="background-color: #122223; font-weight: 550;">Tổng đơn hàng</h6>
                         <div class="d-flex justify-content-between px-2 border-bottom border-dark">
                             <h5 class="">Tổng tiền</h5>
-                            <h5 class="">202.500 VNĐ</h5>
+                            <h5>
+                                <%= parseInt(amount).toLocaleString('it-IT', {style : 'currency' , currency : 'VND' })%>
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -148,12 +150,17 @@
                 </div>
             </div>
             <div class="align-center pt-2">
-                <!-- <a href="/" class="btn btn-detail-order rounded-pill py-2" >Hoàn tất thanh toán <i
-                        class="fa fa-chevron-right"></i></a> -->
-                <button id="completePayment">Hoàn tất thanh toán <i class="fa fa-chevron-right"></i></button>
+                <a href="/order-tracking" onclick="alert('Thanh toán thành công');"
+                    class="btn btn-detail-order rounded-pill py-2">Hoàn tất thanh toán <i
+                        class="fa fa-chevron-right"></i></a>
             </div>
         </div>
     </div>
 </div>
 
 <!--End Payment Method Form -->
+<script>
+    $(document).ready(function () {
+        $('#homepage').removeClass('active');
+    }); 
+</script>
