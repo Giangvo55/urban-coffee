@@ -21,7 +21,8 @@ router.get('/detail-news', mainController.getDetailNews);
 router.get('/detail-news/:id', mainController.getDetailNewsWithId); 
 router.get('/news', mainController.getAllNews);
 router.get('/detail-order-tracking', mainController.exploreDetailOrder); 
-
 router.get('/admin', mainController.admin);
 
+router.get('/my-profile', mainController.exploreMyProfile); 
+router.get('/sign-in', mainController.signIn); 
 module.exports = router;

@@ -242,6 +242,20 @@ exports.exploreDetailOrder = async (req, res) => {
         res.status(500).send({ message: error.message || "Error Occured" });
     }
 }
+exports.exploreMyProfile = async (req, res) => {
+    try {
+        res.render('my-profile', {title : 'Thông tin cá nhân'}); 
+    } catch (error) {
+        res.status(500).send({ message: error.message || "Error Occured" });
+    }
+}
+exports.signIn = async (req, res) => {
+    try {
+        res.render('signin', {title : 'Thông tin cá nhân'}); 
+    } catch (error) {
+        res.status(500).send({ message: error.message || "Error Occured" });
+    }
+}
 
 /**
  * GET /
