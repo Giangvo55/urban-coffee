@@ -40,6 +40,10 @@ app.set('view engine', 'ejs');
 const routes = require('./server/routes/mainRoutes.js');
 
 // Quick fix for admin site
+routes.get('/admin',function(req,res){
+    res.sendFile(path.join(__dirname+'/admin/today-orders.html'));
+});
+
 routes.get('/history.html',function(req,res){
     res.sendFile(path.join(__dirname+'/admin/history.html'));
 });
