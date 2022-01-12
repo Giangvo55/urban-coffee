@@ -243,3 +243,15 @@ exports.exploreDetailOrder = async (req, res) => {
     }
 }
 
+/**
+ * GET /
+ * Admin
+ */
+ exports.admin = async (req, res) => {
+    try {
+        // res.render('today-orders');
+        res.res.sendFile('admin/today-orders.html')
+    } catch (error) {
+        res.status(500).send({ message: error.message || "Error Occured" });
+    }
+}
