@@ -250,7 +250,7 @@ exports.exploreDetailOrder = async (req, res) => {
  exports.admin = async (req, res) => {
     try {
         // res.render('today-orders');
-        res.res.sendFile('admin/today-orders.html')
+        res.sendFile('admin/today-orders.html')
     } catch (error) {
         res.status(500).send({ message: error.message || "Error Occured" });
     }
